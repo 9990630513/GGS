@@ -1,0 +1,3504 @@
+body {
+	margin:0px;
+}
+/* ==========================================================================
+   FONTS
+   ========================================================================== */
+@font-face {
+	font-family: 'Conv_Gotham-Bold';
+	src: url('../fonts/Gotham-Bold.eot');
+	src: local('☺'), url('../fonts/Gotham-Bold.woff') format('woff'), url('../fonts/Gotham-Bold.ttf') format('truetype'), url('../fonts/Gotham-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Gotham-Book';
+	src: url('../fonts/Gotham-Book.eot');
+	src: local('☺'), url('../fonts/Gotham-Book.woff') format('woff'), url('../fonts/Gotham-Book.ttf') format('truetype'), url('../fonts/Gotham-Book.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Gotham-Light';
+	src: url('../fonts/Gotham-Light.eot');
+	src: local('☺'), url('../fonts/Gotham-Light.woff') format('woff'), url('../fonts/Gotham-Light.ttf') format('truetype'), url('../fonts/Gotham-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Gotham-Medium';
+	src: url('../fonts/Gotham-Medium.eot');
+	src: local('☺'), url('../fonts/Gotham-Medium.woff') format('woff'), url('../fonts/Gotham-Medium.ttf') format('truetype'), url('../fonts/Gotham-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_MinionPro-Regular';
+	src: url('../fonts/MinionPro-Regular.eot');
+	src: local('☺'), url('../fonts/MinionPro-Regular.woff') format('woff'), url('../fonts/MinionPro-Regular.ttf') format('truetype'), url('../fonts/MinionPro-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.clr {
+	clear:both;
+}
+img {
+	outline:none;
+	border:none;
+}
+a {
+	border:none;
+	outline:none;
+  text-decoration:none;
+}
+a:hover {
+  border:none;
+  outline:none;
+  text-decoration:none;
+}
+a:focus {
+  border:none;
+  outline:none;
+  text-decoration:none;
+  color:#fff;
+}
+a:active {
+  box-shadow: none;
+}
+input {
+  outline:none;
+}
+
+/* ==========================================================================
+   COMMON 
+   ========================================================================== */
+
+#wrapper {
+  width:100%;
+  margin:auto;
+}
+.container {
+  width:95%;
+  margin:auto;
+}
+.container-fluid {
+    
+}
+
+/* ==========================================================================
+   TOP NAV
+   ========================================================================== */
+
+a.nav-expander {
+  font-family: 'Conv_Gotham-Book';
+  margin-left: -20px;
+  /*background: none repeat scroll 0 0 #939393;*/
+  border-radius:20px;
+  color: #939393;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 42px;
+  line-height: 15px;
+  margin-right: 0;
+  padding: 1em 1.6em 2em;
+  position: absolute;
+  right: 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 0;
+  transition: right 0.3s ease-in-out 0s;
+  width: auto;
+  z-index: 12;
+  transition: right 0.3s ease-in-out 0s;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s;
+
+}
+a.nav-expander:hover {
+   cursor: pointer;
+}
+
+a.nav-expander.fixed {
+  position: fixed;
+  right:40px;
+  top: 55px;
+}
+
+.nav-expanded a.nav-expander.fixed {
+    right: 20em;
+}
+
+nav {
+  background: #FEFEFF;
+  display: block;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  right: -20em;
+  font-size: 15px;
+  top: 0;
+  width: 20em;
+  z-index: 2000;
+  transition: right 0.3s ease-in-out 0s;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s;
+  /*border-top: #e21f25 solid 10px;*/
+  border-left: #E6E6E6 solid 2px;
+}
+.nav-expanded nav {
+  right: 0;
+}
+
+body.nav-expanded {
+  transition: right 0.4s ease-in-out 0s;
+  -webkit-transition: right 0.4s ease-in-out 0s;
+  -moz-transition: right 0.4s ease-in-out 0s;
+  -o-transition: right 0.4s ease-in-out 0s;
+}
+.nav-expanded a.nav-expander {
+  right: 22em !important;
+  background: none repeat scroll 0 0 #939393;
+  color:#fff;
+}
+
+div.nav-expander{
+    transition: right 0.3s ease-in-out 0s;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s;
+}
+.nav-expanded div.nav-expander {
+  right: 40em !important;
+  background: none;
+  color:#fff;
+}
+.nav-expanded a.admission {
+  right:32em !important;
+  background: none;
+  color:#fff;
+}
+#nav-close {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  padding-right: 10px;
+}
+.main-menu {
+  padding-top: 12px;
+}
+.main-menu li {
+  font-size: 18px;
+}
+.main-menu li:nth-child(2n) a {
+  border-bottom: 2px solid #466aa6;
+  color: #466aa6;
+}
+.main-menu li:nth-child(2n).open > a .caret {
+    border-bottom-color: #466aa6;
+}
+.main-menu li:nth-child(2n).open > a:hover > .caret {
+  border-bottom-color: #466aa6;
+}
+.main-menu li:nth-child(2n) a .caret{
+  border-top: 4px solid #466aa6;
+}
+
+
+.main-menu li:nth-child(3n) a {
+  border-bottom: 2px solid #008544;
+  color: #008544;
+}
+.main-menu li:nth-child(3n).open > a .caret {
+    border-bottom-color: #008544;
+}
+.main-menu li:nth-child(3n).open > a:hover > .caret {
+  border-bottom-color: #008544;
+}
+.main-menu li:nth-child(3n) a .caret{
+  border-top: 4px solid #008544;
+}
+
+
+
+.main-menu li:nth-child(4n) a {
+  border-bottom: 2px solid #71c043;
+  color: #008544;
+}
+.main-menu li:nth-child(4n).open > a .caret {
+    border-bottom-color: #71c043;
+}
+.main-menu li:nth-child(4n).open > a:hover > .caret {
+  border-bottom-color: #71c043;
+}
+.main-menu li:nth-child(4n) a .caret{
+  border-top: 4px solid #71c043;
+}
+
+
+
+.main-menu li:nth-child(5n) a {
+  border-bottom: 2px solid #f4801d;
+  color: #f4801d;
+}
+.main-menu li:nth-child(5n).open > a .caret {
+    border-bottom-color: #f4801d;
+}
+.main-menu li:nth-child(5n).open > a:hover > .caret {
+  border-bottom-color: #f4801d;
+}
+.main-menu li:nth-child(5n) a .caret{
+  border-top: 4px solid #f4801d;
+}
+
+
+
+.academics_bg .sub-nav a {
+  line-height:20px !important;
+}
+.main-menu li:nth-child(2n) a:hover {
+  border-bottom: 2px solid #315084;
+  color: #315084;
+}
+.main-menu li:nth-child(3n) a {
+  border-bottom: 2px solid #008544;
+  color: #008544;
+}
+.main-menu li:nth-child(3n) a:hover {
+  border-bottom: 2px solid #026635;
+  color: #026635;
+}
+.main-menu li:nth-child(4n) a {
+  border-bottom: 2px solid #71c043;
+  color: #71c043;
+}
+.main-menu li:nth-child(4n) a:hover {
+  border-bottom: 2px solid #569c2d;
+  color: #569c2d;
+}
+.main-menu li:nth-child(5n) a {
+  border-bottom: 2px solid #f4801d;
+  color: #f4801d;
+}
+.main-menu li:nth-child(5n) a:hover {
+  border-bottom: 2px solid #e27415;
+  color: #e27415;
+}
+.main-menu li:nth-child(6n) a {
+  border-bottom: 2px solid #e01e26;
+  color: #e01e26;
+}
+.main-menu li:nth-child(6n) a:hover {
+  border-bottom: 2px solid #c5141b;
+  color: #c5141b;
+}
+.main-menu li:nth-child(7n) a {
+  border-bottom: 2px solid #e01e26;
+  color: #939393;
+}
+.main-menu li:nth-child(7n) a:hover {
+  border-bottom: 2px solid #c5141b;
+  color: #747272;
+}
+.sub-nav a {
+  border-bottom:none !important;
+}
+
+.main-menu li a {
+  color: #ae1f6e;
+  text-decoration: none;
+  font-family: 'Conv_Gotham-Book';
+  font-size:20px;
+  padding:12px 30px;
+  outline:none;
+  line-height:70px;
+  border-bottom: 2px solid #ae1f6e;
+  display:block;
+}
+
+.main-menu li a:hover {
+  color: #8b1757;
+  border-bottom: 2px solid #8b1757;
+  text-decoration: none;
+}
+
+.main-menu li .sub-nav {
+  border-bottom: 0px;
+  padding:4px 3px;
+}
+.main-menu li .sub-nav a {
+  font-size: 15px;
+}
+li.open {
+  padding:0px;
+}
+li.open a {
+  padding-left:30px;
+  color: #ae1f6e;
+}
+.about_menu_bg a {
+  color:#fff !important;
+  font-family:'Conv_Gotham-Book' !important;
+  line-height: 30px !important;
+}
+
+.main-menu a .caret {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  vertical-align: top;
+  border-top: 4px solid #ae1f6e;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+  margin-top:34px;
+}
+/*.main-menu li:nth-child(2n) a .caret {
+    border-top:4px solid #466aa6 !important;
+}
+.main-menu li:nth-child(2n) .open a .caret {
+  border-bottom:4px solid #466aa6 !important;
+   border-top:0px solid #466aa6 !important;
+}*/
+
+.main-menu a:hover .caret {
+	border-top-color: #ae1f6e;
+}
+
+.main-menu li.open > a > .caret {
+	border-top: none;
+	border-bottom: 4px solid #ae1f6e;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
+
+.main-menu li.open > a:hover > .caret {
+	border-bottom-color: #ae1f6e;
+}
+
+.icon:before {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  content: '\f105';
+}
+
+.main-menu li > a > span.icon {
+  float: right;
+  margin: 0.1em 1.7em -0.1em 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.main-menu li > a:hover > span.icon {
+  float: right;
+  margin: 0.1em 0.8em -0.1em 0;
+  opacity: 1;
+}
+.about_menu_bg {
+  background:#ae1f6e;
+  background-image: url(../images/about_menu_bg.png);
+}
+.academics_bg {
+  background:#466aa6;
+  background-image: url(../images/academics_bg.jpg);
+}
+.beyond_academics_bg {
+  background:#008544;
+  background-image: url(../images/beyond_academics_bg.jpg);
+}
+.school_life_bg {
+  background:#71c043;
+  background-image: url(../images/school_life_bg.jpg);
+}
+.residencies_bg {
+  background:#71c043;
+  background-image: url(../images/residencies_bg.jpg);
+}
+
+
+/* ==========================================================================
+   FONT AWESOME
+   ========================================================================== */
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.0.3');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+.fa-lg {
+    font-size: 1.3333333333333333em;
+    line-height: .75em;
+    vertical-align: -15%
+}
+.fa-bars:before {
+    content: "\f0c9"
+}
+
+.fa-fw {
+    width: 1.2857142857142858em;
+    text-align: center
+}
+.fa-ul {
+    padding-left: 0;
+    margin-left: 2.142857142857143em;
+    list-style-type: none
+}
+.fa-ul>li {
+    position: relative
+}
+.fa-li {
+    position: absolute;
+    left: -2.142857142857143em;
+    width: 2.142857142857143em;
+    top: .14285714285714285em;
+    text-align: center
+}
+.fa-li.fa-lg {
+    left: -1.8571428571428572em
+}
+.fa-border {
+    padding: .2em .25em .15em;
+    border: solid .08em #eee;
+    border-radius: .1em
+}
+.pull-right {
+    float: right
+}
+.pull-left {
+    float: left
+}
+.fa.pull-left {
+    margin-right: .3em
+}
+.fa.pull-right {
+    margin-left: .3em
+}
+
+.fa-stack {
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle
+}
+.fa-stack-1x,
+.fa-stack-2x {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center
+}
+.fa-stack-1x {
+    line-height: inherit
+}
+.fa-stack-2x {
+    font-size: 2em
+}
+.fa-inverse {
+    color: #fff
+}
+
+/* ==========================================================================
+   STICKy HEADER 
+   ========================================================================== */
+
+header.header-show {
+/*  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);*/
+-webkit-transition: all 700ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+   -moz-transition: all 700ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+     -o-transition: all 700ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+        transition: all 700ms cubic-bezier(0.190, 1.000, 0.220, 1.000); /* easeOutExpo */
+}
+
+header.header-hide {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+-webkit-transition: all 300ms cubic-bezier(0.550, 0.055, 0.675, 0.190);
+   -moz-transition: all 300ms cubic-bezier(0.550, 0.055, 0.675, 0.190);
+     -o-transition: all 300ms cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        transition: all 300ms cubic-bezier(0.550, 0.055, 0.675, 0.190); /* easeInCubic */
+}
+
+/* ==========================================================================
+   HEADER SEARCH BAR
+   ========================================================================== */
+
+.mac-style {
+  font-family: 'Conv_Gotham-Book';
+  color: #939393;
+  text-transform: uppercase;
+  width: 122px;
+  -webkit-transition: width 1s ease-in-out;
+  -moz-transition: width 1s ease-in-out;
+  -o-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  box-shadow: inherit;
+  height: 40px;
+  line-height: 40px;
+ } 
+ .form-control {
+  font-size: 14px;
+  box-shadow: none;
+ }
+
+.mac-style:focus{
+    width: 260px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.header_search {
+  position: absolute;
+  right:315px;
+  top: 57px;
+  outline:none;
+
+}
+.search_button {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border: none;
+  outline: none;
+  background: none;
+  background-image: url("../images/search-icon.png");
+  background-repeat: no-repeat;
+  background-position: 0px 6px;
+  width: 25px;
+  line-height: 40px;
+  height: 40px;
+}
+.form-control:focus {
+  border-color:inherit;
+}
+.mac-style:focus {
+      box-shadow: none;
+}
+
+/* ==========================================================================
+    HOME PAGE 
+   ========================================================================== */
+
+header {
+  height:157px;
+  background: rgba(255,255,255,0.8);
+  width:100%;
+  position:fixed;
+  top:0px;
+  z-index: 1070;
+}
+.top_nav {
+  border:none;
+  border-radius:0px;
+  width:93.4%;
+  margin:auto;
+  background-color: inherit;
+}
+.logo {
+  background-image:url(../images/ggs-logo.png);
+  background-repeat: no-repeat;
+  width: 226px;
+  height: 80px;
+  margin-top: 38px;
+  padding: 0px;
+}
+.admission {
+  background:#939393 !important;
+    border-radius: 20px !important;
+    color: #fff !important;
+    position: fixed !important;
+    right: 190px !important;
+    top: 54px !important;
+}
+.admission:hover{
+  background: #000 !important;
+}
+
+/* =============== slider video section =================== */
+
+.slider_video {
+  margin:auto;
+  width:100%;
+  margin-top: 157px;
+  height:auto;
+  background-image:url(../images/home-video.jpg);
+  background-size: cover;
+  background-position: center top;
+  position:relative;
+}
+.video_content {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    top: 50%;
+    margin-top: -35px;
+}
+.thevideo {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index:1080;
+  background-color:#000;
+  top: 0px;
+}
+.videoclose {
+  position:absolute;
+  width: 50px;
+  height: 50px;
+  right: 0px;
+  top: 0px;
+  line-height: 50px;
+  text-align: center;
+  border-bottom-left-radius: 17px;
+  outline: none;
+  text-decoration: none;
+  color: #000;
+  display: block;
+  background-color: #fff;
+  font-size: 20px;
+  z-index: 99999;
+}
+.slider_video img{
+  max-width:100%;
+  height:100%;
+}
+.slider_video object .embed{
+  border:none;
+  outline:none;
+/*  width:50%;
+  height:600px;
+  position:absolute;
+  left:50%;
+  margin-left:-25%;
+  top:50%;
+  margin-top:-300px;*/
+  position: fixed;
+  diplay: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =============== Awards & Laurels =================== */
+
+.awards_laurels {
+  font-family: 'Conv_Gotham-Book';
+  font-size:20px;
+  width:100%;
+  background-color:#939393;
+  color:#fff;
+  line-height:70px;
+  display:block;
+  text-align: center;
+}
+.awards_laurels:hover {
+  background-color:#939393;
+  color:#fff;
+}
+.download_brochure {
+  font-family: 'Conv_Gotham-Book';
+  font-size:20px;
+  background-color:#e21f25;
+  line-height:70px;
+  display:block;
+  text-align: center;
+  color:#fff;
+}
+.download_brochure:hover {
+  background-color:#e21f25;
+  color:#fff;
+}
+.awards_laurels_content {
+  border-bottom: solid #e21f25 10px;
+  top: 100%;
+  position: absolute;
+  bottom: 0px;
+  margin-top: -80px;
+  width: 100%;
+}
+.awards_laurels_content .col-xs-12.col-sm-6.col-md-2:first-child a {
+  background: #828282;
+}
+.awards_laurels_content .col-md-2 {
+  padding:0px;
+}
+.awards_laurels_content .col-md-0 {
+  padding:0px;
+}
+.slider_ticker {
+  background-color:#f0f0f0;
+  height:70px;
+}
+.slider_ticker .bx-pager{
+  display:none;
+}
+.slider_ticker .bx-wrapper .bx-prev {
+  right: 50px !important;
+  left: inherit !important;
+}
+.slider_ticker .bx-wrapper .bx-next {
+  right: 20px !important;
+  left: inherit !important;
+}
+.slider_ticker .bx-wrapper .bx-viewport {
+  height:69px !important;
+  border:5px solid #f0f0f0;
+}
+.slider_ticker ul.bxslider li{
+  line-height:65px;
+}
+.slider_ticker .bx-controls-direction {
+  background-color: #f0f0f0;
+  width: 100px;
+  height: 70px;
+  float: right;
+  top: 0px;
+  position: absolute;
+  right: 0px;
+}
+.awards_laurels_content .bx-wrapper .bx-viewport {
+  background-color:#f0f0f0;
+}
+.slider_ticker span {
+  font-family: 'Conv_Gotham-Book';
+  font-size:10px;
+  color: #939393;
+  margin-right:20px;
+  border-right: solid 1px #939393;
+  padding-right: 20px;
+}
+.slider_ticker li {
+  font-family: 'Conv_Gotham-Light';
+  font-size:20px;
+  color: #e21f25;
+}
+
+/* =============== Curriculum Section =================== */
+
+.curriculum_content {
+  padding-top:140px;
+  padding-bottom:65px;
+  padding-top: 140px;
+  padding-bottom: 65px;
+  background-image: url(../images/about/about_slider_bg.jpg);
+  background-repeat: repeat;
+  height: auto;
+}
+.curriculum_content .thumbnail {
+  padding:0px;
+  border:none;
+  margin-bottom:0px;
+  overflow:hidden;
+  border-radius:0;
+}
+/*.curriculum_content .thumbnail img {
+  width:100%
+}*/
+
+.curriculum_content .thumbnail img {
+    width: 100%;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    border-radius:0;
+
+}
+
+.curriculum_content .thumbnail img:hover {
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    border-radius:0;
+}
+.curriculum_content .caption {
+    background-color: #ad1f6b;
+    padding: 20px;
+    margin-bottom:15px;
+}
+.curriculum_content .caption h3 {
+  text-align:center;
+  font-family: 'Conv_Gotham-Book';
+  font-size:30px;
+  color:#fff;
+  position: relative;
+  margin-bottom: 28px;
+}
+.curriculum_content .caption h3:before {
+  width:10px;
+  height:2px;
+  background-color:#fff;
+  position: absolute;
+  content:"";
+  top:42px;
+  left:50%;
+  margin-left:-5px;
+}
+.curriculum_content .caption p {
+    text-align:center;
+}
+.curriculum_content .caption a {
+  font-family: 'Conv_Gotham-Book';
+  font-size:10px;
+  color:#fff;
+  background-color: inherit;
+  border: none;
+}
+.curriculum_content .caption a:focus {
+  background-color: inherit;
+  box-shadow: none;
+}
+.curriculum_content .caption a:active {
+  box-shadow: none;
+}
+.curriculum_content .col-md-3 {
+  padding-right:15px;
+  padding-left:0px;
+}
+.curriculum_content .col-md-3:last-child {
+    /*padding-right:0px;
+*/}
+.curriculum_content .col-md-3:nth-child(2n) .caption {
+  background-color:#e21f25;
+}
+.curriculum_content .col-md-3:nth-child(3n) .caption {
+  background-color:#008544;
+}
+.curriculum_content .col-md-3:nth-child(4n) .caption{
+  background-color:#466aa6;
+}
+
+/* =============== Curriculum Section =================== */
+
+.events_content {
+  padding-bottom: 60px;
+   background-image: url(../images/about/about_slider_bg.jpg);
+  background-repeat: repeat;
+  height: auto;
+}
+.events_content .thumbnail {
+  padding:0px;
+  border:none;
+  margin-bottom:0px;
+   border-bottom: 10px solid transparent;
+   transition: none;
+   border-radius: 0;
+}
+.events_content .thumbnail img {
+  width:100%
+}
+.events_content .caption {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom:15px;
+    border-bottom: 10px solid transparent;
+}
+.events_content .tab-content .tab-pane > div:hover .caption {
+    border-bottom:10px solid #466aa6;
+    display: block;
+    color:#466aa6;
+}
+
+.events_content .tab-content .tab-pane > div:hover .caption p{
+  color: #466aa6;
+}
+
+.events_content .tab-content .tab-pane > div:hover .caption a{
+  background-color:  #466aa6;
+}
+.events_content .tab-content .tab-pane > div:hover .thumbnail{
+    border-bottom:10px solid #466aa6;
+}
+.events_content .caption h3 {
+  text-align: left;
+  font-family: 'Conv_Gotham-Book';
+  font-size: 10px;
+  color: #989898;
+}
+.events_content .caption p {
+  text-align:left;
+  font-family: 'Conv_Gotham-Light';
+  font-size: 20px;
+  color:#989898;
+  line-height: 25px;
+}
+.events_content .caption a {
+  font-family: 'Conv_Gotham-Book';
+  font-size: 10px;
+  color: #fff;
+  background-color: #939393;
+  border: none;
+  border-radius: 0px;
+  width: 85px;
+  height: 30px;
+  line-height: 18px;
+  margin-top:28px;
+}
+.events_content .caption a:focus {
+  background-color: #939393;
+  box-shadow: none;
+}
+.events_content .caption a:active {
+  box-shadow: none;
+}
+.events_content .col-md-3:last-child {
+  /*padding-right: 0px;*/
+}
+
+.events_content .col-md-3 {
+    padding-right: 15px;
+    padding-left: 0px;
+}
+.events_content ul.nav.nav-tabs {
+  background-color: #e5e5e5;
+  height: 60px;
+  border-bottom: solid #466aa6 10px;
+  margin-bottom:10px;
+  margin-right:15px;
+}
+.events_content .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  font-family: 'Conv_Gotham-Book' !important;
+  font-size:20px !important;
+  color: #FFF;
+  cursor: default;
+  background-color: #466aa6 !important;
+  border: none;
+  border-bottom-color: transparent;
+  line-height: 30px;
+  border-radius: 0px;
+}
+.events_content .events_content .nav-tabs > li.active > a:hover {
+    line-height: 30px !important;
+}
+.events_content .nav > li > a {
+    font-family: 'Conv_Gotham-Book';
+    font-size: 20px;
+    color: #9A9A9A;
+}
+.events_content .nav-tabs > li.active > a {
+    background: #466aa6;
+    color:#fff;
+    border-radius:0px;
+    margin:0px;
+    border-left:0;
+    border-right:0;
+    border-top:solid 1px #9A9A9A;
+   
+}
+.events_content .nav > li > a:hover {
+    background-color: #9A9A9A;
+    color: #fff;
+    border-radius: 0px;
+    padding-right:15px;
+    padding-left:15px;
+    margin-right: 0px;
+    border-left: 0;
+    border-right: 0;
+    border-top: solid 1px #9A9A9A;
+    border-bottom: solid 1px #9A9A9A;
+}
+.events_content .events_bt {
+  font-family: 'Conv_Gotham-Book';
+  font-size: 10px;
+  color: #989898;
+  background-color: #fff;
+  border: none;
+  border-radius: 0px;
+  width: 85px;
+  height: 30px;
+  line-height: 30px;
+  margin: 11px 20px 9px 0px;
+  float: right;
+  text-align: center;
+}
+.events_content .events_bt:hover {
+  background-color: #9A9A9A;
+  color:#fff;
+}
+
+
+/* =============== Affiliations Section =================== */
+
+.affiliations_content {
+  background-color: #FFFFFF;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-bottom: solid 10px #efefef;
+}
+.affiliations_content .col-md-2{
+  line-height:180px;
+}
+.affiliations_content .affiliations_bt {
+  font-family: 'Conv_Gotham-Book';
+  font-size: 20px;
+  width: 100%;
+  background-color: #939393;
+  color: #fff;
+  line-height: 70px;
+  display: block;
+  text-align: left;
+  padding-left:20px;
+  margin: 55px 0px;
+}
+.affiliations_content .col-md-2{
+  text-align:center;
+}
+
+
+/* =============== Footer Section =================== */
+.footer_social_icon {
+    position: absolute;
+    bottom: 63px;
+}
+.footer_social_icon img {
+  width: 13% !important;
+  margin-right: 2px;
+  opacity:0.7;
+}
+.footer_social_icon img:hover {
+  opacity:1;
+}
+.footer_content {
+  background-color:#404040;
+  border-top:solid 15px #262626;
+}
+.footer_content .col-md-5{
+  padding-left:80px;
+}
+.footer_content .col-md-6 {
+    border-right: solid #000 2px;
+    padding: 45px 0px;
+}
+.footer_content .col-md-6:last-child {
+    border-right:0;
+}
+.footer_content .col-md-3 {
+  padding-left: 0px;
+}
+.footer_content ul{
+  margin:0px;
+  padding:0px;
+}
+.footer_content ul li{
+  font-family: 'Conv_Gotham-Book';
+  list-style:none;
+  font-size:12px; 
+  color:#fff;
+}
+.footer_content ul li a{
+  font-family: 'Conv_Gotham-Book';
+  font-size:12px; 
+  color:#fff;
+  text-transform: uppercase;
+  line-height:35px;
+}
+.footer_content ul li a:hover {
+  color:#afafaf;
+}
+.bottom_footer {
+  line-height:35px;
+  background-color:#a3a3a3;
+  color:#fff;
+  font-family:'Conv_Gotham-Book';
+  font-size:10px; 
+}
+.bottom_footer .col-md-12 {
+  padding-left:0px;
+}
+.bottom_footer p {
+  width:auto;
+  float:left;
+  margin:0px;
+}
+.bottom_footer a {
+  color:#fff;
+  margin-left:70px;
+}
+.footer_admission li a {
+  color:#afafaf !important;
+  font-size: 10px !important;
+  line-height:15px !important;
+}
+.footer_admission li a:hover {
+  color:#fff !important;
+}
+.footer_admission li:first-child a{
+  color:#fff !important;
+}
+.footer_annual{
+  width: 108px;
+  display:block;
+  color:#fff !important;
+  margin-bottom: 15px;
+}
+.footer_contact li a{
+  color:#afafaf;
+  font-size: 10px !important;
+  line-height:15px !important;
+}
+.footer_contact li:nth-child(2n){
+   margin-top: 15px;
+}
+.footer_contact li:nth-child(3n) a{
+   color:#afafaf !important;
+   margin-top: 7px;
+}
+.footer_contact li:nth-child(5n) a{
+   color:#afafaf !important;
+   margin-top: 7px;
+}
+.footer_contact li:nth-child(7n) a{
+   color:#afafaf !important;
+   margin-top: 7px;
+}
+.footer_content img {
+  width:100%;
+}
+ul.footer_circulars li:first-child a {
+    margin-top: -10px;
+    display: block;
+}
+
+/* ==========================================================================
+   ABOUT US PAGE
+   ========================================================================== */
+
+
+.responsive-tabs-container[class*="accordion-"] .tab-pane {
+  margin-bottom: 15px;
+}
+.responsive-tabs-container[class*="accordion-"] .accordion-link {
+  display: none;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  background-color: #939393;
+  font-family: 'Conv_Gotham-Book';
+  font-size: 15px;
+  line-height: 20px;
+  border-radius: 0px;
+  width: 100%;
+  color: #fff;
+  border: 0px;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .responsive-tabs-container.accordion-xs .nav-tabs {
+    display: none;
+  }
+  .responsive-tabs-container.accordion-xs .accordion-link {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .responsive-tabs-container.accordion-sm .nav-tabs {
+    display: none;
+  }
+  .responsive-tabs-container.accordion-sm .accordion-link {
+    display: block;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .responsive-tabs-container.accordion-md .nav-tabs {
+    display: none;
+  }
+  .responsive-tabs-container.accordion-md .accordion-link {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .responsive-tabs-container.accordion-lg .nav-tabs {
+    display: none;
+  }
+  .responsive-tabs-container.accordion-lg .accordion-link {
+    display: block;
+  }
+}
+/*# sourceMappingURL=bootstrap-responsive-tabs.css.map */
+
+
+
+.about_container {
+  margin-top:157px;
+  padding-bottom: 65px;
+   border-top:solid 2px #c9c9c9;
+}
+.about_container h2{
+  font-family: 'Conv_Gotham-Book';
+  font-size:12px; 
+  color:#ad1f6b;
+  text-transform: uppercase;
+  padding-top:40px;
+  margin-bottom:5px;
+}
+.about_container h3{
+  font-family: 'Conv_Gotham-Book';
+  font-size:20px; 
+  color:#afafaf;
+  padding-bottom:40px;
+  margin-top:10px;
+}
+.about_bg {
+  background-color:#fff;
+}
+.about_bg .admission{
+  background-color:#ad1f6b !important;
+}
+.about_slider_bg{
+  background-image:url(../images/about/about_slider_bg.jpg);
+  background-repeat:repeat;
+  height:auto;
+  padding:140px 180px 140px 48px;
+  overflow:hidden;
+}
+.about_container .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+  top: 80px !important;
+  right:227px  !important;
+  width: auto !important;
+  height: 40px;
+}
+.about_container .bx-wrapper .bx-pager.bx-default-pager a {
+  background-image:url(../images/about/hexagon_icon.png);
+  width:16px;
+  height:18px;
+  background-color: inherit;
+}
+.about_container .bx-wrapper .bx-pager.bx-default-pager a.active {
+   background-image:url(../images/about/hexagon_active_icon.png);
+   background-color: inherit;
+}
+.about_container .bx-wrapper .bx-pager.bx-default-pager a:hover {
+   background-image:url(../images/about/hexagon_active_icon.png);
+   background-color:inherit;
+}
+.about_container .bx-wrapper .bx-prev {
+  display:none;
+}
+.about_container .bx-wrapper .bx-next {
+  display:none;
+}
+.about_slider_bg .col-md-2 {
+  background-color: #fff;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.about_slider_bg .col-md-2 img {
+  width:100%;
+  border-bottom:solid 10px #ad1f6b;
+  padding:0px;
+}
+.about_slider_bg .col-md-9 {
+  background-color: #fff;
+  padding:40px;
+  position:relative;
+
+}
+.about_slider_bg .col-md-9:before {
+ position:absolute;
+ content:"";
+ background-image:url(../images/about/left_triangle_arrow.png);
+ width:20px;
+ height:20px;
+ left:-20px;
+ top:50px;
+}
+.about_slider_bg p {
+ font-family: 'Conv_Gotham-Light';
+  font-size:14px; 
+  color:#646464;
+  line-height:30px;
+}
+.about_slider_bg span {
+  color:#ad1f6b;
+}
+.abt_purple_color {
+  background-color:#ad1f6b;
+  padding:160px 160px;
+}
+.about_container .container-fluid {
+  padding:0px;
+}
+.about_admission {
+  background-color: #ad1f6b !important;
+}
+.about_awards_laurels {
+  border-bottom:solid 10px #ad1f6b !important;
+  position: inherit;
+  margin-top: 0px;
+  width: auto;
+}
+.about_awards_laurels .slider_ticker li {
+  color:#ad1f6b !important;
+}
+.about_awards_laurels .download_brochure {
+  background-color:#ad1f6b;
+}
+.abt_purple_color .col-md-3 {
+  position:relative;
+  margin-bottom:30px;
+}
+.abt_purple_color .col-md-3 img{
+  width:100%;
+}
+.team_description {
+  background-color: #fff;
+  /* position: absolute; */
+  /* bottom: 17px; */
+  text-align: center;
+  width: 100%;
+  /* left: 50%; */
+  /* margin-left: -40%; */
+  padding: 1px 0px;
+}
+.team_description p {
+  font-family: 'Conv_Gotham-Light';
+  font-size:12px; 
+  color:#646464;
+  margin:10px 0px;
+}
+.team_description span {
+  color:#ad1f6b;
+  display:block;
+}
+.about_our_policies {
+  height: auto;
+  padding:0px 170px 50px 30px;
+  overflow: hidden;
+}
+.about_our_policies p {
+    font-family: 'Conv_Gotham-Light';
+    font-size: 14px;
+    color: #646464;
+    line-height: 30px;
+}
+.about_our_policies p:nth-child(1n+3) {
+  background-image: url(../images/about/abt_dot.png);
+  background-repeat: no-repeat;
+  background-position: 0px 8px;
+  padding-left: 18px;
+}
+.about_our_policies h4 {
+  font-family: 'Conv_Gotham-Book';     
+  font-size: 20px;
+  color: #646464;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.about_our_pledge {
+  height: auto;
+  padding:0px 170px 0px 25px;
+  overflow: hidden;
+}
+.about_our_pledge .col-md-4 img {
+  width: 100%;
+}
+.about_our_pledge p {
+  width:80%;
+  font-family: 'Conv_Gotham-Light';
+  font-size: 14px;
+  color: #646464;
+  line-height: 20px;
+  margin-top:20%;
+}
+.about_our_pledge span {
+  color: #ad1f6b;
+  padding-top:30px;
+  display:block;
+}
+.about_our_pledge .content_border {
+  border-bottom: solid #ad1f6b 10px;
+  margin: 0px;
+  width: 91.5%;
+  float: right;
+  margin-top:-1px;
+}
+.content_border .col-md-4{
+  padding:0px;
+}
+.our_philosophy {
+    padding-bottom: 100px;
+}
+.our_philosophy h2{
+  font-family: 'Conv_Gotham-Book';
+  font-size: 30px;
+  color: #fff;
+  padding-top: 0px;
+  margin-top: -63px;
+  text-transform: inherit;
+  margin-bottom: 30px;
+}
+.our_philosophy p b{
+  font-family: 'Conv_Gotham-Book';  
+  font-weight: normal;   
+  font-size:17px;
+  color: #fff;
+}
+.our_philosophy p{
+  font-family: 'Conv_Gotham-Light';
+  font-size: 14px;
+  color: #fff;
+}
+/*.about_select select {
+  font-family: 'Conv_Gotham-Bold';  
+  font-size:15px;
+  display: block;
+  border: solid 1px #ad1f6b;
+  border-radius: 30px;
+  width: 250px;
+  height: 35px;
+  line-height: 35px;
+  float: left;
+  background-color: #ad1f6b;
+  color: #fff;
+  outline: none;
+  margin-top: 84px;
+  font-weight:normal;
+}*/
+
+
+.about_select {
+  font-family: 'Conv_Gotham-Book';
+  font-size: 15px;
+  border: none;
+  color: #ad1f6b;
+  width: 257px;
+  border-radius: 3px;
+  background-color: transparent;
+  overflow: hidden;
+  background: url("../images/about/icon_select.png") no-repeat 97% 50%;
+  float: right;
+}
+.about_select select {
+  padding: 5px 8px;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  position:relative;
+}
+.about_selecy_list {
+  position:absolute;
+  top:50px;
+}
+.about_select .our-team-select select > option {
+  
+  background:#000;
+}
+.about_select select:focus {
+    outline: none;
+}
+.modal-header {
+  font-family:'Conv_Gotham-Book';
+  border-bottom:1px solid #BBBBBB;
+  background-color:#929292;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  color: #fff;
+}
+.close {
+  color: #FFF;
+  text-shadow: 0 1px 0 #000;
+  opacity: 0.9;
+}
+button.close {
+  background:#929292;
+}
+.btn-primary {
+  background-color:#929292;
+  border:solid 1px #929292;
+}
+.btn-primary:hover {
+  background-color: #6F6F6F;
+  border:solid 1px #6F6F6F;
+}
+label {
+  color: #6D6D6D;
+  font-family: 'Conv_Gotham-Book';
+}
+
+/* Default custom select styles */
+.cs-select {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  text-align: left;
+  color: #ad1f6b;
+  z-index: 100;
+  /* width: 100%;*/    
+  max-width:100%;
+  /*float: right;*/
+  margin:0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline:none;
+  background:transparent;
+  border:none;
+  font-family: 'Conv_Gotham-Book';
+  font-size: 20px;
+}
+
+.cs-select:focus {
+  outline: none; /* For better accessibility add a style for this in your skin */
+}
+
+.cs-select select {
+  display: none;
+}
+
+.cs-select span {
+  display: block;
+  position: relative;
+  cursor: pointer;
+/*  padding: 1em;*/
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align:left;
+}
+.cs-select ul li span:hover {
+  background-color:#929191;
+}
+.cs-options li {
+    line-height: 0px;
+}
+
+/* Placeholder and selected option */
+.cs-select > span {
+  padding-right:2em;
+}
+
+.cs-select > span::after,
+.cs-select .cs-selected span::after {
+  speak: none;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@-moz-document url-prefix() {
+    .cs-select > span::after,
+    .cs-select .cs-selected span::after {
+      top:0;
+    }
+    .cs-select .cs-selected span:after{
+      top:40%;
+    }
+}
+
+.cs-select > span::after {
+  content: '\25BE';
+  background: #AD1F6C;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  color: #fff;
+  line-height: 15px;
+  text-align: center;
+  right: 10px;
+  font-size: 13px;
+}
+
+.cs-select .cs-selected span::after {
+  content: '\2713';
+  margin-left: 1em;
+  right: 10px;
+}
+
+.cs-select.cs-active > span::after {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.cs-active {
+  z-index: 200;
+}
+
+/* Options */
+.cs-select .cs-options {
+  position: absolute;
+  overflow: hidden;
+  width: 140px;
+  /* background: #ad1f6b; */
+  background-color: #afafaf;
+  visibility: hidden;
+  color: #fff;
+  right: 0;
+  text-align:left;
+}
+li.cs-selected {
+    background-color:#929191;
+}
+
+.cs-select.cs-active .cs-options {
+  visibility: visible;
+}
+
+.cs-select ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.cs-select ul span {
+  padding: 1em;
+}
+
+.cs-select ul li.cs-focus span {
+  background-color: #ddd;
+}
+
+/* Optgroup and optgroup label */
+.cs-select li.cs-optgroup ul {
+  padding-left: 1em;
+}
+
+.cs-select li.cs-optgroup > span {
+  cursor: default;
+}
+
+
+
+.cs-skin-border {
+  background: transparent;
+  font-size: 2em;
+  font-weight: 700;
+  max-width: 600px;
+}
+
+@media screen and (max-width: 30em) {
+  .cs-skin-border { font-size: 1em; }
+}
+
+.cs-skin-border > span {
+  border: 5px solid #000;
+  border-color: inherit;
+  -webkit-transition: background 0.2s, border-color 0.2s;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.cs-skin-border > span::after,
+.cs-skin-border .cs-selected span::after {
+  font-family: 'icomoon';
+  content: '\e000';
+}
+
+.cs-skin-border ul span::after {
+  content: '';
+  opacity: 0;
+}
+
+.cs-skin-border .cs-selected span::after {
+  content: '\e00e';
+  color: #ddd9c9;
+  font-size: 1.5em;
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.cs-skin-border.cs-active > span {
+  background: #fff;
+  border-color: #fff;
+  color: #2980b9;
+}
+
+.cs-skin-border .cs-options {
+  color: #2980b9;
+  font-size: 0.75em;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s, visibility 0s 0.2s;
+  transition: opacity 0.2s, visibility 0s 0.2s;
+}
+
+.cs-skin-border.cs-active .cs-options {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+
+}
+
+.cs-skin-border ul span {
+  padding: 1em 2em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.cs-skin-border .cs-options li span:hover,
+.cs-skin-border li.cs-focus span {
+  background: #f5f3ec;
+}
+
+/* ==========================================================================
+   THE SCHOOL CAMPUS PAGE
+   ========================================================================== */
+
+.the_school_campus {
+
+}
+.all_school_content ul.nav li.active a, ul.nav li.active a:hover {
+  line-height:30px;
+  font-size: 14px !important;
+}
+.all_school_content ul.nav li.active a:hover, ul.nav li.active {
+  font-size: 14px !important;
+  line-height:30px;
+}
+.all_school_content ul.nav li a:focus {
+  background-color:#ad1f6b !important;
+}
+.the_school_campus .slider1 .slide {
+  height:auto;
+  background-size:cover;
+  background-repeat:no-repeat;
+  border-bottom:solid #ad1f6b 10px;
+}
+.the_school_campus .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+  top: -92px !important;
+  right: 50px !important;
+}
+.the_school_campus .bx-wrapper .bx-controls-direction a.disabled {
+  display:block;
+  top:94%;
+}
+.the_school_campus .bx-wrapper .bx-next, .about_container .bx-wrapper .bx-prev {
+  display:block;
+}
+
+
+.the_school_campus .bx-wrapper .bx-prev{
+  left:0px;
+}
+.the_school_campus .bx-wrapper .bx-next{
+  right:0px;
+}
+.the_school_campus .bx-controls-direction {
+  left: 74%;
+  width: 78px;
+  position: absolute;
+  bottom: 22px;
+  height: 49px;
+}
+.the_school_campus .slide_content {
+  background-color: #fff;
+  width:80%;
+  margin:auto;
+  bottom:0px;
+  position:absolute;
+  left:50%;
+  margin-left:-40%;
+}
+.the_school_campus .slide_content p{
+  font-family: 'Conv_Gotham-Book';
+  font-size: 20px;
+  color:#ad1f6b;
+  text-align:left;
+  position: relative;
+  line-height:73px;
+  margin: 0px;
+  padding-left:20px;
+}
+.the_school_campus .slide_content a{
+  font-family: 'Conv_Gotham-Book';
+  font-size:18px;
+  background-color: #ad1f6b;
+  color:#fff;
+  float:right;
+  position:absolute;
+  right:0px;
+  padding:0px 20px;
+}
+.the_school_campus .slide_content a img {
+  margin-right: 10px;
+  float: left;
+  width: 20px;
+  margin-top:25px;
+}
+.the_school_content p{
+  font-family: 'Conv_Gotham-Light';
+  font-size:14px;
+  width:20%;
+  margin-right:5%;
+  float:left;
+  margin-top:30px;
+
+}
+.the_school_content p:last-child{
+  margin-right:0px;
+}
+.all_school_content {
+  background-color: #efefef;
+  overflow:hidden;
+  height:auto;
+  border-bottom:solid 65px #fff;
+  padding-top:60px;
+  padding-bottom:60px;
+}
+.all_school_content .nav-tabs {
+  float: right;
+  margin-top: 50px;
+  border-bottom: 0px;
+  position: absolute;
+  left: 36%;
+}
+.all_school_content .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  font-size:12px;
+  border-bottom:none;
+}
+.all_school_content .tab-pane img{
+  float:left;
+  width: 33%;
+}
+.all_school_content .tab-pane p {
+  font-family: 'Conv_Gotham-Light';
+  font-size: 14px;
+  float: right;
+  width: 64%;
+  padding-right: 50px;
+  color:#5D5D5D;
+}
+.all_school_content .tab-pane p:nth-child(2) {
+  padding-top:128px;
+}
+.all_school_content .tab-pane b {
+  font-family: 'Conv_Gotham-Book';
+  font-size:20px;
+  color:#ad1f6b;
+  display:block;
+  margin-top:20px;
+  margin-bottom:10px;
+}
+.all_school_content .tab-pane a {
+  font-family: 'Conv_Gotham-Book';
+  font-size:10px;
+  color:#8C8C8C;
+  display:block;
+  margin-top:50px;
+  text-transform: uppercase;
+  margin-bottom:50px;
+}
+.all_school_content .tab-pane a img {
+  width: auto;
+  margin-top: -5px;
+  margin-right: 10px;
+}
+.all_school_content .col-md-12 {
+  background-color:#fff;
+  padding:0px;
+  border-bottom:#939292 solid 8px;
+}
+.all_school_content .nav-tabs > li > a{
+  background: #939292;
+  font-family: 'Conv_Gotham-Book';
+  font-size:14px !important;
+  color:#fff;
+  line-height: 30px;
+  border-radius:0px;
+  border:0px;
+  margin-right: 4px;
+}
+.all_school_content .nav-tabs > li > a:hover{
+  background: #ad1f6b;
+  border:0px;
+}
+.all_school_content .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover {
+  background: #ad1f6b;
+  font-family: 'Conv_Gotham-Book';
+  font-size: 14px;
+  color: #fff;
+  line-height: 30px;
+}
+.school_curriculum .col-md-3 {
+  background-color: #fff;
+  line-height:100px;
+  text-align: center;
+  margin-top:60px;
+  padding: 0px;
+  margin-right: 23px;
+  width: 24%;
+}
+.school_curriculum .col-md-3:last-child {
+  margin-right:0px;
+}
+.school_curriculum a {
+  font-family: 'Conv_Gotham-Book';  
+  font-size:30px;
+  color:#ae1f6e;
+  outline:none;
+  display:block;
+}
+.school_curriculum a:hover {
+  background-color: #ae1f6e;
+  color:#fff;
+}
+.school_curriculum .col-md-3:nth-child(2n) a  {
+  color:#e01e26;
+}
+.school_curriculum .col-md-3:nth-child(2n) a:hover {
+  background-color: #e01e26;
+  color:#fff;
+}
+.school_curriculum .col-md-3:nth-child(3n) a  {
+  color:#008544;
+}
+.school_curriculum .col-md-3:nth-child(3n) a:hover {
+  background-color: #008544;
+  color:#fff;
+}
+.school_curriculum .col-md-3:nth-child(4n) a  {
+  color:#466aa6;
+}
+.school_curriculum .col-md-3:nth-child(4n) a:hover {
+  background-color: #466aa6;
+  color:#fff;
+}
+
+
+
+/* ==========================================================================
+   AWARDS & LAURELS PAGE
+   ========================================================================== */
+
+.about_al .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+  display:none;
+}
+.abt_al_select {
+  float:right;
+}
+.about_al  .bx-controls-direction {
+  display:none;
+}
+.about_al_content {
+  width:23.2%;
+  height:315px;
+  background-color: #ad1f6b;
+  float:left;
+  padding:30px;
+  margin-right:11px;
+  margin-left:11px;
+  margin-bottom:22px;
+  position:relative; 
+}
+.about_al_content .about_al_content_hover { 
+  position: absolute;
+  left:0px;
+  top:0px;
+  background-color:rgba(0,0,0,0.8);
+  color: #000;    
+  cursor: pointer;
+  padding: 0px;
+  border: 0px;
+  width: 0px;
+  opacity:0;
+}
+.about_al_content:hover .about_al_content_hover { 
+  padding:0;
+  width:100%;
+  height:315px;   
+  opacity: 1;
+  transition: width, border opacity .0s linear .5s;
+  -webkit-transition: width, border opacity .0s linear .5s;
+  -moz-transition: width, border opacity .0s linear .5s;
+  -ms-transition: width, border opacity .0s linear .5s;
+  transition: opacity .5s linear .5s;
+  -webkit-transition: opacity .5s linear .5s;
+  -moz-transition: opacity .5s linear .5s;
+  -ms-transition: opacity .5s linear .5s;
+}
+.about_al_content:hover .about_al_content_hover a {
+  font-family: 'Conv_Gotham-Book';  
+  font-size:20px;
+  color:#fff;
+  line-height: 45px;
+  display:block;
+  background-image:url(../images/go_arrow.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.about_al_content:hover .about_al_content_hover a:hover {
+  color:#FF0088;
+  background-image:url(../images/go_arrow_hover.png);
+   background-position:right;
+}
+.about_al_content_hover_content {
+  width:50%;
+  height:150px;
+  left:50%;
+  margin-top:-75px;
+  top:50%;
+  margin-left:-25%;
+  position: absolute;
+}
+
+.about_al_content b {
+  font-family: 'Conv_Gotham-Book';  
+  font-size:10px;
+  color:#fff;
+  text-transform:uppercase;
+}
+.about_al_content h2{
+  font-family:'Conv_Gotham-Book';
+  font-size:20px;
+  color:#fff;
+  padding:0px;
+  margin-top:30px;
+  text-transform: inherit;
+  line-height: 25px;
+}
+.about_al_content p{
+  font-family: 'Conv_Gotham-Light';
+  font-size: 14px;
+  color: #fff;
+  margin: 0px;
+  width: auto;
+}
+.abt_school_awards {
+  background-color: #efefef;
+  border-bottom:solid 100px #fff;
+  padding: 60px 160px;
+}
+.abt_school_awards h2 {
+  font-family: 'Conv_Gotham-Book';
+  font-size: 15px;
+  color: #ad1f6b;
+  text-align:center;
+  text-transform: uppercase;
+}
+.abt_school_awards h3 {
+  font-family:'Conv_Gotham-Book';
+  font-size:30px;
+  color:#ABABAB;
+  text-align:center;
+  margin-bottom:80px;
+  margin-top:10px;
+}
+.abt_school_awards h3 b {
+  color:#ad1f6b;
+}
+.abt_school_awards_pager {
+  background-color:#fff;
+  margin:auto;
+  border-bottom:solid 100px #fff;
+}
+.abt_school_awards_pager ul {
+  background-color:#efefef;
+  margin:auto;
+  width:500px;
+  line-height: 80px;
+  text-align: center;
+  padding:0px;
+}
+.abt_school_awards_pager  ul li {
+  display:inline;
+}
+.abt_school_awards_pager  ul li:first-child {
+  float:left;
+}
+.abt_school_awards_pager  ul li:last-child {
+  float:right;
+}
+.abt_school_awards_pager ul li a {
+  font-family:'Conv_Gotham-Book';
+  font-size:20px;
+  color:#ABABAB;
+  padding:0px 20px;
+}
+.abt_school_awards_pager ul li a:focus {
+  color:#ad1f6b;
+}
+.abt_school_awards_pager ul li a:hover {
+  color:#ad1f6b;
+}
+.abt_school_awards_pager ul li a.active{
+  color:#ad1f6b;
+}
+
+
+/* ==========================================================================
+   MEDIA PRESS PAGE
+   ========================================================================== */
+
+.media_press_container .about_al_content{
+  padding:0px;
+}
+ul.media_press {
+  margin:0px;
+  padding:0px;
+}
+ul.media_press li {
+  margin:0px 12px 22px 18px;
+  float:left;
+  color:#afafaf;
+  font-size:20px;
+}
+ul.media_press li:first-child {
+  list-style: none;
+  margin-left: 0px;
+}
+ul.media_press li a {
+  font-family:'Conv_Gotham-Book';
+  font-size:28px;
+  color:#afafaf;
+}
+ul.media_press li a.active {
+  color:#ad1f6b;
+}
+.media_press_thumb_img {
+  height:160px;
+  background-size:cover;
+  background-position: center top;
+}
+.media_press_thumb_content {
+  padding:30px;
+}
+.media_press_thumb_content h2 {
+  margin-top:12px;
+}
+
+/* ==========================================================================
+   MEDIA VIDEO PAGE
+   ========================================================================== */
+
+.media_video_container .about_al_content{
+  background-color:inherit;
+  padding:0px;
+}
+.media_video_container .about_al_content p {
+  color:#ad1f6b;
+   margin-top: 20px;
+}
+.media_video_container .about_al_content h2 {
+  color:#939393;
+}
+.media_video_container .media_press_thumb_content {
+  padding:0px;
+
+}
+.media_video_container .media_press_thumb_img {
+  height:205px;
+}
+
+/* ==========================================================================
+   CSR PAGE
+   ========================================================================== */
+.csr_container {
+  padding-bottom:0px;
+}
+.csr_container .col-md-11 {
+  background-color: #fff;
+}
+.csr_container p {
+  font-family:'Conv_Gotham-Light';
+  font-size:20px;
+  float:left;
+  width:100%;
+  line-height:25px;
+}
+.csr_container  b {
+  font-family:'Conv_Gotham-Book';
+  font-size:20px;
+  display:block;
+  color:#AD1F6B;
+  margin-bottom:20px;
+}
+.csr_container .csr_left {
+  float:left;
+  width:62%;
+  padding:30px;
+}
+.csr_container .csr_left ul{
+  padding:0px;
+}
+.csr_container .csr_left ul li {
+  font-family: 'Conv_Gotham-Light';
+  font-size: 20px;
+  background-image: url(../images/about/abt_dot.png);
+  background-repeat: no-repeat;
+  background-position: 0px 8px;
+  padding-left:25px;
+  list-style:none;
+  line-height:30px;
+  display:inline-block;
+  margin-bottom:20px;
+}
+.csr_container .csr_right {
+  float:right;
+  width:320px;
+}
+.csr_school_section .col-md-4 {
+  border-right:solid #F0F0F0 1px;
+  padding-top:100px;
+  padding-bottom:160px;
+  padding-left:25px;
+}
+.csr_school_section .col-md-4:first-child {
+  padding-left:0px;
+}
+.csr_school_section .col-md-4:last-child {
+  border-right:0;
+  padding-top:100px;
+  margin-right:0px;
+  padding-bottom: 0px;
+}
+.csr_container .col-md-4 b {
+  font-family: 'Conv_Gotham-Bold';
+  font-size:14px;
+  color:#646464;
+  font-weight: bold;
+  margin:0px;
+}
+.csr_school_section ul {
+  margin:0px;
+  padding:0px;
+}
+.csr_school_section ul li:first-child {
+  font-family: 'Conv_Gotham-Book';
+  color:#AD1F6B;
+  background-image: inherit;
+  padding-left:0px;
+}
+.csr_school_section ul li {
+  font-family: 'Conv_Gotham-Light';
+  font-size:14px;
+  color:#646464;
+  background-image: url(../images/about/abt_dot.png);
+  background-repeat: no-repeat;
+  background-position: 0px 8px;
+  padding-left:25px;
+  list-style:none;
+  line-height:20px;
+  display:inline-block;
+  margin-bottom:20px;
+}
+.csr_bottom_container {
+  background-color: #ad1f6b;
+  padding-top:130px;
+  background-image:url(../images/csr_child.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  height:522px;
+}
+.csr_bottom_container h2 {
+  font-family: 'Conv_Gotham-Book';
+  color:#fff;
+  font-size:30px;
+  margin-bottom:35px;
+}
+.csr_bottom_container h3 {
+  font-family: 'Conv_Gotham-Book';
+  color:#fff;
+  font-size:20px;
+}
+.csr_bottom_container a {
+  color:#fff;
+  text-decoration:none;
+}
+.csr_bottom_container p {
+  font-family: 'Conv_Gotham-Light';
+  color:#fff;
+  font-size:14px;
+  width:50%;
+}
+
+
+/* ==========================================================================
+   FAQ PAGE
+   ========================================================================== */
+
+
+  .faq_container ul{
+    margin:0px;
+    padding:0px;
+    margin-bottom:30px;
+  }
+  .faq_container ul li{
+    list-style:none;
+  }
+  .faq_container ul li a {
+    font-family: 'Conv_Gotham-Book';
+    font-size:14px;
+    color:#AD1F6B;
+    line-height:40px;
+  }
+  .faq_container h3 {
+    padding-bottom:20px;
+  }
+  .faq_bg {
+    background-color: #F0F0F0;
+    height: auto;
+    padding:55px 0px 55px 0px;
+    overflow: hidden;
+    margin-bottom: 60px;
+  }
+  .faq_content {
+    width:82%;
+    margin:auto;
+    border-bottom:dotted #AFAFAF 2px;
+    margin-bottom:20px;
+  }
+  .faq_content:last-child {
+    border-bottom:0px;
+  }
+  .faq_content h2 {
+    font-family: 'Conv_Gotham-Book';
+    color: #AFAFAF;
+    font-size: 30px;
+    text-transform: inherit;
+    margin-bottom:40px;
+    padding: 0px;
+  }
+  .faq_content b {
+     font-family: 'Conv_Gotham-Book';
+    font-size:14px;
+    color:#AD1F6B;
+  }
+  .faq_content  p{
+     font-family: 'Conv_Gotham-Light';
+    font-size:14px;
+    color:#646464;
+  }
+  .scrollup {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right:70px;
+    display: none;
+    text-indent: -9999px;
+    background: url('../images/up-arrow-arrow.png') no-repeat;
+  }
+
+/* ==========================================================================
+   Academics Page
+   ========================================================================== */
+
+  .academics_container .admission {
+    background-color:#466AA6 !important;
+  }
+  .academics_container .about_container h2 {
+    color:#466AA6;
+  }
+   .blue_color{
+    color:#466AA6;
+  }
+  .academics_container .cs-select{
+    color:#466AA6;
+  }
+  .academics_container .about_awards_laurels .download_brochure {
+    background-color:#466AA6;
+  }
+  .academics_container .about_awards_laurels {
+    border-bottom: solid 10px #466AA6 !important;
+  }
+  .academics_container .slider_ticker li {
+    color:#466AA6 !important;
+  }
+  .academics_the_curriculum ul{
+    margin:0px;
+  }
+  .academics_the_curriculum li.active {
+    background-color: #466AA6;
+    position:relative;
+  }
+  .academics_the_curriculum li.active:before {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 20px solid #466AA6;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: -20px;
+    top:21px;
+    content: '';
+    z-index: 99;
+  }
+ .academics_the_curriculum ul li {
+    display: inline;
+    float: left;
+    width: 100%;
+    border-bottom: solid #BFBFBF 2px;
+  }
+  .academics_the_curriculum ul li:last-child {
+    border-bottom:0px;
+  }
+  .academics_the_curriculum ul li a {
+    background-color: #939393;
+    font-family: 'Conv_Gotham-Book';
+    font-size: 20px;
+    line-height: 60px;
+    border-radius: 0px;
+    width: 100%;
+    color:#fff;
+    border:0px;
+    text-align:center;
+  }
+  .academics_the_curriculum ul li a:hover {
+    background-color: #466AA6;
+    line-height:60px;
+  }
+  .academics_the_curriculum .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover{
+    color: #fff;
+    background-color:transparent;
+    border:0px;
+    border-bottom-color: transparent;
+    line-height:60px;
+  }
+  .academics_the_curriculum ul.nav li.active a, ul.nav li.active a:hover{
+    font-size: 20px !important;
+    line-height:60px;
+  }
+  .academics_the_curriculum .col-md-8{
+    background-color:#fff;
+    padding:30px;
+    min-height:521px;
+  }
+  .academics_the_curriculum  .col-md-3 {
+    padding:0px;
+  }
+  .academics_the_curriculum b,strong{
+    color: #466AA6;
+    font-family: 'Conv_Gotham-Book';
+    font-size: 20px;
+    margin-bottom:15px;
+    display:block;
+  }
+  .academics_the_curriculum p{
+    color: #646464;
+    font-family: 'Conv_Gotham-Light';
+    font-size:16px;
+    margin-bottom:30px;
+  }
+  .academics_professional_development img {
+    max-width:100%;
+    border-bottom:solid #466AA6 10px;
+  }
+
+/* ==========================================================================
+   Beyond Academics Page
+   ========================================================================== */
+
+  .beyond_academics_container .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    display:none;
+  }
+  .beyond_academics_container .admission {
+    background-color:#008545 !important;
+  }
+  .beyond_academics_container .about_container h2 {
+    color:#008545;
+  }
+  .beyond_academics_container .cs-select{
+    color:#008545;
+  }
+  .beyond_academics_container .about_awards_laurels .download_brochure {
+    background-color:#008545;
+  }
+  .beyond_academics_container .about_awards_laurels {
+    border-bottom: solid 10px #008545 !important;
+  }
+  .beyond_academics_container .slider_ticker li {
+    color:#008545 !important;
+  }
+  .beyond_academics_container  .slide_content p {
+    color:#008545;
+  }
+  .beyond_academics_container .the_school_campus .slide_content a {
+    background-color: #008545;
+  }
+  .beyond_academics_container .the_school_campus .slider1 .slide {
+    border-bottom:solid #008545 10px;
+  }
+  .beyond_academics_container .all_school_content {
+    background-color: #008545;
+  }
+  .beyond_academics_container .all_school_content .col-md-12{
+    background-color:transparent !important;
+    border-bottom:transparent !important;
+  }
+  .beyond_academics_container .all_school_content  h2{
+    font-family: 'Conv_Gotham-Book';
+    font-size:30px;
+    color: #fff;
+  }
+  .beyond_academics_container .all_school_content  ul{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 20%;
+    margin-right:3%;
+    margin-top:60px;
+    margin-bottom:30px;
+  }
+  .beyond_academics_container .all_school_content ul li{
+     list-style:none;
+     margin:0px;
+     padding:0px;
+  }
+   .beyond_academics_container .all_school_content ul li a{
+    font-family: 'Conv_Gotham-Book';
+    font-size:20px;
+    color: #fff;
+    display: block;
+    line-height:60px;
+  }
+  .beyond_academics_container b {
+    color:#008545;
+  }
+  .beyond_academics_container .wide_range_sports ul {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width:100%;
+    margin-left:20px;
+    margin-bottom:30px;
+  }
+  .beyond_academics_container .wide_range_sports ul li {
+    font-family: 'Conv_Gotham-Light';
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 0px;
+    list-style-type: decimal;
+    display: list-item;
+    color: #646464;
+  }
+  .beyond_academics_container .wide_range_sports ul li b{
+    color: #646464;
+    display:-webkit-inline-box;
+  }
+  .beyond_academics_container .wide_range_sports .academics_professional_development img {
+    border-bottom: solid #008545 10px;
+  }
+  .beyond_academics_container .art_education .about_slider_bg {
+    padding: 140px 48px 140px 48px;
+  }
+  .beyond_academics_container .about_slider_bg .col-md-6 {
+    background-color:#fff;
+    padding:25px;
+    margin-right:4%;
+    width:48%;
+  }
+  .beyond_academics_container .about_slider_bg .col-md-6:last-child {
+    margin-right:0px;
+  }
+
+
+/* ==========================================================================
+   Beyond Academics Page
+   ========================================================================== */
+.community_service_club {
+  padding:70px 48px 70px 48px !important; 
+}
+.community_service_club .slider1 .slide {
+    border-bottom: solid #008545 10px;
+}
+.community_service_club .col-md-4{
+  background-color: #fff;
+  margin-top: 50px;
+  padding: 20px;
+  margin-right:30px;
+  width: 33%;
+  font-size: 16px !important;
+  color: #000 !important;
+}
+.community_service_club .col-md-4 p{
+  font-size: 16px !important;
+  color: #000 !important;
+}
+.community_service_club .col-md-8 {
+  background-color: #fff;
+  margin-top: 50px;
+   padding: 20px; 
+  margin-right: 0px;
+  width: 65%;
+  min-height: auto;
+}
+.community_service_club ul li {
+  list-style-type: inherit !important;
+  font-size: 16px !important;
+  color: #000 !important;
+}
+.community_service_club ul {
+  float: left !important;
+  width: 44% !important;
+  margin-right: 20px !important;
+}
+.community_service_club_content {
+    display: -webkit-box;
+}
+.community_service_club .bx-wrapper .bx-next {
+  display:block;
+  right:30px;
+}
+.community_service_club .bx-wrapper .bx-prev {
+  display:block;
+  left:30px;
+}
+.community_service_club .bx-controls-direction {
+  background: #fff;
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+}
+.tod_fod_jod {
+  padding:60px 48px 60px 48px !important; 
+}
+.tod_fod_jod .col-md-6 b:nth-child(2n){
+  margin-top:50px !important;
+}
+.animation {
+  display:inherit;
+}
+.animation .col-md-6{
+  margin-top:50px;
+}
+.computer_animation {
+  background-color:transparent !important;
+  padding: 0px !important;
+}
+.computer_animation .col-md-12:first-child{
+  background-color:#FFF;
+  margin-top:0px;
+  padding:25px;
+}
+.computer_animation .col-md-12:last-child{
+  margin-top:30px;
+  background-color:#FFF;
+  padding:25px;
+}
+.computer_animation .col-md-12:last-child b{
+  float:left;
+  margin-right:10px;
+}
+.animation p {
+  font-size:16px;
+  margin-bottom:0px;
+}
+.animation b {
+  margin-bottom:0px;
+}
+.computer_animation_box {
+    display: -webkit-box;
+}
+
+
+/* ==========================================================================
+   School Life Page
+   ========================================================================== */
+
+ 
+  .school_life_container .admission {
+    background-color:#71c043 !important;
+  }
+  .school_life_container .about_container h2 {
+    color:#71c043;
+  }
+  .school_life_container .cs-select{
+    color:#71c043;
+  }
+  .school_life_container .about_awards_laurels .download_brochure {
+    background-color:#71c043;
+  }
+  .school_life_container .about_awards_laurels {
+    border-bottom: solid 10px #71c043 !important;
+  }
+  .school_life_container .slider_ticker li {
+    color:#71c043 !important;
+  }
+  .school_life_container  .slide_content p {
+    color:#71c043;
+  }
+  .school_life_container .the_school_campus .slider1 .slide {
+    border-bottom:solid #71c043 10px;
+  }
+  .school_life_container .all_school_content {
+    background-color: #71c043;
+  }
+  .school_life_container .academics_professional_development img {
+    border-bottom: solid #71c043 10px;
+  }
+
+
+  .sl_ars img{
+    float:right;
+  }
+  .sl_ars p{
+    float: left;
+    width: 75%;
+  }
+  .school_life_container  .academics_the_curriculum b {
+    color:#71c043;
+  }
+  .school_life_table .col-md-12 {
+    padding:0px;
+  }
+  .school_life_table .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border: 1px solid #C7C7C7;
+    font-family: 'Conv_Gotham-Light';
+    font-size:16px;
+    color:#646464;
+    padding:15px;
+    vertical-align:middle;
+  }
+  .school_life_table b {
+    font-family: 'Conv_Gotham-Bold';
+    font-weight: bold;
+    color:#646464;
+    font-size:16px;
+  }
+  .school_life_table strong {
+    font-family: 'Conv_Gotham-Bold';
+    font-weight: bold;
+    color:#646464;
+    font-size:16px;
+  }
+  .school_life_table p {
+    font-family: 'Conv_Gotham-Bold';
+    font-size:16px;
+    color:#646464;
+    font-weight: bold;
+    margin-bottom:20px;
+  }
+  .school_life_table table {
+    margin-bottom:50px;
+  }
+  .school_life_tr_bg {
+    background-color:#F0F0F0;
+  }
+  .green_color {
+    color:#71c043;
+  }
+  .school_life_container .academics_the_curriculum li.active {
+    background-color: #71c043 !important;
+  }
+  .school_life_container ul.student_council > li.active > a:hover, ul.student_council > li.active > a:focus {
+    background-color: #71c043 !important;
+  }
+  .school_life_container .academics_the_curriculum ul li a:hover {
+   background-color: #71c043;
+  }
+  .school_life_container .academics_the_curriculum li.active:before {
+    border-left: 20px solid #71c043;
+  }
+  /* .school_life_container .academics_the_curriculum ul.nav li.active a, ul.nav li.active a:hover {
+    line-height: 24px;
+  }*/
+  .school_life_container .academics_the_curriculum ul li:first-child a {
+    line-height: 30px;
+  }
+  .student_council_content h2 {
+    font-family: 'Conv_Gotham-Book';
+    font-size:18px;
+    color:#72B944;
+    margin-bottom:20px;
+    padding-top: 0px;
+  }
+  .student_council_content h3 {
+    font-family: 'Conv_Gotham-Book';
+    font-size:18px;
+    color:#72B944;
+    text-align:center;
+    padding-bottom: 20px;
+  }
+  .student_council_content p {
+    font-family: 'Conv_Gotham-Light';
+    font-size: 16px;
+    color: #646464;
+    line-height: 25px;
+    margin-bottom:30px;
+  }
+  .career_counselling ul{
+    padding:0px;
+  }
+  .career_counselling ul li {
+    font-family: 'Conv_Gotham-Light';
+    font-size: 16px;
+    color: #646464;
+    line-height: 30px;
+    border-bottom: 0px;
+    margin-bottom: 15px;
+  }
+  .career_counselling ul li:before {
+    content: "•";
+    color: #71c043;
+    padding-right:8px;
+    font-size: 22px;
+  }
+  .school_life_container  .cs-select > span::after {
+    background-color:#72BF44;
+  }
+  .publications_container .col-md-12 {
+    border-bottom:dotted #646464 2px;
+    padding:0px;
+    line-height:60px;
+  }
+  .publications_container .col-md-6 {
+    padding:0px;
+  }
+  .publications_container .col-md-2 {
+    padding-right:0px;
+    text-align: right;
+  }
+  .publications_container a {
+    font-family: 'Conv_Gotham-Light';
+    font-size: 16px;
+    color:#646464;
+    outline:none;
+    border:0px;
+  }
+  .publications_container .col-md-6 a {
+    color:#72BF44;
+  }
+
+
+/* ==========================================================================
+   Residential School  Page
+   ========================================================================== */
+
+ 
+  .residential_school_container .admission {
+    background-color:#f4801d !important;
+  }
+  .residential_school_container .about_container h2 {
+    color:#f4801d;
+  }
+  .residential_school_container .cs-select{
+    color:#f4801d;
+  }
+  .residential_school_container .about_awards_laurels .download_brochure {
+    background-color:#f4801d;
+  }
+  .residential_school_container .about_awards_laurels {
+    border-bottom: solid 10px #f4801d !important;
+  }
+  .residential_school_container .slider_ticker li {
+    color:#f4801d !important;
+  }
+  .residential_school_container  .slide_content p {
+    color:#f4801d;
+  }
+  .residential_school_container .academics_the_curriculum b,strong {
+    color:#f4801d;
+  }
+  .residential_school_container h3 span {
+    margin-right: 30px;
+    font-size: 16px;
+  }
+  .residential_school_container h3 span {
+    margin-right: 30px;
+    font-size: 16px;
+  }
+  .residential_school_container h3 span.active {
+    color:#f4801d;
+  }
+  .residential_school_content {
+    padding:60px;
+  }
+  .residential_school_content .col-md-9:before {
+   background-image: inherit;
+  }
+  .residential_school_content img {
+    float:left;
+    width:100%;
+  }
+  .residential_school_content .col-md-12 {
+    background-color: #fff;
+    padding:0px;
+    margin-bottom:60px;
+  }
+  .residential_school_content ul{
+    margin:0px;
+    padding:0px;
+  }
+  .residential_school_content li {
+    color: #646464;
+    font-family: 'Conv_Gotham-Light';
+    font-size: 16px;
+    border-bottom: 0px !important;
+    list-style-type:none;
+    float: inherit !important;
+    display:list-item !important;
+    line-height:35px;
+  }
+  .residential_school_content li:before {
+    content: "■";
+    color:#f4801d;
+    padding-right:10px;
+  }
+  .rs_bg {
+    background-color: #E2E2E2;
+    margin: 40px;
+    padding:40px;
+  }
+  .rs_bg img{
+    width:auto;
+    margin-right:10px;
+  }
+
+
+
+
+
+/*=========================================================================================================
+ <!****************************************** RESPONSIVE ***********************************************!> 
+=========================================================================================================*/
+
+
+
+
+@media screen and (min-width:1280px) and (max-width:1440px) {
+
+.school_curriculum .col-md-3{width:23.6%;}
+.the_school_campus .bx-controls-direction {left:68%;}
+
+}
+
+
+
+
+@media screen and (min-width:960px) and (max-width:1279px) {
+
+
+/* ============= HOME PAGE  =================== */
+
+
+
+}
+
+
+
+
+
+@media screen and (min-width:768px) and (max-width:959px) {
+
+
+/* ============= HOME PAGE =================== */
+
+
+
+}
+
+
+
+
+@media screen and (min-width:480px) and (max-width:768px) {
+
+/* ============= HOME PAGE =================== */
+
+
+
+}
+
+@media screen and (min-width:320px) and (max-width:479px) {
+
+
+/* ============= Home Page Header Section =================== */
+
+.mobile_menu {
+  visibility: visible;
+}
+.visibility-block {
+  visibility: visible !important;
+}
+.admission {
+  display: none !important;
+}
+header {
+  height: 132px;
+  border-bottom: solid 1px #CACACA;
+  background-color: #fff;
+}
+header.header-hide {
+  transform:inherit !important;
+}
+nav {
+  width: 100%;
+  right: -100%;
+}
+.main-menu li a {
+  font-size: 14px;
+  line-height: 41px;
+}
+.main-menu a .caret {
+  margin-top: 18px;
+}
+.main-menu li .sub-nav a {
+  font-size: 11px;
+  line-height: 10px !important;
+}
+.main-menu li .sub-nav {
+  padding: 0px;
+}
+.logo {
+  width: 100px;
+  background-size:contain;
+  height: 40px;
+  margin-top: 20px;
+}
+.nav-expanded a.nav-expander {
+  right: 15px !important;
+  top: 10px;
+  font-size: 12px;
+  line-height: 30px;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  text-align: center;
+  padding: 0px;
+}
+a.nav-expander.fixed {
+  right: 0px;
+  top: 14px;
+}
+.header_search {
+  right: 0px;
+  top: 92px;
+  width: 90%;
+  border: solid 1px #DCDCDC;
+  margin-right: 16px;
+}
+.nav-expanded div.nav-expander {
+  right: 0px !important;
+}
+.mac-style {
+  width: 90%;
+  height: 20px;
+  line-height: 20px;
+}
+.mac-style:focus {
+  width: 90%;
+}
+.search_button {
+  right: 10px;
+}
+.form-control {
+  font-size:10px;
+  padding: 6px 6px;
+}
+.search_button {
+  height: 20px;
+  line-height: 20px;
+  background-size: 62%;
+  background-position:10px 3px;
+}
+.top_nav {
+  border-bottom: solid #D6D6D6 1px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+.menu_text {
+  display: none;
+}
+
+/* ============= Home Page Video Section ================ */
+
+.slider_video {
+  margin-top:132px;
+  height:200px !important;
+}
+.video_content {
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+
+/* ============= Home Page Awards Laurels Section ================ */
+
+.awards_laurels_content {
+  position:inherit;
+  margin-top:0px;
+  border-bottom:0px;
+}
+.about_awards_laurels {
+  border-bottom: solid 3px #ad1f6b !important;
+}
+.awards_laurels {
+  font-size:15px;
+  line-height:50px;
+  width: 90%;
+  margin: auto;
+  margin-top:15px;
+}
+.awards_laurels_content .col-xs-12.col-sm-6.col-md-2:first-child a {
+  margin-top: 15px;
+}
+.download_brochure {
+  font-size:15px;
+  line-height:50px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+.slider_ticker ul.bxslider li {
+  line-height: 14px;
+  width: 74% !important;
+  font-size:12px;
+  text-align:center;
+}
+.slider_ticker span {
+  display:block;
+  text-align:center;
+  border-right:0px;
+  margin-right:0px;
+  padding-right:0px;
+  margin-top:8px;
+}
+.slider_ticker {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: inherit;
+}
+.slider_ticker .bx-controls-direction {
+  background-color: transparent;
+  width:100%;
+}
+.slider_ticker .bx-wrapper .bx-prev {
+  left: -5px !important;
+  right: inherit !important;
+}
+.slider_ticker .bx-wrapper .bx-next {
+  right: -5px !important;
+  left: inherit !important;
+}
+
+/* ============= Home Page Curriculum Section ================ */
+
+.curriculum_content {
+  padding-top:30px;
+}
+.curriculum_content .caption h3 {
+  font-size:15px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+.curriculum_content .caption h3:before {
+  top:20px;
+}
+.curriculum_content .caption p {
+  margin-bottom:0px;
+}
+.modal-dialog {
+  width:100%;
+}
+.curriculum_content .col-md-3 {
+  padding-right:0px;
+}
+.curriculum_content .caption {
+  margin-bottom:25px;
+}
+
+/* ============= Home Page Events Section ================ */
+
+.events_content {
+  position: relative;
+ padding-bottom:70px;
+}
+.events_content .caption p {
+  font-size:13px;
+  line-height:17px;
+  margin:0px;
+}
+.events_content .caption h3 {
+  margin-top:0px;
+}
+.events_content .nav > li > a {
+  font-size:12px;
+}
+.events_content .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  font-size: 12px !important;
+  line-height:17px;
+}
+.events_content .nav > li > a {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.events_content ul.nav.nav-tabs {
+  height:47px;
+  margin-right:0px;
+}
+.events_content .col-md-3 {
+  padding-right:0px;
+}
+.events_content .events_bt {
+  width: 100px;
+  position: absolute;
+  bottom: 22px;
+  right:4px;
+  font-size: 12px;
+  background-color: #466aa6;
+  color: #fff;
+}
+
+/* ============= Home Page Affiliations Section ================ */
+
+.affiliations_content .affiliations_bt {
+  font-size:15px;
+  line-height:50px;
+  margin:30px 0px;
+}
+.affiliations_content .col-md-2 {
+  line-height: 110px;
+}
+
+/* ============= Home Page Footer Section ================ */
+
+.footer_content .col-md-6 {
+  border-right: 0px;
+  border-bottom: solid 1px #000;
+  padding-bottom: 70px;
+}
+.container-fluid.footer_content .col-md-3 {
+  min-height:130px;
+}
+.footer_social_icon {
+  bottom:25px;
+}
+.footer_content ul li a {
+  font-size:10px;
+  line-height:25px;
+}
+.footer_content .col-md-5 {
+  padding-left: 0px;
+  margin-bottom: 20px;
+}
+.footer_content .col-md-7{
+  padding:0px;
+}
+.bottom_footer a {
+  margin-left: 0px;
+  display: block;
+  text-align: center;
+}
+.bottom_footer {
+  line-height:15px;
+  text-align: center;
+  padding:15px 27px;
+}
+.bottom_footer p {
+  margin-bottom:10px;
+}
+
+
+/* ============= About Page  ================ */
+
+.about_container h3 {
+  font-size:15px;
+  padding-bottom:10px;
+}
+.cs-select{
+  font-size:15px;
+  margin-left:-8px;
+}
+.about_container h2 {
+  font-size:10px;
+  padding-top:0px;
+}
+.about_container {
+  margin-top:132px;
+  border-top:0px;
+  padding-bottom:0px;
+}
+.abt_purple_color {
+  padding:40px 0px;
+}
+.about_slider_bg {
+  padding:20px 20px 20px 20px;
+}
+.about_slider_bg .col-md-2 img {
+  border-bottom:solid 3px #ad1f6b;
+}
+.about_slider_bg .col-md-9 {
+  padding:20px;
+}
+.about_slider_bg p {
+  font-size: 12px;
+  line-height: 20px;
+}
+.about_slider_bg .col-md-9:before {
+  display:none;
+}
+
+/* ============= About Page Our Pledge  ================ */
+
+.about_our_pledge {
+  padding:0px 10px 0px 10px;
+}
+.about_our_pledge p {
+  width:100%;
+  margin-top:0px;
+  font-size: 12px;
+  line-height:20px;
+}
+.about_our_pledge .content_border {
+  width:100%;
+}
+/* ============= About Page Our Philosophy  ================ */
+
+.our_philosophy p {
+  font-size:12px;
+}
+.our_philosophy p b {
+  font-size:14px;
+}
+/* ============= About Page Our Policies  ================ */
+
+.about_our_policies {
+  padding: 0px 0px 20px 0px;
+}
+.about_our_policies p {
+  font-size:12px;
+  line-height:20px;
+}
+.about_our_policies h4 {
+  font-size:13px;
+}
+.about_our_policies p:nth-child(1n+3) {
+  background-position:0px 4px;
+}
+
+/* ============= About Page The School Campus  ================ */
+
+.the_school_campus .slide_content {
+  width:100%;
+  left:0px;
+  margin-left:0px;
+  bottom:-33px;
+}
+.the_school_campus .bx-wrapper .bx-viewport {
+    height: 180px !important;
+}
+.the_school_campus .slide_content p {
+  width:100%;
+  font-size:12px;
+  line-height:30px;
+  background:#E2E2E2;
+}
+.the_school_campus .slide_content a {
+  width:100%;
+  display:block;
+  font-size:14px;
+}
+.the_school_campus .slide_content a img {
+  width: 16px;
+  margin-top: 6px;
+}
+.the_school_campus .slider1 .slide {
+  border-bottom: solid #ad1f6b 3px;
+}
+.the_school_content p {
+  font-size: 12px;
+  width: 100%;
+  margin-top:10px;
+}
+.the_school_campus .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+  display:none;
+}
+.the_school_campus .bx-controls-direction {
+  left: 75%;
+  width: 65px;
+  top: 47px;
+}
+.all_school_content .nav-tabs > li > a {
+  font-size: 12px !important;
+  line-height: 13px;
+}
+.all_school_content .nav-tabs {
+  margin-top:20px;
+  left:0px;
+}
+.all_school_content ul.nav li.active a, ul.nav li.active a:hover {
+  line-height: 13px !important;
+  font-size: 12px !important;
+}
+.all_school_content ul.nav li {
+  width: 94%;
+  margin-bottom: 10px;
+  font-size: 12px !important;
+  float: inherit;
+  right: 6px;
+}
+.all_school_content .tab-pane p {
+  font-size: 12px;
+  width: 95%;
+  padding-right: 20px;
+}
+.all_school_content .tab-pane p:nth-child(2) {
+  padding-top: 20px;
+}
+.all_school_content .tab-pane img {
+    width: 100%;
+    margin-top: 200px;
+}
+.all_school_content .tab-pane b {
+  font-size:15px;
+}
+.school_curriculum .col-md-3 {
+  line-height: 50px;
+  margin-top: 20px;
+  width: 100%;
+}
+.school_curriculum a {
+  font-size:15px;
+}
+.all_school_content {
+  border-bottom:solid 10px #fff;
+}
+.academics_the_curriculum b {
+  font-size:13px;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
