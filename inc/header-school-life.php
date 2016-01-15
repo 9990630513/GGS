@@ -77,7 +77,19 @@
                     <li class="sub-nav"><a href="#">FAQs</a></li>
                   </ul>
                 </li>
-                <li><a href="#">Facilities</a></li>
+                <li><a href="#">Facilities</a>
+                  <ul class="list-unstyled about_menu_bg facilities_bg">
+                    <li class="sub-nav"><a href="facilities.php">Multipurpose Hall</a></li>
+                    <li class="sub-nav"><a href="library.php">Library</a></li>
+                    <li class="sub-nav"><a href="#">Classrooms</a></li>
+                    <li class="sub-nav"><a href="#">Laboratories</a></li>
+                    <li class="sub-nav"><a href="#">Health</a></li>
+                    <li class="sub-nav"><a href="#">Nutrition</a></li>
+                    <li class="sub-nav"><a href="#">Transportation</a></li>
+                    <li class="sub-nav"><a href="#">Security</a></li>
+                    <li class="sub-nav"><a href="#">FAQs</a></li>
+                  </ul>
+                </li>
                 <li><a href="#">Admissions</a></li>
               </ul>
             </nav> 

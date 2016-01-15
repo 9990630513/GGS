@@ -12,7 +12,7 @@
 	<!-- end -->
 </head>
 <body>
-	<div id="wrapper" class="about_bg">
+	<div id="wrapper" class="about_bg facilities_container">
     <!-- header Section -->
 		<header id="sticky">
       <div class="container-fluid">
