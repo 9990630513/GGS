@@ -13,7 +13,7 @@
                               <option value="our-philosophy">Our Philosophy</option>
                               <option value="about-overview">Our Pledge</option>
                               <option value="the-school-campus">The School Campus</option>
-                              <option value="#">Senior Secondary School</option>
+                              <option value="school-overview">School Overview</option>
                               <option value="#">Alumni</option>
                             </select>
                           </h3>
@@ -26,12 +26,19 @@
 
                                 <h4>CONTENT TO BE PROVIDED</h4>
 
-                                <p>Ehent rerspiducit, et, od et, omnime pratem quibus, te et alitatione renetur? Quiam facerae saperrovid earias veliquatem consequam, sit por si ut laceped ut ulluptatur, quatur? </p>
+                                <ul>
+                                  <li>Ehent rerspiducit, et, od et, omnime pratem quibus, te et alitatione renetur? Quiam facerae saperrovid earias veliquatem consequam, sit por si ut laceped ut ulluptatur, quatur? </li>
+                                  <li>Hit ipsa volumque exped eataectam, optaspiet verum ut quaecep eratquaectur aut dolorae ritiust iscias esendi ut fugit diores sumenet a volorpo repudi dolupta temoluptat in perferi onsequati acea doles senistem re et fugitam, qui aci aut rat. </li>
+                                  <li>Dunt essitius que niandi aspiet quidus, qui incias receperum quibea volupic tem resequiate nistrum quibusam sam resequosam as velias porpore et facit occumqu isinctem ipsam ene nonsequi te si quia num autem quam quam, omnitibusdae voles sequat.</li>
+                                </ul>
+                                <h4>Download GGS Policies</h4>
 
-                                <p> Hit ipsa volumque exped eataectam, optaspiet verum ut quaecep eratquaectur aut dolorae ritiust iscias esendi ut fugit diores sumenet a volorpo repudi dolupta temoluptat in perferi onsequati acea doles senistem re et fugitam, qui aci aut rat. </p>
-
-                                <p>Dunt essitius que niandi aspiet quidus, qui incias receperum quibea volupic tem resequiate nistrum quibusam sam resequosam as velias porpore et facit occumqu isinctem ipsam ene nonsequi te si quia num autem quam quam, omnitibusdae voles sequat. </p>
-
+                                <a href="images/pdf/Academic_Honesty_Policy.pdf" target="_blank"><img src="images/workplan_pdf_icon.png" alt="">Academic Honesty </a>
+                                <a href="images/pdf/Admission_Policy.pdf" target="_blank"><img src="images/workplan_pdf_icon.png" alt="">Admission </a>
+                                <a href="images/pdf/Assessment_Policy.pdf" target="_blank"><img src="images/workplan_pdf_icon.png" alt="">Assessment </a>
+                                <a href="images/pdf/Language_Policy.pdf" target="_blank"><img src="images/workplan_pdf_icon.png" alt="">Language </a>
+                                <a href="images/pdf/LSD_Policy.pdf" target="_blank"><img src="images/workplan_pdf_icon.png" alt="">LSD </a>
+                                <a href="images/pdf/Sexual_Harassment_Policy.pdf" target="_blank"><img src="images/workplan_pdf_icon.png" alt="">Sexual Harassment </a>
                             </div>
                       </div>
                   </div>

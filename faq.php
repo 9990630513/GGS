@@ -32,7 +32,7 @@
                     <p>
                       Toddlers (pre-nursery): 9a.m – 12:15p.m <br>
                       Nursery and KG: 7:45a.m – 12:15p.m<br>
-                      Primary , Middle and Senior: 7:45a.m - 3:15p.m
+                      Primary, Middle and Senior: 7:45a.m - 3:15p.m
                     </p>
                   </div>
                   <div class="faq_content">
@@ -99,7 +99,7 @@
                   <div class="faq_content">
                     <b>What afterschool (extended day) activities are provided?</b>
                     <p>
-                      TThe afterschool (extended day) activities include sports, music, dance, art, storytelling, theatre, homework time and free play.
+                      The afterschool (extended day) activities include sports, music, dance, art, storytelling, theatre, homework time and free play.
                     </p>
                   </div>
                   <div class="faq_content">

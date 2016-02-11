@@ -10,8 +10,9 @@
                         <h3><span class="h3_trigger ggs_about_team" id="3">Co-curricular •</span>
                           <select class="cs-select our-team-select" onchange="javascript:handleSelect(this)">
                             <option value="creative-writing">Creative Writing</option>
-                             <option value="astronomy">Astronomy</option>
-                            <option value="co-curricular">Design & Technology</option>
+                            <option value="astronomy">Astronomy</option>
+                            <option value="design-technology">Design & Technology</option>
+                            <option value="co-curricular">Overview</option>
                             <option value="robotics">Robotics</option>
                             <option value="art-education">Art Education</option>
                             <option value="debate">Debate</option>
@@ -20,10 +21,10 @@
                     </div>
                   </div>
                   <div class="container about_slider_bg academics_the_curriculum wide_range_sports">
-                        <div class="col-xs-12 col-sm-12 col-md-3 col-md-offset-1 academics_professional_development">
+                        <div class="col-xs-12 col-sm-4 col-md-3 academics_professional_development">
                           <img src="images/creative_writing.jpg" alt="">
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-8">
+                        <div class="col-xs-12 col-sm-8 col-md-9">
                             <b>Creative Writing</b>
                             <p>
                                 Creative Writing is an art that requires patient and sensitive
@@ -31,7 +32,8 @@
                                 rides on wings. Genesis Global School believes in harnessing 
                                 this skill to create an individual with a distinct  mind and 
                                 thought. Creative Writing, therefore, is not simply an element of 
-                                developing language skills. It becomes a process, whereby, one gets the opportunity to explore the surreal world and 
+                                developing language skills. It becomes a process, whereby, 
+                                one gets the opportunity to explore the surreal world and 
                                 interpret it as one perceives. It also provides an opportunity to 
                                 create a realm of your own and express the deepest thoughts 
                                 that tease your intellect.

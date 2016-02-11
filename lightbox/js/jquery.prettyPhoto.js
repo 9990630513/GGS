@@ -18,8 +18,8 @@
 			show_title: true, /* true/false */
 			allow_resize: true, /* Resize the photos bigger than viewport. true/false */
 			allow_expand: true, /* Allow the user to expand a resized image. true/false */
-			default_width: 500,
-			default_height: 344,
+			default_width: 1000,
+			default_height: 550,
 			counter_separator_label: '/', /* The separator for the gallery counter 1 "of" 2 */
 			theme: 'pp_default', /* light_rounded / dark_rounded / light_square / dark_square / facebook */
 			horizontal_padding: 20, /* The padding on each side of the picture */
@@ -90,7 +90,7 @@
 			iframe_markup: '<iframe src ="{path}" width="{width}" height="{height}" frameborder="no"></iframe>',
 			inline_markup: '<div class="pp_inline">{content}</div>',
 			custom_markup: '',
-			social_tools: '<div class="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div><div class="facebook"><iframe src="//www.facebook.com/plugins/like.php?locale=en_US&href={location_href}&amp;layout=button_count&amp;show_faces=true&amp;width=500&amp;action=like&amp;font&amp;colorscheme=light&amp;height=23" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:500px; height:23px;" allowTransparency="true"></iframe></div>' /* html or false to disable */
+			//social_tools: '<div class="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div><div class="facebook"><iframe src="//www.facebook.com/plugins/like.php?locale=en_US&href={location_href}&amp;layout=button_count&amp;show_faces=true&amp;width=500&amp;action=like&amp;font&amp;colorscheme=light&amp;height=23" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:500px; height:23px;" allowTransparency="true"></iframe></div>' /* html or false to disable */
 		}, pp_settings);
 		
 		// Global variables accessible only by prettyPhoto

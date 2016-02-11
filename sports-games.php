@@ -19,10 +19,11 @@
             <div class="slider1">
               <!-- slide1 -->
               <div class="slide">
-                <img src="images/sports_games_banner.jpg" alt="">
+                <img src="images/sports_slider1.jpg" alt="">
                   <div class="slide_content">
                    <p>
                     Cricket Ground
+                      <a href="photo-gallery.php"><img src="images/view_more_icon.png" alt=""></a>
                       <a href="#"><img src="images/school_tour_icon.png" alt="">School Tour</a>
                    </p> 
 
@@ -30,10 +31,11 @@
               </div>
                <!-- slide2 -->
               <div class="slide">
-                <img src="images/sports_games_banner.jpg" alt="">
+                <img src="images/sports_slider2.jpg" alt="">
                   <div class="slide_content">
                    <p>
                     Olymipic Swimming Pool2
+                      <a href="photo-gallery.php"><img src="images/view_more_icon.png" alt=""></a>
                       <a href="#"><img src="images/school_tour_icon.png" alt="">School Tour</a>
                    </p> 
 
@@ -41,10 +43,23 @@
               </div>
                <!-- slide3 -->
               <div class="slide">
-                <img src="images/sports_games_banner.jpg" alt="">
+                <img src="images/sports_slider3.jpg" alt="">
                   <div class="slide_content">
                    <p>
                     Olymipic Swimming Pool3
+                      <a href="photo-gallery.php"><img src="images/view_more_icon.png" alt=""></a>
+                      <a href="#"><img src="images/school_tour_icon.png" alt="">School Tour</a>
+                   </p> 
+
+                  </div>
+              </div>
+              <!-- slide4 -->
+              <div class="slide">
+                <img src="images/sports_slider4.jpg" alt="">
+                  <div class="slide_content">
+                   <p>
+                    Olymipic Swimming Pool3
+                      <a href="photo-gallery.php"><img src="images/view_more_icon.png" alt=""></a>
                       <a href="#"><img src="images/school_tour_icon.png" alt="">School Tour</a>
                    </p> 
 
@@ -82,10 +97,10 @@
     <!-- End Sports Games -->
 
     <!-- Sports Games Bottom Content Section -->
-    <div class="container-fluid all_school_content">
+    <div class="container-fluid all_school_content sport_game">
       <div class="row">
         <div class="container">
-          <div class="col-xs-12 col-sm-6 col-md-10 col-md-offset-2">
+          <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2">
            <h2>The following sports and games are offered:</h2>  
              <ul>
                <li><a href="#">Athletics</a></li>

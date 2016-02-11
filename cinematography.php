@@ -17,35 +17,36 @@
                     </div>
                   </div>
                   <div class="container about_slider_bg academics_the_curriculum wide_range_sports">
-                        <div class="col-xs-12 col-sm-12 col-md-3 col-md-offset-1 academics_professional_development">
+                        <div class="col-xs-12 col-sm-4 col-md-3  academics_professional_development">
                           <img src="images/cinematography.jpg" alt="">
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-8">
+                        <div class="col-xs-12 col-sm-8 col-md-9">
                             <b>Cinematography</b>
                             <p>
                               Cinematography is the art of visual storytelling.  Anyone can set a camera on a tripod and hit 
-                              record, but the artistry of cinematography comes in controlling what the  viewer  sees (or doesn’t 
-                              see) and how  the  image ispresented.  Film is a visual medium, and the  best-shot films  are  the 
+                              record, but the artistry of cinematography comes in controlling what the viewer  sees (or doesn’t 
+                              see) and how  the  image is presented.  Film is a visual medium, and the  best-shot films  are  the 
                               ones  where you  can  tell  what’s  going on  without hearing any  of the  dialogue.
                             </p>
 
                             <p>
-                              We in our school provide the young talent to work not only for school events’ recording but also to
-                               compile them as a News for the school .And in this process they learn:
+                              We, in the school provide the young talent to work not only for school events’ recording but also to
+                               compile them as a News for the school. And in this process they learn:
                               </p>
-                            <p>
-                               How to use an advance camera to shot and record with proper sound and light effects?<br>
-                              How to edit the reports (omit and add the videos) effectively<br>
-                              using different kind of software? <br>
-                              How to write script and compile it? <br>
-                              How to read news in an appropriate and standard form? <br>
-                              How to interview well known personality with well framed and exploring questions?<br>
-                              How to give special effects in composition of news?<br>
+                           
+
+                           <ul>
+                             <li>How to use an advance camera to shot and record with proper sound and light effects?</li>
+                             <li>How to edit the reports (omit and add the videos) effectively using different kind of software?</li>
+                             <li>How to write script and compile it? </li>
+                             <li>How to read news in an appropriate and standard form?</li>
+                             <li>How to interview well known personality with well framed and exploring questions?</li>
+                             <li>How to give special effects in composition of news?</li>
+                             <li>
                               And understanding many more practical nuances and insightful
-                              information required during this process of news making and in
-                              dividual movie making.
-                            
-                            </p>            
+                              information required during this process of news making and individual movie making.
+                            </li>
+                           </ul>     
                         </div>
                   </div>
               </div>

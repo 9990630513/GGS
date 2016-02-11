@@ -17,10 +17,10 @@
                     </div>
                   </div>
                   <div class="container about_slider_bg academics_the_curriculum wide_range_sports">
-                        <div class="col-xs-12 col-sm-12 col-md-3 col-md-offset-1 academics_professional_development">
+                        <div class="col-xs-12 col-sm-4 col-md-3 academics_professional_development">
                           <img src="images/wide-range-sports.jpg" alt="">
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-8">
+                        <div class="col-xs-12 col-sm-8 col-md-9">
                             <b>Wide Range of Sports</b>
                             <p>
                                 We offer a very wide range of sports and games, so that every student can find at least one in which she/he 
@@ -32,7 +32,7 @@
                                    martial arts, squash and swimming.
                                 </li>
                                <li>
-                                 <b>Physical and Skills -</b> Badminton, cricket, horse riding,tennis.
+                                 <b>Physical and Skills -</b> Badminton, cricket, horse riding, tennis.
                                </li>
                                <li>
                                  <b>Greater Skill -</b> Fencing, golf and table tennis.

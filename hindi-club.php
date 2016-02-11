@@ -19,10 +19,10 @@
                     </div>
                   </div>
                   <div class="container about_slider_bg academics_the_curriculum wide_range_sports">
-                        <div class="col-xs-12 col-sm-12 col-md-3 col-md-offset-1 academics_professional_development">
+                        <div class="col-xs-12 col-sm-4 col-md-3 academics_professional_development">
                           <img src="images/hindi_club.jpg" alt="">
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-8">
+                        <div class="col-xs-12 col-sm-8 col-md-9">
                             <b>Hindi Club</b>
                             <p>
                               The purpose of the Hindi-Club is to enhance the creativity of our scholars. The club allows the 

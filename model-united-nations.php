@@ -16,10 +16,10 @@
                     </div>
                   </div>
                   <div class="container about_slider_bg academics_the_curriculum wide_range_sports">
-                        <div class="col-xs-12 col-sm-12 col-md-3 col-md-offset-1 academics_professional_development">
+                        <div class="col-xs-12 col-sm-4 col-md-3 academics_professional_development">
                           <img src="images/overseas_exchange_programmes.jpg" alt="">
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-8">
+                        <div class="col-xs-12 col-sm-8 col-md-9">
                           <b>Model United Nations</b>
                             <p>
                               An academic simulation of the United Nations that aims to educate participants about current events,

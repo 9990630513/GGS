@@ -9,8 +9,9 @@
                        <h2 class="h3_trigger ggs_about_team" id="3">BEYOND ACADEMICS</h2>
                         <h3><span class="h3_trigger ggs_about_team" id="3">Co-curricular •</span>
                           <select class="cs-select our-team-select" onchange="javascript:handleSelect(this)">
-                             <option value="astronomy">Astronomy</option>
-                            <option value="co-curricular">Design & Technology</option>
+                            <option value="astronomy">Astronomy</option>
+                            <option value="design-technology">Design & Technology</option>
+                            <option value="co-curricular">Overview</option>
                             <option value="robotics">Robotics</option>
                             <option value="art-education">Art Education</option>
                             <option value="creative-writing">Creative Writing</option>
@@ -20,16 +21,15 @@
                     </div>
                   </div>
                   <div class="container about_slider_bg academics_the_curriculum wide_range_sports">
-                        <div class="col-xs-12 col-sm-12 col-md-3 col-md-offset-1 academics_professional_development">
+                        <div class="col-xs-12 col-sm-4 col-md-3 academics_professional_development">
                           <img src="images/astronomy.jpg" alt="">
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-8">
+                        <div class="col-xs-12 col-sm-8 col-md-9">
                             <b>Astronomy</b>
                             <p>
-                                A wonderful gateway hobby that can provide a hook to the 
-                                scholar to study many other aspects of science. It’s also an 
-                                interdisciplinary subject that draws on so many of the traditional science subjects. Also, understanding astronomy helps us to 
-                                understand ourselves, our universe, and our home
+                              A wonderful gateway hobby that can provide a hook to the scholar to study many other aspects of
+                              science. It’s also an interdisciplinary subject that draws on so many of the traditional science subjects. 
+                              Also, understanding astronomy helps us to understand ourselves, our universe, and our home.
                              </p>             
                         </div>
                   </div>

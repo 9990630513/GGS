@@ -21,7 +21,9 @@
                   <div class="container about_slider_bg academics_the_curriculum wide_range_sports community_service_club">
 
                     <div class="col-xs-12 col-sm-12 col-md-12">
+                      <a href="#" class="csc_view"><img src="images/view_more_icon.png" alt=""></a>
                       <div class="slider1">
+                       
                         <!-- slide1 -->
                         <div class="slide">
                           <img src="images/community_service_club.jpg" alt="">
@@ -53,7 +55,7 @@
                              <li>To create and foster a spirit of community service among our students.</li>
                            </ul> 
                            <ul>
-                             <li>Students of the community service club learning the basicknowledge of computer.</li>
+                             <li>Students of the community service club learning the basic knowledge of computer.</li>
                              <li>Students learning the MS WORD, EXCEL, PPT, exploring internet and its uses.</li>
                            </ul>       
                         </div>

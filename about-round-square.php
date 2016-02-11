@@ -19,22 +19,29 @@
                     </div>
                   </div>
                   <div class="container about_slider_bg academics_the_curriculum wide_range_sports">
-                        <div class="col-xs-12 col-sm-12 col-md-3 col-md-offset-1 academics_professional_development">
+                        <div class="col-xs-12 col-sm-4 col-md-3 academics_professional_development">
                           <img src="images/about_round_square.jpg" alt="">
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-8 sl_ars">
+                        <div class="col-xs-12 col-sm-8 col-md-9 sl_ars career_counselling">
+                          <b>Round Square</b>
                             <p>
-                              Round square is based on the philosophy of Kurt Hahn, an exceptional educational leader.
-                            <br> <br>
-                              He believed that schools should have a greater purpose beyond preparing young people for college 
-                              and university. Dr. Hahn believed that it was crucial for scholars to prepare for life by having
-                              them face it head on and experience it in ways that would demand courage, generosity, imagination,
-                              principle and resolution. As a result, he felt that young people would become empowered and develop
-                              the skills and abilities to be the leaders and guardians of the world tomorrow.
-                            <br> <br>
-                              The School is an associate member of Round Square and actively participates in its conferences in India and overseas.  
+                              The School is a Global member of Round Square, and actively participates in its conferences
+                              in India and overseas. It is based on the philosophy of Kurt Hahn, an exceptional educational 
+                              leader. Dr. Hahn believed that it was crucial for scholars to prepare for life by having them face 
+                              it head on and experience it in ways that would demand courage, generosity, imagination, 
+                              principle and resolution.
                             </p>  
-                            <img src="images/about_round_square_logo.jpg" alt="">          
+                            <img src="images/about_round_square_logo.jpg" alt=""> 
+                            <b>The 6 ideals of Round Square are:</b> 
+                            <ul>
+                              <li>Care for the Environment</li>
+                              <li>Focus on Internationalism </li>
+                              <li>Nurturing Leadership </li>
+                              <li>Service to Society </li>
+                              <li>The Practice of Democracy</li>
+                              <li>The Spirit of Adventure </li>
+                            </ul> 
+                            
                         </div>
                   </div>
               </div>

@@ -13,7 +13,7 @@
                               <option value="our-philosophy">Our Philosophy</option>
                               <option value="our-policies">Our Policies</option>
                               <option value="the-school-campus">The School Campus</option>
-                              <option value="#">Senior Secondary School</option>
+                              <option value="school-overview">School Overview</option>
                               <option value="#">Alumni</option>
                             </select>
                           </h3>
@@ -21,7 +21,7 @@
                       </div>
                       <div class="container about_our_pledge">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-7 col-md-offset-1">
+                            <div class="col-xs-12 col-sm-6 col-md-7 col-md-offset-1">
                               <p>
                                 We pledge to provide every child with individual attention, modern facilities and exposure to the best global practices of mentoring and care. We ensure multicultural education rooted in universal values, with emphasis on personal excellence.
                                 <span>
@@ -30,7 +30,7 @@
                               </p>
                               
                             </div>
-                            <div class="col-xs-12 col-sm-12 col-md-4">
+                            <div class="col-xs-12 col-sm-6 col-md-4">
                               <img src="images/about/our_pledge.jpg">
                             </div>
                           </div>

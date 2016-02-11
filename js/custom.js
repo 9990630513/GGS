@@ -1,3 +1,5 @@
+(function($) {
+
 /*===============================================================
   Home Page Right Menu 
 ===============================================================*/
@@ -31,7 +33,7 @@
  
 // 
  $(document).mouseup(function (e){
-    var container = $('header');
+    var container = $('.header_container');
     if (!container.is(e.target) && container.has(e.target).length === 0) {
         $('#nav-expander').trigger('click');
         $('body').removeClass('nav-expanded');
@@ -42,7 +44,7 @@ $(document).ready(function() {
     $('#nav-expander1').toggleClass("visibility-block");
   });
   $('#nav-expander1').on("click" ,function() {
-    $("html").find("body.nav-expanded").removeClass('nav-expanded')
+    $("html").find("body.nav-expanded").removeClass('nav-expanded');
   });
 });
 
@@ -93,10 +95,10 @@ function hasScrolled() {
 ===============================================================*/
 
   $('.video_content').click(function() {
-    $('.thevideo').show('300');
+    $('.thevideo').fadeIn('300');
   });
   $('.videoclose').click(function() {
-    $('.thevideo').hide('300', function() {
+    $('.thevideo').fadeOut('300', function() {
       
     });
   });
@@ -106,7 +108,7 @@ function hasScrolled() {
 ===============================================================*/
 
   windowHeight = $(window).height();
-  headerHeight = $('header').height();
+  headerHeight = $('.header_content').height();
   awardsHeight = $('.awards_laurels_content').height();
   videoContainerHeight = windowHeight - (headerHeight + awardsHeight);
   $('.slider_video').height(videoContainerHeight);
@@ -143,6 +145,7 @@ function hasScrolled() {
     $('.bx-pager .bx-pager-item a[data-slide-index="' + value + '"]').trigger('click');
    
  });
+  
 // $(document).on('click','.cs-options ul li a',function(event) {
 //   val = $( '.cs-options ul li a').html();
 //   document.location.href = val+".html";
@@ -224,6 +227,73 @@ $('.faq_container ul li a').click(function(event) {
         }, 1500);
         return false;
     });
+
+/*===============================================================
+  Home Page video 
+===============================================================*/
+
+ $('[data-toggle=tab]').click(function(){
+   if ($(this).parent().hasClass('active')){
+     $($(this).attr("href")).toggleClass('active');
+      $('#scrollbar1').tinyscrollbar();
+   }
+ })
+ $('[data-toggle=tab]').click(function(){
+    $('#scrollbar1').addClass("active");
+ });
+
+$('.videoclose').click(function(event) {
+    var tmp = $(this).next().attr("src");
+   $(this).next().attr('src','');
+   $(this).next().attr('src',''+tmp+'');
+   $(".thevideo").fadeOut();
+});
+
+/*===============================================================
+ Search 
+===============================================================*/
+var query = window.location.search.substring(1);
+  var vars = query.split("&");
+  for (var i=0;i<vars.length;i++) {
+  var pair = vars[i].split("=");
+  if(pair[0]=="Search"){
+    // alert("test");
+    $('.mac-style').focus();
+  }
+}
+
+/*===============================================================
+ Senior Management Popoup 
+===============================================================*/
+
+$(document).ready(function() {
+  $('.smt-box a').click(function(event) {
+    button  = $(this);
+    popContent = button.next().html();
+    console.log(popContent);
+    $('.smt-popup-content').html(popContent);
+    $('.smt-popup').fadeIn('600');
+  });
+  $('.close').click(function(event) {
+    $('.smt-popup').fadeOut('600', function() {
+      
+    });
+  });
+  $(document).mouseup(function (e){
+    var container = $('.smt-popup');
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        && container.has(e.target).length === 0) {
+        $('.smt-popup .close').trigger('click');
+    }
+});
+});
+
+
+
+
+})(jQuery);
+
+
 
 
 

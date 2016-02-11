@@ -68,40 +68,40 @@
     <div class="container-fluid curriculum_content">
       <div class="container">
         <div class="row">
-           <div class="col-sm-6 col-md-3">
+           <div class="col-xs-12 col-sm-3 col-md-3">
               <div class="thumbnail">
                  <img src="images/curriculum.jpg" alt="">
               </div>
               <div class="caption">
                  <h3>Curriculum</h3>
-                 <p> <a href="#" class="btn btn-primary" role="button">Know More</a> </p>
+                 <p> <a href="academics-the-curriculum.php" class="btn btn-primary" role="button">Know More</a> </p>
               </div>
            </div>
-           <div class="col-sm-6 col-md-3">
+           <div class="col-xs-12 col-sm-3 col-md-3">
               <div class="thumbnail">
                  <img src="images/residence.jpg" alt="">
               </div>
               <div class="caption">
                  <h3>Residence</h3>
-                 <p> <a href="#" class="btn btn-primary" role="button">Know More</a> </p>
+                 <p> <a href="day-extended-day-programme.php" class="btn btn-primary" role="button">Know More</a> </p>
               </div>
            </div>
-           <div class="col-sm-6 col-md-3">
+           <div class="col-xs-12 col-sm-3 col-md-3">
               <div class="thumbnail">
                  <img src="images/sports.jpg" alt="">
               </div>
               <div class="caption">
                  <h3>Sports</h3>
-                 <p> <a href="#" class="btn btn-primary" role="button">Know More</a> </p>
+                 <p> <a href="sports-games.php" class="btn btn-primary" role="button">Know More</a> </p>
               </div>
            </div>
-           <div class="col-sm-6 col-md-3">
+           <div class="col-xs-12 col-sm-3 col-md-3">
               <div class="thumbnail">
                  <img src="images/co-curricular.jpg" alt="">
               </div>
               <div class="caption">
                  <h3>Co-Curricular</h3>
-                 <p> <a href="#" class="btn btn-primary" role="button">Know More</a> </p>
+                 <p> <a href="co-curricular.php" class="btn btn-primary" role="button">Know More</a> </p>
               </div>
            </div>
         </div>
@@ -129,7 +129,7 @@
             <!-- Tab panes -->
             <div class="tab-content">
               <div role="tabpanel" class="tab-pane fade in active" id="Important_Dates">
-                  <div class="col-sm-6 col-md-3">
+                  <div class="col-xs-12 col-sm-3 col-md-3">
                     <div class="thumbnail">
                        <img src="images/important_dates1.jpg" alt="">
                     </div>
@@ -139,7 +139,7 @@
                        <p> <a href="#" class="btn btn-primary" role="button">Read More</a> </p>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-3">
+                  <div class="col-xs-12 col-sm-3 col-md-3">
                     <div class="thumbnail">
                        <img src="images/important_dates2.jpg" alt="">
                     </div>
@@ -149,7 +149,7 @@
                        <p> <a href="#" class="btn btn-primary" role="button">Read More</a> </p>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-3">
+                  <div class="col-xs-12 col-sm-3 col-md-3">
                     <div class="thumbnail">
                        <img src="images/important_dates3.jpg" alt="">
                     </div>
@@ -159,7 +159,7 @@
                        <p> <a href="#" class="btn btn-primary" role="button">Read More</a> </p>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-3">
+                  <div class="col-xs-12 col-sm-3 col-md-3">
                     <div class="thumbnail">
                        <img src="images/important_dates4.jpg" alt="">
                     </div>
@@ -171,7 +171,7 @@
                   </div>
               </div>
               <div role="tabpanel" class="tab-pane fade" id="Upcoming_Events">
-                <div class="col-sm-6 col-md-3">
+                <div class="col-xs-12 col-sm-3 col-md-3">
                     <div class="thumbnail">
                        <img src="images/important_dates4.jpg" alt="">
                     </div>
@@ -181,7 +181,7 @@
                        <p> <a href="#" class="btn btn-primary" role="button">Read More</a> </p>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-3">
+                  <div class="col-xs-12 col-sm-3 col-md-3">
                     <div class="thumbnail">
                        <img src="images/important_dates3.jpg" alt="">
                     </div>
@@ -191,7 +191,7 @@
                        <p> <a href="#" class="btn btn-primary" role="button">Read More</a> </p>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-3">
+                  <div class="col-xs-12 col-sm-3 col-md-3">
                     <div class="thumbnail">
                        <img src="images/important_dates2.jpg" alt="">
                     </div>
@@ -201,7 +201,7 @@
                        <p> <a href="#" class="btn btn-primary" role="button">Read More</a> </p>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-3">
+                  <div class="col-xs-12 col-sm-3 col-md-3">
                     <div class="thumbnail">
                        <img src="images/important_dates1.jpg" alt="">
                     </div>
@@ -223,22 +223,22 @@
     <div class="container-fluid affiliations_content">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-2">
+          <div class="col-xs-12 col-sm-2 col-md-2">
             <a href="#" class="affiliations_bt">Affiliations</a>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-2">
+          <div class="col-xs-12 col-sm-2 col-md-2">
             <a href="#"><img src="images/affiliations_logo1.png" alt=""></a>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-2">
+          <div class="col-xs-12 col-sm-2 col-md-2">
             <a href="#"><img src="images/affiliations_logo2.png" alt=""></a>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-2">
+          <div class="col-xs-12 col-sm-2 col-md-2">
             <a href="#"><img src="images/affiliations_logo3.png" alt=""></a>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-2">
+          <div class="col-xs-12 col-sm-2 col-md-2">
             <a href="#"><img src="images/affiliations_logo4.png" alt=""></a>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-2">
+          <div class="col-xs-12 col-sm-2 col-md-2">
             <a href="#"><img src="images/affiliations_logo5.png" alt=""></a>
           </div>
         </div>
@@ -249,22 +249,22 @@
     <div class="container-fluid affiliations_content">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-2">
+          <div class="col-xs-12 col-sm-2 col-md-2">
             <a href="#" class="affiliations_bt">Collaborations</a>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-2">
+          <div class="col-xs-12 col-sm-2 col-md-2">
             <a href="#"><img src="images/affiliations_logo1.png" alt=""></a>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-2">
+          <div class="col-xs-12 col-sm-2 col-md-2">
             <a href="#"><img src="images/affiliations_logo2.png" alt=""></a>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-2">
+          <div class="col-xs-12 col-sm-2 col-md-2">
             <a href="#"><img src="images/affiliations_logo3.png" alt=""></a>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-2">
+          <div class="col-xs-12 col-sm-2 col-md-2">
             <a href="#"><img src="images/affiliations_logo4.png" alt=""></a>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-2">
+          <div class="col-xs-12 col-sm-2 col-md-2">
             <a href="#"><img src="images/affiliations_logo5.png" alt=""></a>
           </div>
         </div>

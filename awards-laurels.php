@@ -21,22 +21,45 @@
                       <div class="container">
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12">
+                            <!-- hightlight post -->
+                            <div class="col-xs-12 col-sm-6 col-md-6 al_highlight">
+                                <div class="about_al_content about_al_content_highlight">  <!-- style="background-image:url(images/awards_laurels_img1.jpg);" -->
+                                  <img src="images/awards_laurels_img1.jpg" alt="">
+                                  <div class="highlight_text">
+                                    <b>Co-curricular</b>
+                                    <h2>Quill Writers Story Writing Workshop</h2>
+                                    <p>
+                                      Conducted by renowned author Mr. Hemant Kumar Stories of shortlisted students will soon be published in a book.
+                                    </p>
+                                  </div>
+                                  <div class="about_al_content_hover about_al_content_highlight">
+                                    <div class="about_al_content_hover_content">
+                                        <a href="#">View Link</a>
+                                       <a href="#">Email</a>
+                                       <a href="#">Share</a>
+                                     </div>
+                                  </div>
+                                </div>
+                             </div>
                             <!-- box 1 -->
-                             <div class="about_al_content"> 
-                                <b>Milestone</b>
-                                <h2>IPSC Membership</h2>
-                                <p>
-                                Genesis becomes a proud member of the Indian Public Schools’ Conference. The youngest school to achieve the same.
-                                </p>
-                                <div class="about_al_content_hover">
-                                  <div class="about_al_content_hover_content">
-                                      <a href="#">View Link</a>
-                                     <a href="#">Email</a>
-                                     <a href="#">Share</a>
-                                   </div>
+                            <div class="col-xs-12 col-sm-3 col-md-3">
+                                <div class="about_al_content"> 
+                                  <b>Milestone</b>
+                                  <h2>IPSC Membership</h2>
+                                  <p>
+                                  Genesis becomes a proud member of the Indian Public Schools’ Conference. The youngest school to achieve the same.
+                                  </p>
+                                  <div class="about_al_content_hover">
+                                    <div class="about_al_content_hover_content">
+                                        <a href="#">View Link</a>
+                                       <a href="#">Email</a>
+                                       <a href="#">Share</a>
+                                     </div>
+                                  </div>
                                 </div>
                              </div>
                              <!-- box 2 -->
+                             <div class="col-xs-12 col-sm-3 col-md-3">
                              <div class="about_al_content"> 
                                 <b>Milestone</b>
                                 <h2>IBDP</h2>
@@ -51,7 +74,9 @@
                                    </div>
                                  </div>
                              </div>
+                             </div>
                              <!-- box 3 -->
+                             <div class="col-xs-12 col-sm-3 col-md-3">
                              <div class="about_al_content"> 
                                 <b>Milestone</b>
                                 <h2>Science E Magazine</h2>
@@ -66,7 +91,9 @@
                                    </div>
                                  </div>
                              </div>
+                             </div>
                             <!-- box 4 -->
+                            <div class="col-xs-12 col-sm-3 col-md-3">
                              <div class="about_al_content"> 
                                 <b>Co-curricular</b>
                                 <h2>Our students participated in a Play directed by Tom Alter. The play was based on the life of Hindi poet and lyricist Sahir Ludhyanvi</h2>
@@ -81,7 +108,9 @@
                                    </div>
                                  </div>
                              </div>
+                             </div>
                             <!-- box 5 -->
+                            <div class="col-xs-12 col-sm-3 col-md-3">
                              <div class="about_al_content"> 
                                 <b>Co-curricular</b>
                                 <h2>Landmark (Edition 2) – Inter School Cultural Extravaganza</h2>
@@ -96,38 +125,44 @@
                                    </div>
                                  </div>
                              </div>
+                           </div>
                              <!-- box 6 -->
-                             <div class="about_al_content"> 
-                                <b>Sports</b>
-                                <h2>Athletics: Raja Udhyan was declared Best Athlete In U-12 Category</h2>
-                                <p>
-                                  3rd Invitational Inter School Athletics Championship, Pathways Aravali — Won 2 Gold And 2 Bronze.
-                                </p>
-                                <div class="about_al_content_hover">
-                                  <div class="about_al_content_hover_content">
-                                      <a href="#">View Link</a>
-                                     <a href="#">Email</a>
-                                     <a href="#">Share</a>
+                             <div class="col-xs-12 col-sm-3 col-md-3">
+                               <div class="about_al_content"> 
+                                  <b>Sports</b>
+                                  <h2>Athletics: Raja Udhyan was declared Best Athlete In U-12 Category</h2>
+                                  <p>
+                                    3rd Invitational Inter School Athletics Championship, Pathways Aravali — Won 2 Gold And 2 Bronze.
+                                  </p>
+                                  <div class="about_al_content_hover">
+                                    <div class="about_al_content_hover_content">
+                                        <a href="#">View Link</a>
+                                       <a href="#">Email</a>
+                                       <a href="#">Share</a>
+                                     </div>
                                    </div>
-                                 </div>
-                             </div>
+                               </div>
+                            </div>
                              <!-- box 7 -->
-                             <div class="about_al_content"> 
-                                <b>Co-curricular</b>
-                                <h2>Quill Writers Story Writing Workshop</h2>
-                                <p>
-                                  Conducted by renowned author Mr. Hemant Kumar Stories of shortlisted students will soon be published in a book
-                                </p>
-                                <div class="about_al_content_hover">
-                                  <div class="about_al_content_hover_content">
-                                      <a href="#">View Link</a>
-                                     <a href="#">Email</a>
-                                     <a href="#">Share</a>
+                             <div class="col-xs-12 col-sm-3 col-md-3">
+                               <div class="about_al_content"> 
+                                  <b>Co-curricular</b>
+                                  <h2>Quill Writers Story Writing Workshop</h2>
+                                  <p>
+                                    Conducted by renowned author Mr. Hemant Kumar Stories of shortlisted students will soon be published in a book
+                                  </p>
+                                  <div class="about_al_content_hover">
+                                    <div class="about_al_content_hover_content">
+                                        <a href="#">View Link</a>
+                                       <a href="#">Email</a>
+                                       <a href="#">Share</a>
+                                     </div>
                                    </div>
-                                 </div>
-                             </div>
+                               </div>
+                            </div>
                             <!-- box 8 -->
-                             <div class="about_al_content"> 
+                            <div class="col-xs-12 col-sm-3 col-md-3">
+                              <div class="about_al_content"> 
                                 <b>Co-curricular</b>
                                 <h2>French Exchange Program to College Yves Klien, Nice, France</h2>
                                 <p>
@@ -140,7 +175,8 @@
                                      <a href="#">Share</a>
                                    </div>
                                  </div>
-                             </div>
+                              </div>
+                            </div>
 
                             </div>
                           </div>
@@ -150,10 +186,10 @@
               <!-- slide2 -->
               <div class="slide">
                 <div class="container-fluid">
-                      <div class="container ">
+                      <div class="container">
                         <div class="col-xs-12 col-sm-10 col-md-10 col-md-offset-1">
-                          <h2>About Us</h2>
-                          <h3><span class="ggs_about_team">Awards & Laurels</span>
+                          <h2 class="h3_trigger ggs_about_team" id="1">About Us</h2>
+                          <h3><span class="h3_trigger ggs_about_team" id="1">Awards & Laurels</span>
                             <select class="cs-select abt_al_select">
                               <option value="0">2014</option>
                               <option value="1">2013</option>
@@ -163,25 +199,49 @@
                       </div>
                   </div>
                       <div class="container">
+                        <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12">
+                            <!-- hightlight post -->
+                            <div class="col-xs-12 col-sm-6 col-md-6 al_highlight">
+                                <div class="about_al_content about_al_content_highlight">  <!-- style="background-image:url(images/awards_laurels_img1.jpg);" -->
+                                  <img src="images/awards_laurels_img1.jpg" alt="">
+                                  <div class="highlight_text">
+                                    <b>Co-curricular</b>
+                                    <h2>Quill Writers Story Writing Workshop</h2>
+                                    <p>
+                                      Conducted by renowned author Mr. Hemant Kumar Stories of shortlisted students will soon be published in a book.
+                                    </p>
+                                  </div>
+                                  <div class="about_al_content_hover about_al_content_highlight">
+                                    <div class="about_al_content_hover_content">
+                                        <a href="#">View Link</a>
+                                       <a href="#">Email</a>
+                                       <a href="#">Share</a>
+                                     </div>
+                                  </div>
+                                </div>
+                             </div>
                             <!-- box 1 -->
-                             <div class="about_al_content"> 
-                                <b>Milestone 2013</b>
-                                <h2>IPSC Membership</h2>
-                                <p>
-                                Genesis becomes a proud member of the Indian Public Schools’ Conference. The youngest school to achieve the same.
-                                </p>
-                                <div class="about_al_content_hover">
-                                  <div class="about_al_content_hover_content">
-                                      <a href="#">View Link</a>
-                                     <a href="#">Email</a>
-                                     <a href="#">Share</a>
-                                   </div>
-                                 </div>
+                            <div class="col-xs-12 col-sm-3 col-md-3">
+                                <div class="about_al_content"> 
+                                  <b>Milestone</b>
+                                  <h2>IPSC Membership</h2>
+                                  <p>
+                                  Genesis becomes a proud member of the Indian Public Schools’ Conference. The youngest school to achieve the same.
+                                  </p>
+                                  <div class="about_al_content_hover">
+                                    <div class="about_al_content_hover_content">
+                                        <a href="#">View Link</a>
+                                       <a href="#">Email</a>
+                                       <a href="#">Share</a>
+                                     </div>
+                                  </div>
+                                </div>
                              </div>
                              <!-- box 2 -->
+                             <div class="col-xs-12 col-sm-3 col-md-3">
                              <div class="about_al_content"> 
-                                <b>Milestone 2013</b>
+                                <b>Milestone</b>
                                 <h2>IBDP</h2>
                                 <p>
                                   Got approval to run International Curriculum- IBDP for classes XI and XII
@@ -194,9 +254,11 @@
                                    </div>
                                  </div>
                              </div>
+                             </div>
                              <!-- box 3 -->
+                             <div class="col-xs-12 col-sm-3 col-md-3">
                              <div class="about_al_content"> 
-                                <b>Milestone 2013</b>
+                                <b>Milestone</b>
                                 <h2>Science E Magazine</h2>
                                 <p>
                                   A science e-magazine ‘Eureka’ was released. It can be accessed from the school website
@@ -209,9 +271,11 @@
                                    </div>
                                  </div>
                              </div>
+                             </div>
                             <!-- box 4 -->
+                            <div class="col-xs-12 col-sm-3 col-md-3">
                              <div class="about_al_content"> 
-                                <b>Co-curricular 2013</b>
+                                <b>Co-curricular</b>
                                 <h2>Our students participated in a Play directed by Tom Alter. The play was based on the life of Hindi poet and lyricist Sahir Ludhyanvi</h2>
                                 <p>
                                
@@ -224,7 +288,9 @@
                                    </div>
                                  </div>
                              </div>
+                             </div>
                             <!-- box 5 -->
+                            <div class="col-xs-12 col-sm-3 col-md-3">
                              <div class="about_al_content"> 
                                 <b>Co-curricular</b>
                                 <h2>Landmark (Edition 2) – Inter School Cultural Extravaganza</h2>
@@ -239,38 +305,44 @@
                                    </div>
                                  </div>
                              </div>
+                           </div>
                              <!-- box 6 -->
-                             <div class="about_al_content"> 
-                                <b>Sports</b>
-                                <h2>Athletics: Raja Udhyan was declared Best Athlete In U-12 Category</h2>
-                                <p>
-                                  3rd Invitational Inter School Athletics Championship, Pathways Aravali — Won 2 Gold And 2 Bronze.
-                                </p>
-                                <div class="about_al_content_hover">
-                                  <div class="about_al_content_hover_content">
-                                      <a href="#">View Link</a>
-                                     <a href="#">Email</a>
-                                     <a href="#">Share</a>
+                             <div class="col-xs-12 col-sm-3 col-md-3">
+                               <div class="about_al_content"> 
+                                  <b>Sports</b>
+                                  <h2>Athletics: Raja Udhyan was declared Best Athlete In U-12 Category</h2>
+                                  <p>
+                                    3rd Invitational Inter School Athletics Championship, Pathways Aravali — Won 2 Gold And 2 Bronze.
+                                  </p>
+                                  <div class="about_al_content_hover">
+                                    <div class="about_al_content_hover_content">
+                                        <a href="#">View Link</a>
+                                       <a href="#">Email</a>
+                                       <a href="#">Share</a>
+                                     </div>
                                    </div>
-                                 </div>
-                             </div>
+                               </div>
+                            </div>
                              <!-- box 7 -->
-                             <div class="about_al_content"> 
-                                <b>Co-curricular</b>
-                                <h2>Quill Writers Story Writing Workshop</h2>
-                                <p>
-                                  Conducted by renowned author Mr. Hemant Kumar Stories of shortlisted students will soon be published in a book
-                                </p>
-                                <div class="about_al_content_hover">
-                                  <div class="about_al_content_hover_content">
-                                      <a href="#">View Link</a>
-                                     <a href="#">Email</a>
-                                     <a href="#">Share</a>
+                             <div class="col-xs-12 col-sm-3 col-md-3">
+                               <div class="about_al_content"> 
+                                  <b>Co-curricular</b>
+                                  <h2>Quill Writers Story Writing Workshop</h2>
+                                  <p>
+                                    Conducted by renowned author Mr. Hemant Kumar Stories of shortlisted students will soon be published in a book
+                                  </p>
+                                  <div class="about_al_content_hover">
+                                    <div class="about_al_content_hover_content">
+                                        <a href="#">View Link</a>
+                                       <a href="#">Email</a>
+                                       <a href="#">Share</a>
+                                     </div>
                                    </div>
-                                 </div>
-                             </div>
+                               </div>
+                            </div>
                             <!-- box 8 -->
-                             <div class="about_al_content"> 
+                            <div class="col-xs-12 col-sm-3 col-md-3">
+                              <div class="about_al_content"> 
                                 <b>Co-curricular</b>
                                 <h2>French Exchange Program to College Yves Klien, Nice, France</h2>
                                 <p>
@@ -283,9 +355,11 @@
                                      <a href="#">Share</a>
                                    </div>
                                  </div>
-                             </div>
+                              </div>
+                            </div>
 
                             </div>
+                           </div> 
                     </div>
                 </div>
             </div>

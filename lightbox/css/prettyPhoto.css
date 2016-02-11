@@ -185,15 +185,15 @@
 	div.light_square .pp_left ,
 	div.light_square .pp_middle,
 	div.light_square .pp_right,
-	div.light_square .pp_content { background: #fff; }
+	div.light_square .pp_content { background: #fff;     padding-top: 10px;}
 	
 	div.light_square .pp_content .ppt { color: #000; }
 	div.light_square .pp_expand { background: url(../images/prettyPhoto/light_square/sprite.png) -31px -26px no-repeat; cursor: pointer; } /* Expand button */
 	div.light_square .pp_expand:hover { background: url(../images/prettyPhoto/light_square/sprite.png) -31px -47px no-repeat; cursor: pointer; } /* Expand button hover */
 	div.light_square .pp_contract { background: url(../images/prettyPhoto/light_square/sprite.png) 0 -26px no-repeat; cursor: pointer; } /* Contract button */
 	div.light_square .pp_contract:hover { background: url(../images/prettyPhoto/light_square/sprite.png) 0 -47px no-repeat; cursor: pointer; } /* Contract button hover */
-	div.light_square .pp_close { width: 75px; height: 22px; background: url(../images/prettyPhoto/light_square/sprite.png) -1px -1px no-repeat; cursor: pointer; } /* Close button */
-	div.light_square .pp_details { position: relative; }
+	div.light_square .pp_close { width: 75px; height: 40px; background: url(../images/prettyPhoto/light_square/sprite.png) -1px -1px no-repeat; cursor: pointer; } /* Close button */
+	div.light_square .pp_details { position:absolute; top:-20px; }
 	div.light_square .pp_description { margin-right: 85px; }
 	div.light_square #pp_full_res .pp_inline { color: #000; }
 	div.light_square .pp_gallery a.pp_arrow_previous,
@@ -203,7 +203,7 @@
 	
 	div.light_square .pp_arrow_previous { background: url(../images/prettyPhoto/light_square/sprite.png) 0 -71px no-repeat; } /* The previous arrow in the bottom nav */
 		div.light_square .pp_arrow_previous.disabled { background-position: 0 -87px; cursor: default; }
-	div.light_square .pp_arrow_next { background: url(../images/prettyPhoto/light_square/sprite.png) -22px -71px no-repeat; } /* The next arrow in the bottom nav */
+	div.light_square .pp_arrow_next { background: url(../images/prettyPhoto/light_square/sprite.png) -40px -71px no-repeat; } /* The next arrow in the bottom nav */
 		div.light_square .pp_arrow_next.disabled { background-position: -22px -87px; cursor: default; }
 	
 	div.light_square .pp_next:hover { background: url(../images/prettyPhoto/light_square/btnNext.png) center right  no-repeat; cursor: pointer; } /* Next button */
@@ -239,7 +239,7 @@
 	div.facebook .pp_arrow_next { background: url(../images/prettyPhoto/facebook/sprite.png) -32px -71px no-repeat; height: 22px; margin-top: 0; width: 22px; } /* The next arrow in the bottom nav */
 		div.facebook .pp_arrow_next.disabled { background-position: -32px -96px; cursor: default; }
 	div.facebook .pp_nav { margin-top: 0; }
-	div.facebook .pp_nav p { font-size: 15px; padding: 0 3px 0 4px; }
+	div.facebook .pp_nav p { font-size: 15px; padding: 0 3px 0 4px; display:none;}
 	div.facebook .pp_nav .pp_play { background: url(../images/prettyPhoto/facebook/sprite.png) -1px -123px no-repeat; height: 22px; width: 22px; }
 	div.facebook .pp_nav .pp_pause { background: url(../images/prettyPhoto/facebook/sprite.png) -32px -123px no-repeat; height: 22px; width: 22px; }
 	
@@ -337,13 +337,14 @@
 				.pp_nav {
 					clear: right;
 					float: left;
-					margin: 3px 10px 0 0;
+					margin:0px 10px 0 0;
 				}
 				
 					.pp_nav p {
 						float: left;
 						margin: 2px 4px;
 						white-space: nowrap;
+						display:none;
 					}
 					
 					.pp_nav .pp_play,
@@ -351,22 +352,23 @@
 						float: left;
 						margin-right: 4px;
 						text-indent: -10000px;
+						display:none;
 					}
 				
 					a.pp_arrow_previous,
 					a.pp_arrow_next {
-						display: block;
-						float: left;
-						height: 15px;
-						margin-top: 3px;
-						overflow: hidden;
-						text-indent: -10000px;
-						width: 14px;
+						    display: block;
+						    float: left;
+						    height: 30px;
+						    margin-top: 0px;
+						    overflow: hidden;
+						    text-indent: -10000px;
+						    width: 40px;
 					}
 		
 		.pp_hoverContainer {
 			position: absolute;
-			top: 0;
+			top: 30px;
 			width: 100%;
 			z-index: 2000;
 		}
@@ -377,6 +379,7 @@
 			margin-top: -50px;
 			position: absolute;
 			z-index: 10000;
+			display:none !important;
 		}
 		
 			.pp_gallery div {
@@ -436,6 +439,7 @@
 			height: 100%;
 			text-indent: -10000px;
 			width: 49%;
+			display:none;
 		}
 			
 		a.pp_previous {
@@ -445,6 +449,7 @@
 			height: 100%;
 			text-indent: -10000px;
 			width: 49%;
+			display:none;
 		}
 		
 		a.pp_expand,

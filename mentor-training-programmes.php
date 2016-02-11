@@ -7,14 +7,21 @@
                   <div class="container">
                     <div class="col-xs-12 col-sm-11 col-md-11 col-md-offset-1">
                       <h2 class="h3_trigger ggs_about_team" id="2">ACADEMICS</h2>
-                      <h3><span class="h3_trigger ggs_about_team" id="2">Mentor Training Programmes</span></h3>
+                     <!--  <h3><span class="h3_trigger ggs_about_team" id="2">Mentor Training Programmes</span></h3> -->
+                      <h3><span class="h3_trigger academics_page" id="2">Mentor Training Programmes •</span>
+                        <select class="cs-select our-team-select"  onchange="javascript:handleSelect(this)">
+                          <option value="mentor-training-programmes">Overview</option>
+                          <option value="teaching-approaches-assessment">Teaching Approaches & Assessment</option>
+                          <option value="professional-development">Professional Development</option>
+                        </select>
+                      </h3>
                     </div>
                   </div>
                   <div class="container about_slider_bg academics_the_curriculum">
-                        <div class="col-xs-12 col-sm-12 col-md-3 col-md-offset-1 academics_professional_development">
+                        <div class="col-xs-12 col-sm-4 col-md-3 academics_professional_development">
                           <img src="images/mentor-training-programmes.jpg" alt="">
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-8">
+                        <div class="col-xs-12 col-sm-8 col-md-9 pd_content">
                               <b>Mentor Training Programmes</b>
                                 
                                 <p>
@@ -24,14 +31,14 @@
                                   learning process.
                                 </p>
                                 <b>The mentor training programme at Genesis is implemented through: </b>
-                                <p>
-                                  INSET programmes <br>
-                                  External seminars and workshops <br>
-                                  National and international visiting faculty <br>
-                                  Exchange programmes<br>
-                                  Cambridge International Examination workshops & online courses<br> 
-                                  International Baccalaureate workshops and online courses 
-                                </p>
+                                <ul>
+                                  <li>INSET programmes </li>
+                                  <li>External seminars and workshops </li>
+                                  <li>National and international visiting faculty</li>
+                                  <li>Exchange programmes</li>
+                                  <li>Cambridge International Examination workshops & online courses</li>
+                                  <li>International Baccalaureate workshops and online courses</li>
+                                </ul>
                                 <p>
                                   The CBSE has a very structured curriculum. Though the teachers have the liberty to design their own curriculum 
                                   till class VIII, we strictly follow books prescribed for CBSE for classes IX and above. With the coming of CCE,

@@ -16,13 +16,36 @@
                         </h3>
                     </div>
                   </div>
-                  <div class="container about_slider_bg academics_the_curriculum residential_school_content">
-                        <b>Boys & Girls Residences</b>
-                        <p>Information Missing</p>
-                        <b>Safety & Security</b>
-                        <p>Information Missing </p>
-                        <b>Personal Hygiene</b>
-                        <p>Information Missing </p>
+                  <div class="container about_slider_bg academics_the_curriculum residential_school_content day_programme rscontent_bg">
+                       <div class="col-md-12">
+                          <b>Residences</b>
+                          <p>
+                            The scholar’s residence on campus is well appointed and air-conditioned. There are 
+                            separate Residences for boys and girls. All Scholars are cared for by a House Parent. The 
+                            Residences function under the overall supervision of the Dean (Residences).
+                          </p>
+                          <p>
+                            The Residence of Genesis Global School is a great hub of activity and creativity. The 
+                            Scholars in Residence. (SIRS) have already been able to publish a magazine ‘The Coffee 
+                            House’ and a newsletter ‘Buzz’
+                            ‘The Coffee House’ is a bi-annual magazine and ‘Buzz’ is a monthly newsletter giving an 
+                            insight into the life of scholars in residence.
+                          </p>
+                          <p>
+                            ‘Fun Zone’ is the name given to competitive and non-competitive activities in the 
+                            residence. Such interactions enrich the lives of our Resident Scholars. Fun Zone has a 
+                            plethora of cultural activities such as dance, music, rangoli, painting, skating, 
+                            extempore; sports fever and even dinner prepared and served by a selected group of 
+                            residents. Celebrations of all types and festivals are a way of life in the residence.
+                          </p>
+                          <b>Mid-term Breaks and Excursions</b>
+                          <p>
+                            Scholars are taken for adventure activities and educational excursions during the mid-
+                            term break every year. These platforms of experiential learning are essential for the 
+                            overall development of the Scholar. Scholars are expected to participate and attend 
+                            these compulsorily.
+                          </p>
+                       </div>
                   </div>
               </div>
           </div>

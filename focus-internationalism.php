@@ -16,17 +16,23 @@
                     </div>
                   </div>
                   <div class="container about_slider_bg academics_the_curriculum wide_range_sports">
-                        <div class="col-xs-12 col-sm-12 col-md-3 col-md-offset-1 academics_professional_development">
+                        <div class="col-xs-12 col-sm-4 col-md-3 academics_professional_development">
                           <img src="images/overseas_exchange_programmes.jpg" alt="">
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-8">
+                        <div class="col-xs-12 col-sm-8 col-md-9">
                           <b>International Exchange & Global Exposure</b>
                             <p>
-                              Student's exchange programs are perhaps the most wonderful way to become a member of the global community and allows students to have an in depth experience of the culture of various countries. Students get a chance to live with families, understand their customs and traditions. Not only this, the students also get to know the school system when they take part in the classes & share ideas and opinions. GENESIS GLOBAL SCHOOL is committed to the tenet of internationalism and nurturing its students into 
-                              enlightened beings and responsible citizens for tomorrow. 
+                              Student's exchange programs are perhaps the most wonderful way to become a member of the global 
+                              community and allows students to have an in-depth experience of the culture of various countries.
+                               Students get a chance to live with families, understand their customs and traditions. Not only 
+                               this, the students also get to know the school system when they take part in the classes & share 
+                               ideas and opinions. Genesis Global School is committed to the tenet of internationalism and 
+                               nurturing its students into enlightened beings and responsible citizens for tomorrow. 
                             </p>
                             <p>
-                              Having partner schools in several countries like Germany, France, England etc. our school organizes exchange programmes every year. The trips to NASA or CERN also provide the global exposure. The exchange programmes aims at organising a collaborative
+                              Having partner schools in several countries like Germany, France, England etc. our school 
+                              organizes exchange programmes every year. The trips to NASA or CERN also provide the global 
+                              exposure. The exchange programme aims at organising a collaborative
                               project on a pre-determined theme. 
                             </p>
                             <p>

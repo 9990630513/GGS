@@ -10,8 +10,8 @@
                         <h3><span class="h3_trigger ggs_about_team" id="5">Life at Residences •</span>
                           <select class="cs-select our-team-select" onchange="javascript:handleSelect(this)">
                             <option value="weekends">Weekends</option>
-                            <option value="daily-routine">Daily Routine</option>
-                            <option value="life-at-residences">Overview</option>
+                            <option value="life-at-residences">Daily Routine</option>
+                            <option value="things-brought-home">Things to be brought from Home</option>
                           </select>
                         </h3>
                     </div>
@@ -20,7 +20,7 @@
                        <div class="col-xs-12 col-sm-12 col-md-12">
                           <div class="rs_bg">
                             <div class="col-xs-12 col-sm-6 col-md-6">
-                              <b>Weekends</b>
+                              <b>Proposed action plan for Resident Scholars during the weekends</b>
                               <ul>
                                 <li>First Saturday – Cultural / Recreational activities</li>
                                 <li>Second Saturday – Outing with educational recreational purpose/mall</li>
@@ -38,10 +38,21 @@
                                 <li>Cooking on Sundays</li>
                               </ul>
                             </div>
+                             <div class="col-xs-12">
+                              <b  class="rs_mr">Saturday Schedule for Residence Scholars</b>
+                              <ul>
+                                <li>7.00 AM to 9.00 AM – Morning games</li>
+                                <li>10.00 AM to 12.45 PM – Art and craft/ elocution/ Theatre</li>
+                                <li>Music – 3.30 PM to 5.15 PM</li>
+                                <li>PM to 6.00 PM – Additional Inputs for classes XI and XII in Maths, Physics, Economics, Accountancy by Resident Mentors.</li>
+                                <li>Social Service visits</li>
+                                <li>Movie once a month</li>
+                              </ul>
+                            </div>
                             <p>
                               *(Activity classes include sports and creative activities)<br><br>
                               Students can choose from a variety of sports like cricket, soccer, squash, horse riding, netball, basketball, fencing, swimming, table tennis
-                              badminton, tennis , martial arts, Shooting etc.
+                              badminton, tennis , martial arts, Shooting etc.<br>
                               Creative activities include drawing and painting, art and craft, dance, photography, music, clay modeling etc.
                             </p>
                           </div>

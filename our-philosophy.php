@@ -13,7 +13,7 @@
                               <option value="about-overview">Our Pledge</option>
                               <option value="our-policies">Our Policies</option>
                               <option value="the-school-campus">The School Campus</option>
-                              <option value="#">Senior Secondary School</option>
+                              <option value="school-overview">School Overview</option>
                               <option value="#">Alumni</option>
                             </select>
                           </h3>
@@ -25,11 +25,11 @@
                           <h2>Our Philosophy</h2>
                           <p> 
                             Education is a journey and at Genesis this journey is full
-                            of opportunities and fulfilment. The scholars of Genesis scholars are confident, disciplined and critical thinkers. These qualities ensure that they grow into responsible and caring adults of a global society. We encourage experiential learning and create specific opportunities for growth.  </p>
+                            of opportunities and fulfilment. The scholars of Genesis are confident, disciplined and critical thinkers. These qualities ensure that they grow into responsible and caring adults of a global society. We encourage experiential learning and create specific opportunities for growth.  </p>
 
                           <p><b>Keeping the above in mind, the curriculum is designed to go beyond academics.</b></p>
 
-                          <p> Learning of the highest quality is possible in an environment where scholars feel valued and respected. At Genesis, the democratic ethos permeates every aspect of interaction with scholars, parents and mentors. It is in such an environment, that our scholars develop an understanding of their strengths and the areas of improvement. This in turn leads to a healthy self-respect and increased confidence in their problem-solving abilities.</p>
+                          <p> Learning of the highest quality is possible in an environment where scholars feel valued and respected. At Genesis, the democratic ethos permeate every aspect of interaction with scholars, parents and mentors. It is in such an environment, that our scholars develop an understanding of their strengths and the areas of improvement. This in turn leads to a healthy self-respect and increased confidence in their problem-solving abilities.</p>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6">
                           <p> We respect individual uniqueness and celebrate the integrity and dignity of each student. The conduct of a scholar at Genesis is based upon - respect for self, consideration for others and concern for the environment. </p>

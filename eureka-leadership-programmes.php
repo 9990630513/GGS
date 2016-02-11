@@ -11,19 +11,19 @@
                           <select class="cs-select our-team-select" onChange="javascript:handleSelect(this)">
                             <option value="eureka-leadership-programmes">Eureka Leadership Programmes</option>
                             <option value="nurturing-leadership">Morning Assembly</option>
-                            <option value="heritage-walks">Heritage Walks</option>
+                           <!--  <option value="heritage-walks">Heritage Walks</option> -->
                           </select>
                         </h3>
                     </div>
                   </div>
                   <div class="container about_slider_bg academics_the_curriculum wide_range_sports">
-                        <div class="col-xs-12 col-sm-12 col-md-3 col-md-offset-1 academics_professional_development">
+                        <div class="col-xs-12 col-sm-4 col-md-3 academics_professional_development">
                           <img src="images/eureka_leadership_programmes.jpg" alt="">
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-8">
+                        <div class="col-xs-12 col-sm-8 col-md-9">
                           <b>Eureka Leadership Programmes</b>
                             <p>
-                              Adventure is one of the pillars of Round Square and each academic session, GGS provides an opportunity to its students to explore and introspect by organising Adventure camps.
+                              Adventure is one of the pillars of Round Square and in each academic session, GGS provides an opportunity to its students to explore and introspect by organising Adventure camps.
                             </p>
                             <p>
                               It is fun time for students and teachers alike. However, the idea behind these camps is to expose them to challenging outdoor 
@@ -34,9 +34,7 @@
                               intrinsic enjoyment and satisfaction.
                             </p>
                             <p>
-                              These activities being non-competitive provide avenues for achievement as well as opportunities to develop independence & self-reliance, helping them to overcome fears & apprehensions along the way. Trust, care and tolerance to give and accept are 
-                              encouraged to develop interpersonal skills while working in teams. It contributes to good health and physical fitness and sense of 
-                              appreciation for the environment.
+                              These activities being non-competitive provide avenues for achievement as well as opportunities to develop independence & self-reliance, helping them to overcome fears & apprehensions along the way. 
                             </p>         
                         </div>
                   </div>

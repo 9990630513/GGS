@@ -7,12 +7,14 @@
                 <div class="container">
                   <div class="col-xs-12 col-sm-11 col-md-11 col-md-offset-1">
                     <h2 class="h3_trigger ggs_about_team" id="1">About Us</h2>
-                    <h3><span class="h3_trigger ggs_about_team" id="1">Corporate Social Responsibility </span>
-                    </h3>
+                    <ul class="media_press">
+                      <li class="ggs_about_team"><a class="active" href="csr.php">Corporate Social Responsibility</a></li>
+                      <li><a href="mbcn.php">MBCN</a></li>
+                    </ul>
                   </div>
                 </div>
                 <div class="container about_slider_bg">
-                      <div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1">
+                      <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="csr_left">
                          <p>
                             <b>Social Development/Community Service Programme</b>
@@ -32,7 +34,6 @@
                       
                         <div class="csr_right">
                           <img src="images/csr_img1.jpg">
-                          <img src="images/csr_img2.jpg">
                         </div>
                         
                       </div>

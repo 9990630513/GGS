@@ -16,35 +16,50 @@
                         </h3>
                     </div>
                   </div>
-                  <div class="container about_slider_bg academics_the_curriculum residential_school_content about_house_parents">
-                        <b>About House Parents</b>
-                        <ul>
-                          <li>
-                            Sunita Bansal – House parent for Girls’  at Genesis  since 2012
-                            Lecturer in Food and Nutrition at SD College, Jalandhar. Worked as Teacher and Admin in UK, 2000 to 2010
-                            (Birmingham) Houseparent and teacher of maths at GD Goenka world School 2010 to 2012.
-                          </li>
-                          <li>
-                            Vanita Jindal – House Parent for Girls at Genesis since January 2015
-                            House Parent and Yoga Instructor at Army Public School, Dagshai till 2014.
-                          </li>
-                          <li>
-                            Ankur Bhatt- Working as Music Teacher and House Parent at Genesis since 2011.
-                            Worked as Music Teacher and Asstt. House Master in Junior School,at Mayo College, Ajmer till 2011.
-                            Passionate about Cricket and Trekking.
-                          </li>
-                          <li> 
-                            J. Bannerjee- working as House Parent at Genesis since 2013.
-                            Worked as Warden and teacher of Maths at Ganga International School , Delhi for 8 years.
-                          </li>
-                          <li>
-                            Mrs Diksha Bhatt- working as Matron and part time Elementary Hindi Teacher at Genesis since 2011. Passionate about Dancing.
-                          </li>
-                          <li>
-                             Mrs. Mousami Bannerjee- working as House Parent / matron at genesis since 2014.
-                          </li>
-                        </ul>
-                        
+                  <div class="container about_slider_bg academics_the_curriculum residential_school_content about_house_parents day_programme rscontent_bg">
+                        <div class="col-md-12">
+                            <b>Profile of Dean Residences</b>
+                            <ul>
+                              <li>
+                                Ajay Singh –  A UGC-Net in Psychology. 
+                                University Topper in Psychology – MA (Clinical Psychology) as well as BA (Hons) in 
+                                Psychology,   Banaras Hindu University.
+                                Worked at Mayo  College, Ajmer from 2003 to 2012 as HOD Psychology, Counselor, 
+                                Hockey  Supervisor, Quiz Master,.  Was House Master of Rajasthan House from Dec2009 to April 2012. 
+                                Passionate about reading, quizzing , playing cricket, table tennis, badminton.
+                              </li>
+                            </ul>
+
+                            <b>House Parents</b>
+                            <ul>
+                              <li>
+                                Sunita Bansal – House parent for Girls’  at Genesis  since 2012.
+                                Lecturer in Food and Nutrition at SD College, Jalandhar. 
+                                Worked as Teacher and Admin in UK, 2000 to 2010 (Birmingham) 
+                                Houseparent and teacher of maths at GD Goenka world School 2010 to 2012.
+                              </li>
+                              <li>
+                                Vanita Jindal – House Parent for Girls at Genesis since January 2015
+                                House Parent and Yoga Instructor at Army Public School, Dagshai till 2014.
+                              </li>
+                              <li>
+                                Ankur Bhatt- Working as Music Teacher and House Parent at Genesis since 2011.
+                                Worked as Music Teacher and Asstt. House Master in Junior School,at Mayo College, Ajmer till 2011.
+                                Passionate about Cricket and Trekking.
+                              </li>
+                              <li> 
+                                J. Bannerjee- working as House Parent at Genesis since 2013.
+                                Worked as Warden and teacher of Maths at Ganga International School , Delhi for 8 years.
+                              </li>
+                              <li>
+                                Mrs Diksha Bhatt- working as Matron and part time Elementary Hindi Teacher at Genesis since 2011.
+                                Passionate about Dancing.
+                              </li>
+                              <li>
+                                 Mrs. Mousami Bannerjee- working as House Parent / matron at genesis since 2014.
+                              </li>
+                            </ul>
+                        </div>
                   </div>
               </div>
           </div>

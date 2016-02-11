@@ -171,12 +171,12 @@ div.nav-expander{
   -o-transition: right 0.3s ease-in-out 0s;
 }
 .nav-expanded div.nav-expander {
-  right: 43em !important;
+  right: 62em !important;
   background: none;
   color:#fff;
 }
 .nav-expanded a.admission {
-  right:35em !important;
+  right:36em !important;
   background: none;
   color:#fff;
 }
@@ -270,6 +270,21 @@ div.nav-expander{
 }
 
 
+.main-menu li:nth-child(7n) a {
+  border-bottom: 2px solid #939393;
+  color: #939393;
+}
+.main-menu li:nth-child(7n).open > a .caret {
+    border-bottom-color: #939393;
+}
+.main-menu li:nth-child(7n).open > a:hover > .caret {
+  border-bottom-color: #939393;
+}
+.main-menu li:nth-child(7n) a .caret{
+  border-top: 4px solid #939393;
+}
+
+
 
 .academics_bg .sub-nav a {
   line-height:20px !important;
@@ -311,12 +326,12 @@ div.nav-expander{
   color: #c5141b;
 }
 .main-menu li:nth-child(7n) a {
-  border-bottom: 2px solid #e01e26;
+  border-bottom: 2px solid #939393;
   color: #939393;
 }
 .main-menu li:nth-child(7n) a:hover {
-  border-bottom: 2px solid #c5141b;
-  color: #747272;
+  border-bottom: 2px solid #6F6F6F;
+  color: #6F6F6F;
 }
 .sub-nav a {
   border-bottom:none !important;
@@ -446,6 +461,10 @@ li.open a {
   background:#e31f27;
   background-image: url(../images/facilities_bg.jpg);
 }
+.admission_bg {
+  background:#939393;
+  background-image: url(../images/admission_bg.jpg);
+}
 
 
 
@@ -547,7 +566,7 @@ li.open a {
    STICKy HEADER 
    ========================================================================== */
 
-header.header-show {
+.header_content.header-show {
 /*  -webkit-transform: translateY(0%);
   -ms-transform: translateY(0%);
   transform: translateY(0%);*/
@@ -557,7 +576,7 @@ header.header-show {
         transition: all 700ms cubic-bezier(0.190, 1.000, 0.220, 1.000); /* easeOutExpo */
 }
 
-header.header-hide {
+.header_content.header-hide {
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
@@ -596,9 +615,12 @@ header.header-hide {
     width: 260px;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 }
+.mac_styles{
+  width:260px;
+}
 .header_search {
   position: absolute;
-  right:315px;
+  right:550px;
   top: 47px;
   outline: none;
   margin: 0px;
@@ -628,13 +650,14 @@ header.header-hide {
     HOME PAGE 
    ========================================================================== */
 
-header {
+.header_content {
   height:140px;
   background: rgba(255,255,255,0.8);
   width:100%;
   position:fixed;
   top:0px;
   z-index: 1070;
+  border-bottom:solid 1px #c9c9c9;
 }
 .top_nav {
   border:none;
@@ -654,14 +677,18 @@ header {
 }
 .admission {
   background:#939393 !important;
-    border-radius: 20px !important;
-    color: #fff !important;
-    position: fixed !important;
-    right: 190px !important;
-    top: 44px !important;
+  border-radius: 20px !important;
+  color: #fff !important;
+  position: fixed !important;
+  right: 190px !important;
+  top: 44px !important;
 }
 .admission:hover{
   background: #000 !important;
+}
+
+.placement_btn {
+  margin-right:180px !important;
 }
 
 /* =============== slider video section =================== */
@@ -743,8 +770,8 @@ header {
   text-align: center;
 }
 .awards_laurels:hover {
-  background-color:#939393;
-  color:#fff;
+  background-color:#888888;
+  color:#DCDCDC;
 }
 .download_brochure {
   font-family: 'Conv_Gotham-Book';
@@ -756,8 +783,8 @@ header {
   color:#fff;
 }
 .download_brochure:hover {
-  background-color:#e21f25;
-  color:#fff;
+  background-color:#CC191E;
+  color:#DCDCDC;
 }
 .awards_laurels_content {
   border-bottom: solid #e21f25 10px;
@@ -769,6 +796,10 @@ header {
 }
 .awards_laurels_content .col-xs-12.col-sm-6.col-md-2:first-child a {
   background: #828282;
+}
+.awards_laurels_content .col-xs-12.col-sm-6.col-md-2:first-child a:hover {
+  background:#888888;
+  color:#DCDCDC;
 }
 .awards_laurels_content .col-md-2 {
   padding:0px;
@@ -1010,7 +1041,7 @@ header {
 }
 .events_content .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   font-family: 'Conv_Gotham-Book' !important;
-  font-size:20px !important;
+  font-size:18px !important;
   color: #FFF;
   cursor: default;
   background-color: #466aa6 !important;
@@ -1118,15 +1149,17 @@ header {
   padding-left:80px;
 }
 .footer_content .col-md-6 {
-    border-right: solid #000 2px;
+    border-right: solid #000 1px;
     padding: 45px 0px;
+    min-height:296px;
 }
 .footer_content .col-md-6:last-child {
     border-right:0;
 }
-.footer_content .col-md-3 {
+.footer_content .col-md-2 {
   padding-left: 0px;
 }
+
 .footer_content ul{
   margin:0px;
   padding:0px;
@@ -1167,15 +1200,15 @@ header {
   margin-left:70px;
 }
 .footer_admission li a {
-  color:#afafaf !important;
+  /*color:#afafaf !important;
   font-size: 10px !important;
-  line-height:15px !important;
+  line-height:15px !important;*/
 }
 .footer_admission li a:hover {
-  color:#fff !important;
+  /*color:#fff !important;*/
 }
 .footer_admission li:first-child a{
-  color:#fff !important;
+  /*color:#fff !important;*/
 }
 .footer_annual{
   width: 108px;
@@ -1207,7 +1240,7 @@ header {
   width:100%;
 }
 ul.footer_circulars li:first-child a {
-    margin-top: -10px;
+    /*margin-top: -10px;*/
     display: block;
 }
 
@@ -1233,7 +1266,7 @@ ul.footer_circulars li:first-child a {
   border: 0px;
   text-align: left;
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .responsive-tabs-container.accordion-xs .nav-tabs {
     display: none;
   }
@@ -1272,7 +1305,6 @@ ul.footer_circulars li:first-child a {
 .about_container {
   margin-top:140px;
   padding-bottom: 65px;
-   border-top:solid 2px #c9c9c9;
 }
 .about_container h2{
   font-family: 'Conv_Gotham-Book';
@@ -1295,12 +1327,19 @@ ul.footer_circulars li:first-child a {
 .about_bg .admission{
   background-color:#ad1f6b !important;
 }
+.about_bg .admission:hover {
+  background-color: #901657 !important;
+  color: #E8E8E8 !important;
+}
 .about_slider_bg{
-  background-image:url(../images/about/about_slider_bg.jpg);
+  background-image:url(../images/about/about_slider_bg1.jpg);
   background-repeat:repeat;
   height:auto;
-  padding:140px 180px 140px 48px;
+  padding:100px 100px 100px 100px;
   overflow:hidden;
+}
+.beyond_academics_container .about_slider_bg {
+  display:-webkit-box;
 }
 .about_container .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
   top: 80px !important;
@@ -1338,16 +1377,16 @@ ul.footer_circulars li:first-child a {
   border-bottom:solid 10px #ad1f6b;
   padding:0px;
 }
-.about_slider_bg .col-md-9 {
+.about_slider_bg .col-md-10 {
   background-color: #fff;
   padding:40px;
   position:relative;
 
 }
-.about_slider_bg .col-md-9:before {
+.about_slider_bg .col-md-10:before {
  position:absolute;
  content:"";
- background-image:url(../images/about/left_triangle_arrow.png);
+ /*background-image:url(../images/about/left_triangle_arrow.png);*/
  width:20px;
  height:20px;
  left:-20px;
@@ -1356,8 +1395,8 @@ ul.footer_circulars li:first-child a {
 .about_slider_bg p {
  font-family: 'Conv_Gotham-Light';
   font-size:14px; 
-  color:#646464;
-  line-height:30px;
+  color:#000;
+  line-height:25px;
 }
 .about_slider_bg span {
   color:#ad1f6b;
@@ -1384,12 +1423,90 @@ ul.footer_circulars li:first-child a {
 .about_awards_laurels .download_brochure {
   background-color:#ad1f6b;
 }
+.about_awards_laurels .download_brochure:hover {
+  color: #E4E4E4;
+}
 .abt_purple_color .col-md-3 {
   position:relative;
   margin-bottom:30px;
 }
 .abt_purple_color .col-md-3 img{
   width:100%;
+}
+.smt-popup {
+  background: rgba(0,0,0,0.9);
+  position: fixed;
+  z-index: 9999;
+  text-align: center;
+  width: 1100px;
+  margin: auto;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  overflow-y: scroll;
+  display:flex;
+}
+.smt-popup p{
+  color: #fff;
+  font-size: 22px;
+  line-height:22px;
+}
+.smt-popup .close{
+  color: #000;
+  font-size: 16px;
+  background: #fff;
+  width: 30px;
+  line-height: 30px;
+  border-radius: 100%;
+  text-decoration: none;
+  display: block;
+  font-family: arial;
+  float: right;
+  outline: none;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+.smt-popup-content {
+  width:80%;
+  margin: auto;
+  text-align:left;
+}
+.popup-data-img {
+  float:left;
+  margin-right:20px;
+  margin-bottom:0px;
+  background: #fff;
+  text-align: center;
+  width:20%;
+}
+.popup-data-content {
+  float:right;
+  width:77%;
+}
+.popup-data-img img{
+  border:1px solid #fff;
+  width:100%;
+}
+
+.smt-popup-content p{
+  font-family: 'Conv_Gotham-Light';
+  font-size:14px; 
+  color:#D2D2D2;
+  line-height:25px;
+}
+.smt-popup-content h3{
+ padding-bottom:0px;
+ margin-top: 0px;
+ font-size: 15px;
+  color: #8C8C8C;
+}
+.smt-popup-content h2 {
+  padding-top:0px;
+  font-size:17px !important;
+  text-transform:inherit;
+  margin-top:10px;
 }
 .team_description {
   background-color: #fff;
@@ -1416,21 +1533,50 @@ ul.footer_circulars li:first-child a {
   padding:0px 170px 50px 30px;
   overflow: hidden;
 }
-.about_our_policies p {
-    font-family: 'Conv_Gotham-Light';
-    font-size: 14px;
-    color: #646464;
-    line-height: 30px;
+.about_our_policies a {
+  font-family: 'Conv_Gotham-Light';
+  color: #646464;
+  text-decoration: none;
+  display: -webkit-inline-box;
+  margin-bottom: 23px;
+  width: 30%;
 }
-.about_our_policies p:nth-child(1n+3) {
-  background-image: url(../images/about/abt_dot.png);
-  background-repeat: no-repeat;
-  background-position: 0px 8px;
-  padding-left: 18px;
+.about_our_policies img {
+  margin-right:10px;
+}
+.about_our_policies a:hover {
+  color:#ad1f6b;
+}
+.about_our_policies ul {
+  margin:0px;
+  padding:0px;
+}
+.about_our_policies ul li {
+  font-family: 'Conv_Gotham-Light';
+  font-size: 14px;
+  color: #646464;
+  line-height: 25px;
+  margin-bottom:20px;
+  position:relative;
+  padding-left:15px;
+  display: inherit;
+}
+.about_our_policies ul li:before {
+  position:absolute;
+  content:"●";
+ color:#ad1f6b;
+  top:0px;
+  left:0px;
+}
+.about_our_policies p {
+  font-family: 'Conv_Gotham-Light';
+  font-size: 14px;
+  color: #646464;
+  line-height: 25px;
 }
 .about_our_policies h4 {
   font-family: 'Conv_Gotham-Book';     
-  font-size: 20px;
+  font-size: 18px;
   color: #646464;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1448,7 +1594,7 @@ ul.footer_circulars li:first-child a {
   font-family: 'Conv_Gotham-Light';
   font-size: 14px;
   color: #646464;
-  line-height: 20px;
+  line-height: 25px;
   margin-top:20%;
 }
 .about_our_pledge span {
@@ -1488,6 +1634,7 @@ ul.footer_circulars li:first-child a {
   font-family: 'Conv_Gotham-Light';
   font-size: 14px;
   color: #fff;
+  line-height:25px;
 }
 /*.about_select select {
   font-family: 'Conv_Gotham-Bold';  
@@ -1795,13 +1942,23 @@ li.cs-selected {
 .the_school_campus {
 
 }
+.sport_game ul li {
+  list-style-type:none !important;
+}
+.sport_game ul li:before {
+  content:"" !important;
+}
 .all_school_content ul.nav li.active a, ul.nav li.active a:hover {
   line-height:30px;
   font-size: 14px !important;
+  background: #ad1f6b;
 }
 .all_school_content ul.nav li.active a:hover, ul.nav li.active {
   font-size: 14px !important;
   line-height:30px;
+}
+.all_school_content ul.nav li.active a, ul.nav li.active a:hover{
+  background: #ad1f6b !important;
 }
 .all_school_content ul.nav li a:focus {
   background-color:#ad1f6b !important;
@@ -1823,17 +1980,15 @@ li.cs-selected {
 .the_school_campus .bx-wrapper .bx-next, .about_container .bx-wrapper .bx-prev {
   display:block;
 }
-
-
 .the_school_campus .bx-wrapper .bx-prev{
   left:0px;
 }
 .the_school_campus .bx-wrapper .bx-next{
-  right:0px;
+  right:-97px;
 }
 .the_school_campus .bx-controls-direction {
-  left: 74%;
-  width: 78px;
+  left: 73%;
+  width: auto;
   position: absolute;
   bottom: 22px;
   height: 49px;
@@ -1856,6 +2011,21 @@ li.cs-selected {
   line-height:73px;
   margin: 0px;
   padding-left:20px;
+}
+.the_school_campus .slide_content a:first-child{
+  position: absolute;
+  left: 81.5%;
+  width: 19px;
+  height: 20px;
+  top: 27px;
+  background: transparent;
+      background-color: transparent !important;
+  padding: 0px;
+}
+.the_school_campus .slide_content a:first-child img{
+  max-width:inherit;
+  margin:0px;
+  width:100%;
 }
 .the_school_campus .slide_content a{
   font-family: 'Conv_Gotham-Book';
@@ -1880,6 +2050,7 @@ li.cs-selected {
   margin-right:5%;
   float:left;
   margin-top:30px;
+  line-height:25px;
 
 }
 .the_school_content p:last-child{
@@ -1892,6 +2063,7 @@ li.cs-selected {
   border-bottom:solid 65px #fff;
   padding-top:60px;
   padding-bottom:60px;
+  margin-top:-65px;
 }
 .all_school_content .nav-tabs {
   float: right;
@@ -1915,13 +2087,14 @@ li.cs-selected {
   width: 64%;
   padding-right: 50px;
   color:#5D5D5D;
+  line-height:25px;
 }
 .all_school_content .tab-pane p:nth-child(2) {
   padding-top:128px;
 }
 .all_school_content .tab-pane b {
   font-family: 'Conv_Gotham-Book';
-  font-size:20px;
+  font-size:16px;
   color:#ad1f6b;
   display:block;
   margin-top:20px;
@@ -2027,15 +2200,39 @@ li.cs-selected {
 .about_al  .bx-controls-direction {
   display:none;
 }
+.about_al .col-md-3 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.about_al .col-md-6 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.about_al_content_highlight {
+  height:650px !important;
+  background-repeat: no-repeat;
+  background-position:center top;
+  background-size:100%;
+  padding:0px !important;
+}
+.about_al_content_highlight img{
+  width:100%;
+}
+.highlight_text {
+  width:90%;
+  margin:auto;
+  padding-top:40px;
+}
 .about_al_content {
-  width:23.2%;
+  /*width:23.2%;*/
+  width:100%;
   height:315px;
   background-color: #ad1f6b;
   float:left;
   padding:30px;
-  margin-right:11px;
-  margin-left:11px;
-  margin-bottom:22px;
+ /* margin-right:11px;
+  margin-left:11px;*/
+  margin-bottom:20px;
   position:relative; 
 }
 .about_al_content .about_al_content_hover { 
@@ -2055,14 +2252,14 @@ li.cs-selected {
   width:100%;
   height:315px;   
   opacity: 1;
-  transition: width, border opacity .0s linear .5s;
-  -webkit-transition: width, border opacity .0s linear .5s;
-  -moz-transition: width, border opacity .0s linear .5s;
-  -ms-transition: width, border opacity .0s linear .5s;
-  transition: opacity .5s linear .5s;
-  -webkit-transition: opacity .5s linear .5s;
-  -moz-transition: opacity .5s linear .5s;
-  -ms-transition: opacity .5s linear .5s;
+  transition: width, border opacity .0s linear .1s;
+  -webkit-transition: width, border opacity .0s linear .1s;
+  -moz-transition: width, border opacity .0s linear .1s;
+  -ms-transition: width, border opacity .0s linear .1s;
+  transition: opacity .5s linear .1s;
+  -webkit-transition: opacity .5s linear .1s;
+  -moz-transition: opacity .5s linear .1s;
+  -ms-transition: opacity .5s linear .1s;
 }
 .about_al_content:hover .about_al_content_hover a {
   font-family: 'Conv_Gotham-Book';  
@@ -2097,12 +2294,12 @@ li.cs-selected {
 }
 .about_al_content h2{
   font-family:'Conv_Gotham-Book';
-  font-size:20px;
-  color:#fff;
-  padding:0px;
-  margin-top:30px;
-  text-transform: inherit;
-  line-height: 25px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0px;
+    margin-top: 30px;
+    text-transform: inherit;
+    line-height: 21px;
 }
 .about_al_content p{
   font-family: 'Conv_Gotham-Light';
@@ -2110,6 +2307,7 @@ li.cs-selected {
   color: #fff;
   margin: 0px;
   width: auto;
+  line-height:25px;
 }
 .abt_school_awards {
   background-color: #efefef;
@@ -2125,7 +2323,7 @@ li.cs-selected {
 }
 .abt_school_awards h3 {
   font-family:'Conv_Gotham-Book';
-  font-size:30px;
+  font-size:25px;
   color:#ABABAB;
   text-align:center;
   margin-bottom:80px;
@@ -2158,7 +2356,7 @@ li.cs-selected {
 }
 .abt_school_awards_pager ul li a {
   font-family:'Conv_Gotham-Book';
-  font-size:20px;
+  font-size:18px;
   color:#ABABAB;
   padding:0px 20px;
 }
@@ -2196,8 +2394,11 @@ ul.media_press li:first-child {
 }
 ul.media_press li a {
   font-family:'Conv_Gotham-Book';
-  font-size:28px;
+  font-size:20px;
   color:#afafaf;
+}
+ul.media_press li a:hover {
+  color:#ad1f6b;
 }
 ul.media_press li a.active {
   color:#ad1f6b;
@@ -2243,12 +2444,12 @@ ul.media_press li a.active {
 .csr_container {
   padding-bottom:0px;
 }
-.csr_container .col-md-11 {
+.csr_container .col-md-12 {
   background-color: #fff;
 }
 .csr_container p {
   font-family:'Conv_Gotham-Light';
-  font-size:20px;
+  font-size:14px;
   float:left;
   width:100%;
   line-height:25px;
@@ -2267,18 +2468,25 @@ ul.media_press li a.active {
 }
 .csr_container .csr_left ul{
   padding:0px;
+  clear: both;
 }
 .csr_container .csr_left ul li {
   font-family: 'Conv_Gotham-Light';
-  font-size: 20px;
-  background-image: url(../images/about/abt_dot.png);
+  font-size:14px;
   background-repeat: no-repeat;
   background-position: 0px 8px;
-  padding-left:25px;
+  padding-left:15px;
   list-style:none;
-  line-height:30px;
-  display:inline-block;
+  line-height:25px;
   margin-bottom:20px;
+  position:relative;
+}
+.csr_container .csr_left ul li:before{
+  position: absolute;
+  content:"●";
+  left:0px;
+  color:#AD1F6B;
+  top:0px;
 }
 .csr_container .csr_right {
   float:right;
@@ -2300,7 +2508,7 @@ ul.media_press li a.active {
   padding-bottom: 0px;
 }
 .csr_container .col-md-4 b {
-  font-family: 'Conv_Gotham-Bold';
+  font-family: 'Conv_Gotham-Light';
   font-size:14px;
   color:#646464;
   font-weight: bold;
@@ -2325,7 +2533,7 @@ ul.media_press li a.active {
   background-position: 0px 8px;
   padding-left:25px;
   list-style:none;
-  line-height:20px;
+  line-height:25px;
   display:inline-block;
   margin-bottom:20px;
 }
@@ -2334,19 +2542,19 @@ ul.media_press li a.active {
   padding-top:130px;
   background-image:url(../images/csr_child.png);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position:right bottom;
   height:522px;
 }
 .csr_bottom_container h2 {
   font-family: 'Conv_Gotham-Book';
   color:#fff;
-  font-size:30px;
+  font-size:25px;
   margin-bottom:35px;
 }
 .csr_bottom_container h3 {
   font-family: 'Conv_Gotham-Book';
   color:#fff;
-  font-size:20px;
+  font-size:18px;
 }
 .csr_bottom_container a {
   color:#fff;
@@ -2357,6 +2565,7 @@ ul.media_press li a.active {
   color:#fff;
   font-size:14px;
   width:50%;
+  line-height:25px;
 }
 
 
@@ -2378,6 +2587,9 @@ ul.media_press li a.active {
     font-size:14px;
     color:#AD1F6B;
     line-height:40px;
+  }
+  .faq_container ul li a:hover {
+    color:#7D0043;
   }
   .faq_container h3 {
     padding-bottom:20px;
@@ -2401,7 +2613,7 @@ ul.media_press li a.active {
   .faq_content h2 {
     font-family: 'Conv_Gotham-Book';
     color: #AFAFAF;
-    font-size: 30px;
+    font-size:25px;
     text-transform: inherit;
     margin-bottom:40px;
     padding: 0px;
@@ -2415,24 +2627,89 @@ ul.media_press li a.active {
      font-family: 'Conv_Gotham-Light';
     font-size:14px;
     color:#646464;
+    line-height:25px;
   }
   .scrollup {
     width: 40px;
     height: 40px;
     position: fixed;
-    bottom: 50px;
-    right:70px;
+    bottom:40px;
+    right:40px;
     display: none;
     text-indent: -9999px;
     background: url('../images/up-arrow-arrow.png') no-repeat;
+    z-index: 9999;
   }
+
+ .academics_container .faq_container ul li a {
+    color:#466AA6;
+  }
+  .academics_container .faq_container ul li a:hover {
+    color:#2D518E;
+  }
+  .academics_container .faq_content b  {
+    color:#466AA6;
+  }
+
+  .beyond_academics_container .faq_container ul li a {
+    color:#008545;
+  }
+  .beyond_academics_container .faq_container ul li a:hover {
+    color:#03562E;
+  }
+  .beyond_academics_container .faq_content b  {
+    color:#008545;
+  }
+
+  .school_life_container .faq_container ul li a {
+    color:#71c043;
+  }
+  .school_life_container .faq_container ul li a:hover {
+    color:#439414;
+  }
+  .school_life_container .faq_content b  {
+    color:#71c043;
+  }
+
+  .residential_school_container .faq_container ul li a {
+    color:#f4801d;
+  }
+  .residential_school_container .faq_container ul li a:hover {
+    color:#CE6710;
+  }
+  .residential_school_container .faq_content b  {
+    color:#f4801d;
+  }
+
+  .facilities_container .faq_container ul li a {
+    color:#e31f27;
+  }
+  .facilities_container  .faq_container ul li a:hover {
+    color:#B5161C;
+  }
+  .facilities_container  .faq_content b  {
+    color:#e31f27;
+  }
+  .landmark_content a {
+    color:#71c043;
+  }
+
+
+
+
+
+
 
 /* ==========================================================================
    Academics Page
    ========================================================================== */
-
+  
   .academics_container .admission {
     background-color:#466AA6 !important;
+  }
+  .academics_container .admission:hover {
+    background-color: #31538C !important;
+    color: #E8E8E8 !important;
   }
   .academics_container .about_container h2 {
     color:#466AA6;
@@ -2483,7 +2760,7 @@ ul.media_press li a.active {
   .academics_the_curriculum ul li a {
     background-color: #939393;
     font-family: 'Conv_Gotham-Book';
-    font-size: 20px;
+    font-size: 18px;
     line-height: 60px;
     border-radius: 0px;
     width: 100%;
@@ -2502,14 +2779,24 @@ ul.media_press li a.active {
     border-bottom-color: transparent;
     line-height:60px;
   }
-  .academics_the_curriculum ul.nav li.active a, ul.nav li.active a:hover{
-    font-size: 20px !important;
+  .academics_the_curriculum ul.nav li.active a:hover{
+    font-size: 18px !important;
     line-height:60px;
+    background: #466AA6 !important;
   }
-  .academics_the_curriculum .col-md-8{
+  .academics_container .academics_the_curriculum{
+    display:-webkit-box;
+  }
+  .cc_overview{
+    
+  }
+  .cc_overview .col-md-12 {
+    background-color:#fff;
+    padding:25px;
+  }
+  .academics_the_curriculum .col-md-9{
     background-color:#fff;
     padding:30px;
-    min-height:521px;
   }
   .academics_the_curriculum  .col-md-3 {
     padding:0px;
@@ -2517,19 +2804,49 @@ ul.media_press li a.active {
   .academics_the_curriculum b,strong{
     color: #466AA6;
     font-family: 'Conv_Gotham-Book';
-    font-size: 20px;
+    font-size:18px;
     margin-bottom:15px;
     display:block;
   }
   .academics_the_curriculum p{
     color: #646464;
     font-family: 'Conv_Gotham-Light';
-    font-size:16px;
+    font-size:14px;
     margin-bottom:30px;
+    line-height:25px;
   }
   .academics_professional_development img {
     max-width:100%;
+    width:100%;
     border-bottom:solid #466AA6 10px;
+  }
+  .pd_content ul {
+    margin:0px;
+    padding:0px;
+  }
+  .pd_content ul li{
+    color:#646464;
+    font-family: 'Conv_Gotham-Light';
+    font-size:14px;
+    margin-bottom:20px;
+    line-height:25px;
+    position: relative;
+    border-bottom:0px;
+    padding-left:15px;
+  }
+  .pd_content ul li:before {
+    content:"●";
+    color:#466AA6;
+    left:0px;
+    top:0px;
+    position: absolute;
+  }
+  .affiliations_collaborations .col-md-12{
+    background-color:#fff;
+    padding:25px;
+  }
+  .affiliations_collaborations{
+  padding-bottom:0px !important;
   }
 
 /* ==========================================================================
@@ -2541,6 +2858,10 @@ ul.media_press li a.active {
   }
   .beyond_academics_container .admission {
     background-color:#008545 !important;
+  }
+  .beyond_academics_container .admission:hover {
+    background-color: #03773F !important;
+    color: #E8E8E8 !important;
   }
   .beyond_academics_container .about_container h2 {
     color:#008545;
@@ -2588,9 +2909,19 @@ ul.media_press li a.active {
     margin-bottom:30px;
   }
   .beyond_academics_container .all_school_content ul li{
-     list-style:none;
+     list-style:inherit;
      margin:0px;
      padding:0px;
+     position: relative;
+  }
+
+
+  .beyond_academics_container .all_school_content ul li:before{
+    position: absolute;
+    content:"●";
+    left:0px;
+    color:#008545;
+    top:0px;
   }
    .beyond_academics_container .all_school_content ul li a{
     font-family: 'Conv_Gotham-Book';
@@ -2607,30 +2938,40 @@ ul.media_press li a.active {
     margin: 0px;
     padding: 0px;
     width:100%;
-    margin-left:20px;
     margin-bottom:30px;
   }
   .beyond_academics_container .wide_range_sports ul li {
     font-family: 'Conv_Gotham-Light';
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 14px;
     border-bottom: 0px;
-    list-style-type: decimal;
-    display: list-item;
     color: #646464;
+    line-height:35px;
+    position: relative;
+    padding-left:15px;
+  }
+  .beyond_academics_container .wide_range_sports ul li:before{
+    position: absolute;
+    content:"●";
+    left:0px;
+    color:#008545;
+    top:0px;
   }
   .beyond_academics_container .wide_range_sports ul li b{
     color: #646464;
     display:-webkit-inline-box;
+    font-size:14px;
+  }
+  .tod_fod_jod ul li b{
+    margin-bottom:0px;
   }
   .beyond_academics_container .wide_range_sports .academics_professional_development img {
     border-bottom: solid #008545 10px;
   }
   .beyond_academics_container .art_education .about_slider_bg {
-    padding: 140px 48px 140px 48px;
+    padding:58px 58px 58px 58px;
   }
   .beyond_academics_container .about_slider_bg .col-md-6 {
-    background-color:#fff;
+    background-color:#fff !important;
     padding:25px;
     margin-right:4%;
     width:48%;
@@ -2640,14 +2981,28 @@ ul.media_press li a.active {
   }
 
 
+
 /* ==========================================================================
    Beyond Academics Page
    ========================================================================== */
+
 .community_service_club {
   padding:70px 48px 70px 48px !important; 
+  display:inherit !important;
 }
 .community_service_club .slider1 .slide {
     border-bottom: solid #008545 10px;
+}
+.csc_view {
+  position: absolute;
+  bottom: 26px;
+  left: 79px;
+  width: 20px;
+  height: 20px;
+  z-index:2;
+}
+.csc_view img {
+  max-width:inherit;
 }
 .community_service_club .col-md-4{
   background-color: #fff;
@@ -2659,8 +3014,7 @@ ul.media_press li a.active {
   color: #000 !important;
 }
 .community_service_club .col-md-4 p{
-  font-size: 16px !important;
-  color: #000 !important;
+  font-size: 14px;
 }
 .community_service_club .col-md-8 {
   background-color: #fff;
@@ -2672,8 +3026,6 @@ ul.media_press li a.active {
 }
 .community_service_club ul li {
   list-style-type: inherit !important;
-  font-size: 16px !important;
-  color: #000 !important;
 }
 .community_service_club ul {
   float: left !important;
@@ -2719,7 +3071,7 @@ ul.media_press li a.active {
   margin-top:0px;
   padding:25px;
 }
-.computer_animation .col-md-12:last-child{
+/*.computer_animation .col-md-12:last-child{
   margin-top:30px;
   background-color:#FFF;
   padding:25px;
@@ -2727,9 +3079,8 @@ ul.media_press li a.active {
 .computer_animation .col-md-12:last-child b{
   float:left;
   margin-right:10px;
-}
+}*/
 .animation p {
-  font-size:16px;
   margin-bottom:0px;
 }
 .animation b {
@@ -2737,16 +3088,24 @@ ul.media_press li a.active {
 }
 .computer_animation_box {
     display: -webkit-box;
-}
-
+} 
 
 /* ==========================================================================
    School Life Page
    ========================================================================== */
 
- 
+ .school_life_container .abt_school_awards_pager ul li a.active {
+  color: #71c043;
+ }
   .school_life_container .admission {
     background-color:#71c043 !important;
+  }
+  .school_life_container .admission:hover {
+    background-color: #5AA230 !important;
+    color: #EFEFEF !important;
+  }
+  .school_life_container .wide_range_sports {
+    display:-webkit-box;
   }
   .school_life_container .about_container h2 {
     color:#71c043;
@@ -2786,6 +3145,7 @@ ul.media_press li a.active {
   }
   .school_life_container  .academics_the_curriculum b {
     color:#71c043;
+    clear: both;
   }
   .school_life_table .col-md-12 {
     padding:0px;
@@ -2793,25 +3153,30 @@ ul.media_press li a.active {
   .school_life_table .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
     border: 1px solid #C7C7C7;
     font-family: 'Conv_Gotham-Light';
-    font-size:16px;
+    font-size:14px;
     color:#646464;
     padding:15px;
     vertical-align:middle;
+    background: #fff;
   }
-  .school_life_table b {
-    font-family: 'Conv_Gotham-Bold';
+  .table-responsive b,strong {
+    font-size:14px;
+  }
+  .school_life_table b,strong {
+    font-family: 'Conv_Gotham-Book';
     font-weight: bold;
     color:#646464;
-    font-size:16px;
+    font-size:14px;
   }
   .school_life_table strong {
-    font-family: 'Conv_Gotham-Bold';
+    font-family: 'Conv_Gotham-Book';
     font-weight: bold;
-    color:#646464;
-    font-size:16px;
+    color:#646464 !important;
+    font-size:14px;
+    text-transform:initial;
   }
   .school_life_table p {
-    font-family: 'Conv_Gotham-Bold';
+    font-family: 'Conv_Gotham-Book';
     font-size:16px;
     color:#646464;
     font-weight: bold;
@@ -2841,8 +3206,15 @@ ul.media_press li a.active {
   /* .school_life_container .academics_the_curriculum ul.nav li.active a, ul.nav li.active a:hover {
     line-height: 24px;
   }*/
-  .school_life_container .academics_the_curriculum ul li:first-child a {
+  /*.school_life_container .academics_the_curriculum ul li:first-child a {
     line-height: 30px;
+  }*/
+  .school_life_container .academics_the_curriculum ul.nav li.active a, ul.nav li.active a:hover{
+    background:#71c043;
+    line-height: 60px;
+  }
+ .student_council_content {
+    padding: 0px;
   }
   .student_council_content h2 {
     font-family: 'Conv_Gotham-Book';
@@ -2860,21 +3232,24 @@ ul.media_press li a.active {
   }
   .student_council_content p {
     font-family: 'Conv_Gotham-Light';
-    font-size: 16px;
+    font-size: 14px;
     color: #646464;
     line-height: 25px;
     margin-bottom:30px;
   }
   .career_counselling ul{
     padding:0px;
+    margin-bottom: 30px;
+    overflow: hidden;
   }
   .career_counselling ul li {
-    font-family: 'Conv_Gotham-Light';
-    font-size: 16px;
-    color: #646464;
-    line-height: 30px;
-    border-bottom: 0px;
-    margin-bottom: 15px;
+    font-family:'Conv_Gotham-Light';
+    font-size:14px;
+    color:#646464;
+    line-height:30px;
+    border-bottom:0px;
+    margin-bottom:15px;
+    display:flex;
   }
   .career_counselling ul li:before {
     content: "•";
@@ -2890,21 +3265,27 @@ ul.media_press li a.active {
     padding:0px;
     line-height:60px;
   }
-  .publications_container .col-md-6 {
+  .publications_container .col-md-9 {
     padding:0px;
   }
-  .publications_container .col-md-2 {
+  .publications_container .col-md-1 {
     padding-right:0px;
+    text-align: right;
+  }
+  .publications_container .col-md-1:nth-child(1n) {
+    text-align: center;
+  }
+  .publications_container .col-md-1:last-child {
     text-align: right;
   }
   .publications_container a {
     font-family: 'Conv_Gotham-Light';
-    font-size: 16px;
+    font-size: 14px;
     color:#646464;
     outline:none;
     border:0px;
   }
-  .publications_container .col-md-6 a {
+  .publications_container .col-md-9 a {
     color:#72BF44;
   }
 
@@ -2916,6 +3297,10 @@ ul.media_press li a.active {
  
   .residential_school_container .admission {
     background-color:#f4801d !important;
+  }
+  .residential_school_container .admission:hover {
+    background-color: #DC741B !important;
+    color: #ECECEC !important;
   }
   .residential_school_container .about_container h2 {
     color:#f4801d;
@@ -2938,6 +3323,20 @@ ul.media_press li a.active {
   .residential_school_container .academics_the_curriculum b,strong {
     color:#f4801d;
   }
+  .daily_schedule {
+    display:flex;
+  }
+  .day_programme .col-md-12 {
+    background-color:#fff !important;
+    padding:25px !important;
+    padding-bottom:0px !important;
+  }
+   .day_programme {
+    padding-bottom:0px !important;
+  }
+  .rscontent_bg {
+    padding-bottom:60px !important;
+  }
   .residential_school_content {
     padding:60px;
   }
@@ -2949,9 +3348,12 @@ ul.media_press li a.active {
     width:100%;
   }
   .residential_school_content .col-md-12 {
-    background-color: #fff;
+    /*background-color:#E2E2E2;*/
     padding:0px;
     margin-bottom:60px;
+  }
+  .residential_school_content .col-xs-12.col-sm-12.col-md-12:first-child {
+    /*display: -webkit-box;*/
   }
   .residential_school_content .col-md-12:last-child {
     margin-bottom:0px;
@@ -2965,23 +3367,27 @@ ul.media_press li a.active {
   .residential_school_content li {
     color: #646464;
     font-family: 'Conv_Gotham-Light';
-    font-size: 16px;
+    font-size: 14px;
     border-bottom: 0px !important;
     list-style-type:none;
     float: inherit !important;
     display:list-item !important;
-    line-height:35px;
+    line-height:25px;
   }
   .residential_school_content li:before {
-    content: "■";
+    content: "●";
     color: #f4801d;
     left: 0px;
     position: absolute;
   }
   .rs_bg {
-    background-color: #E2E2E2;
-    margin: 40px;
-    padding:40px;
+  background-color: #FFFFFF;
+  /* margin: 40px; */
+  padding:30px;
+  /*border: solid #E2E2E2 40px;*/
+  }
+  .rs_bg .col-md-4,.col-md-6 {
+    padding-left:0px;
   }
   .rs_bg img{
     width:auto;
@@ -3017,12 +3423,16 @@ ul.media_press li a.active {
 
 
   /* ==========================================================================
-   Residential School  Page
+   Facilities  Page
    ========================================================================== */
 
  
   .facilities_container .admission {
     background-color:#e31f27 !important;
+  }
+  .facilities_container .admission:hover {
+    background-color: #CA161D !important;
+    color: #EFEFEF !important;
   }
   .facilities_container .about_container h2 {
     color:#e31f27;
@@ -3060,159 +3470,71 @@ ul.media_press li a.active {
   .multipurpose_hall .col-md-3 {
     padding-left:0px;
   }
-  .multipurpose_hall ul{
+ .multipurpose_hall ul{
     margin:0px;
     padding:0px;
   }
   .multipurpose_hall ul li{
-    margin: 0px;
-    padding: 0px;
+    position: relative;
     display: inline;
+    width:11.8%;
     float: left;
-    width: 11.8%;
-    margin-left: 10px;
+    margin-left:10px;
   }
-  .multipurpose_hall ul li a {
-    font-family: 'Conv_Gotham-Bold';
+  .multipurpose_hall ul li:first-child{
+    margin-left:0px;
+  }
+  .mh {
+    width:100%;
+    background-color:#B7B7B7;
+  }
+  .mh_active {
+    display:block !important;
+  }
+  .mh a{
+    font-family: 'Conv_Gotham-Book';
     text-transform: uppercase;
     font-size: 10px;
     text-align: center;
     background: #fff;
-    display: block;
-    padding:70px 5px 20px 5px;
-    height: 100px;
-    color: #605e5e;
+    display:block;
+    height:110px;
+    text-align: center;
+    padding: 20px 5px;
+    color:#605e5e;
   }
-  .multipurpose_hall ul li:first-child a {
-    background-image: url(../images/multipurpose_hall_icon.png);
-    background-position: center 30px;
-    background-repeat: no-repeat;
+  .mh a img{
+    padding-bottom:7px;
+    margin:auto;
+    display:block;
   }
-  .multipurpose_hall ul li:first-child a:hover {
-    background-image: url(../images/multipurpose_hall_icon1.png);
-    background-position: center 30px;
-    background-repeat: no-repeat;
+  .mh_hover {
+    display:none;
+    position: absolute;
+    top:0px;
+    background-color:#e31f27;
+    height:110px;
+    width:100%;
+    color:#fff;
+    padding: 20px 5px;
+    text-align:center;
   }
-  .multipurpose_hall ul li:first-child a.active {
-    background-image: url(../images/multipurpose_hall_icon1.png);
-    background-position: center 30px;
-    background-repeat: no-repeat;
+  .mh_hover a img{
+    padding-bottom:7px;
+    margin:auto;
+    display:block;
   }
-  .multipurpose_hall ul li:nth-child(2n) a {
-    background-image: url(../images/library_icon.png);
-    background-position: center 20px;
-    background-repeat: no-repeat;
-  }
-  .multipurpose_hall ul li:nth-child(2n) a:hover {
-    background-image: url(../images/library_icon1.png);
-    background-position: center 20px;
-    background-repeat: no-repeat;
-  }
-  .multipurpose_hall ul li:nth-child(2n) a.active {
-    background-image: url(../images/library_icon1.png);
-    background-position: center 20px;
-    background-repeat: no-repeat;
-  }
-  .multipurpose_hall ul li:nth-child(3n) a {
-    background-image: url(../images/classroom_icon.png);
-    background-position: center 20px;
-    background-repeat: no-repeat;
-  }
-  .multipurpose_hall ul li:nth-child(3n) a:hover {
-    background-image: url(../images/classroom_icon1.png);
-    background-position: center 20px;
-    background-repeat: no-repeat;
-  }
-  .multipurpose_hall ul li:nth-child(3n) a.active {
-    background-image: url(../images/classroom_icon1.png);
-    background-position: center 20px;
-    background-repeat: no-repeat;
-  }
-  .multipurpose_hall ul li:nth-child(4n) a {
-    background-image: url(../images/laboratories_icon.png);
-    background-position: center 20px;
-    background-repeat: no-repeat;
-  }
-  .multipurpose_hall ul li:nth-child(4n) a:hover {
-    background-image: url(../images/laboratories_icon1.png);
-    background-position: center 20px;
-    background-repeat: no-repeat;
-  }
-  .multipurpose_hall ul li:nth-child(4n) a.active {
-    background-image: url(../images/laboratories_icon1.png);
-    background-position: center 20px;
-    background-repeat: no-repeat;
-  }
-  .multipurpose_hall ul li:nth-child(5n) a {
-    background-image: url(../images/health_icon.png);
-    background-position: center 20px;
-    background-repeat: no-repeat;
-  }
-  .multipurpose_hall ul li:nth-child(5n) a:hover {
-    background-image: url(../images/health_icon1.png);
-    background-position: center 20px;
-    background-repeat: no-repeat;
-  }
-  .multipurpose_hall ul li:nth-child(5n) a.active {
-    background-image: url(../images/health_icon1.png);
-    background-position: center 20px;
-    background-repeat: no-repeat;
-  }
-  .multipurpose_hall ul li:nth-child(6n) a {
-    background-image: url(../images/nutrition_icon.png);
-    background-position: center 20px;
-    background-repeat: no-repeat;
-  }
-  .multipurpose_hall ul li:nth-child(6n) a:hover {
-    background-image: url(../images/nutrition_icon1.png);
-    background-position: center 20px;
-    background-repeat: no-repeat;
-  }
-  .multipurpose_hall ul li:nth-child(6n) a.active {
-    background-image: url(../images/nutrition_icon1.png);
-    background-position: center 20px;
-    background-repeat: no-repeat;
-  }
-   .multipurpose_hall ul li:nth-child(7n) a {
-    background-image: url(../images/transportation_icon.png);
-    background-position: center 20px;
-    background-repeat: no-repeat;
-  }
-  .multipurpose_hall ul li:nth-child(7n) a:hover {
-    background-image: url(../images/transportation_icon1.png);
-    background-position: center 20px;
-    background-repeat: no-repeat;
-  }
-  .multipurpose_hall ul li:nth-child(7n) a.active {
-    background-image: url(../images/transportation_icon1.png);
-    background-position: center 20px;
-    background-repeat: no-repeat;
-  }
-   .multipurpose_hall ul li:nth-child(8n) a {
-    background-image: url(../images/security_icon.png);
-    background-position: center 20px;
-    background-repeat: no-repeat;
-  }
-  .multipurpose_hall ul li:nth-child(8n) a:hover {
-    background-image: url(../images/security_icon1.png);
-    background-position: center 20px;
-    background-repeat: no-repeat;
-  }
-  .multipurpose_hall ul li:nth-child(8n) a.active {
-    background-image: url(../images/security_icon1.png);
-    background-position: center 20px;
-    background-repeat: no-repeat;
-  }
-  .multipurpose_hall ul li a.active {
-    background: #e31f27;
+  .mh_hover a {
+    font-family: 'Conv_Gotham-Book';
+    text-transform: uppercase;
+    font-size: 10px;
+    text-align: center;
+    display:block;
+    height:100px;
     color:#fff;
   }
-  .multipurpose_hall ul li a:hover{
-    background: #e31f27;
-    color: #FFFFFF;
-  }
-   .multipurpose_hall ul li:first-child{
-    margin-left:0px;
+  .multipurpose_hall ul li:hover .mh_hover {
+    display:block;
   }
   .multipurpose_hall h3 {
     padding-bottom:0px;
@@ -3238,13 +3560,727 @@ ul.media_press li a.active {
   .classrooms a span{
     color: #646464;
     font-family: 'Conv_Gotham-Light';
-    font-size: 13px;
+    font-size: 12px;
     text-transform: uppercase;
     display:block;
   }
-  
-      
+  .classrooms_thumb_content {
+    width:100%;
+    float:left;
+    margin-bottom:30px;
+  }
+  .classrooms_thumb {
+    width:100%;
+    height:200px;
+    border:solid 8px #fff;
+    border-radius:0px;
+    background-size: cover;
+    background-position: 50% 50%;
+      filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);  /* For Webkit browsers */
+    filter: gray;  /* For IE 6 - 9 */
+    -webkit-transition: all .6s ease;  /* Transition for Webkit browsers */
+  }
+  .classrooms_thumb:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    filter: none;
+  }
+  .classrooms_gallery .col-md-12{
+    background-color: inherit;
+  }
+  .cr_back {
+    font-family:'Conv_Gotham-Book';
+    font-size:16px;
+    color:#FFFFFF;
+    position:absolute;
+    right:15px;
+    top:15px;
+    background: #FD0404;
+    padding: 5px 10px;
+  }
+  .cr_back:hover {
+    color:#FFFFFF;
+    background:#000;
+  }
+  .classrooms_gallery .col-md-2 {
+    padding-left:15px;
+    padding-right:15px;
+    background-color:transparent;
+  }
+  .transportation_content {
+    padding-left:0px;
+  }
+  .transportation_content b,strong{
+    font-size:13px;
+    text-transform: uppercase;
+    margin-bottom:0px;
+  }
+   .transportation_content p{
+    font-size:13px;
+    margin-bottom:15px;
+  }
+  .transportation_bottom_content {
+    padding:0px;
+  }
+   .transportation_bottom_content {
+    border-top:solid #ababab 1px;
+    padding-top: 30px;
+    margin-top: 10px;
+   }
+  .transportation_bottom_content p {
+    color:#e31f27;
+    font-size:13px;
+    margin-bottom: 10px;
+    line-height: 20px;
+  }
+  .transportation_bottom_content p b,strong {
+    color:#000 !important;
+    font-size:13px;
+    display:inline;
+    font-weight:bold;
+  }
+  .bx-default-pager .bx-pager-item:last-child{
+    /*display:none !important;*/
+  }
 
+
+/* ==========================================================================
+ Admission Page
+ ========================================================================== */
+
+
+.admission_content .col-md-12 {
+  background-color:#fff;
+}
+.admission_content .col-md-12 {
+  padding:50px;
+  text-align:center;
+}
+.admission_content .table-responsive, .admission_content .table-responsive table{
+  margin:0px;
+}
+.admission_additional_information b,strong {
+  text-align:center;
+}
+.admission_content .col-md-12  hr{
+  width:45px;
+  height:2px;
+  background-color:#000;
+  margin:auto;
+  margin-bottom:30px;
+}
+.admission_additional_information span {
+  display:block;
+  color:#e31f27;
+  font-family; font-family:'Conv_Gotham-Light';
+}
+.admission_additional_information ul li:before {
+ color:red;
+
+}
+.admission_additional_information ul{
+  text-align: left;
+}
+.admission_additional_information ul li {
+  line-height:35px;
+ 
+}
+.fund_transfer {
+  width:650px;;
+  margin: auto;
+  margin-bottom:30px;
+}
+.fund_transfer .table > tbody > tr > td, .table > tfoot > tr > td{
+  background: #f0f0f0;
+  border:0px;
+  color: #000;
+}
+.fund_transfer .table > tbody > tr > td, .table > tfoot > tr {
+  border-bottom:5px #fff solid;
+}
+.fund_transfer span {
+  float:right;
+  margin-right:20%;
+}
+.fund_transfer b{
+  font-size: 13px !important;
+  line-height: 20px;
+  text-align: left;
+}
+.fund_transfer_contact b {
+  display:-webkit-inline-box;
+  font-size:14px;
+}
+.fund_transfer_contact {
+  text-align: left;
+  width:55%;
+  margin:auto;
+  overflow:hidden;
+}
+.fund_transfer_contact .col-md-6:first-child {
+  width:53%;
+}
+.fund_transfer_contact .col-md-6:last-child {
+  width:46%;
+}
+.abbreviations a {
+  background-color:#A5A5A5;
+  color:#fff; 
+  padding:10px 20px;
+}
+.abbreviations a:hover {
+  background-color:#e31f27;
+  color:#fff; 
+}
+
+
+/* ==========================================================================
+ Enquiry Page
+ ========================================================================== */
+
+
+.enquiry_content .col-md-12:first-child{
+  display:inherit !important;
+  text-align:left;
+  padding: 20px 10px;
+}
+.enquiry_content b,strong {
+  margin-top:40px;
+}
+.enquiry_content .col-sm-10 {
+  padding-left:10px;
+}
+.enquiry_content label {
+  background-color: #f0f0f0;
+  font-family: 'Conv_Gotham-Book';
+  font-size: 11px;
+  line-height:16px;
+  text-transform: uppercase;
+  padding:9px 0px 9px 12px;
+}
+.enquiry_content label span {
+  color:red;
+}
+.enquiry_content .form-group {
+  overflow:hidden;
+  font-family:'Conv_Gotham-Light';
+  margin-bottom: 5px;
+}
+.enquiry_content .form-group .col-sm-8 {
+  padding-left:10px;
+}
+.enquiry_content input,.enquiry_content textarea{
+  background-color:#fff;
+  border:solid 1px #b9b9b9;
+  outline:none;
+  border-radius:0px;
+}
+.enquiry_content input:focus,.enquiry_content textarea:focus   {
+  box-shadow:inherit;
+  border:#e31f27 solid 1px;
+}
+.enquiry_content textarea {
+  margin-bottom:5px;
+  resize: none;
+  height:90px;
+}
+.enquiry_textarea {
+  padding: 31px 10px 31px 12px !important;
+  height:90px;
+}
+.enquiry_textarea2 {
+  padding:39px 10px 39px 12px !important;
+  height:90px;
+}
+.enquiry_age .col-sm-4:nth-child(2n) {
+  padding-right:0px;
+}
+.enquiry_content input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus{
+    box-shadow:inherit;
+  border:#e31f27 solid 1px;
+  outline:none;
+} 
+.enquiry_content select {
+  background-color:#fff;
+  border:solid 1px #b9b9b9;
+  outline:none;
+  border-radius:0px;
+  -webkit-appearance: inherit;
+  padding-left: 10px;
+  background: #fff url("../images/select_arrow.png") no-repeat 97% 50%;
+}
+.enquiry_content .form-control:focus {
+  border-color: inherit;
+  box-shadow: inherit;
+  border: solid red 1px;
+}
+.enquiry_content p {
+  font-family: 'Conv_Gotham-Book';
+  font-size: 12px;
+  text-align: center;
+  text-transform: capitalize;
+  width: 100%;
+  padding:20px 24px 0px 24px;
+}
+.enquiry_checkbox {
+  display: block;
+  margin: auto !important;
+  width: 15px;
+  margin-top: 20px !important;
+}
+.enquiry_submit {
+  font-family: 'Conv_Gotham-Book';
+  font-size: 12px;
+  text-transform: uppercase;
+  display: block;
+  margin: auto;
+  background-color: #e31f27;
+  color: #fff;
+  border: none;
+  border-radius: 0px;
+  margin-bottom: 30px;
+  width: 122px;
+  height: 34px;
+  outline:none;
+}
+.enquiry_submit:hover {
+  background-color: #000;
+  color: #fff;
+}
+.enquiry_submit:focus {
+  box-shadow:none;
+  outline:none;
+  background: red;
+  color: #fff;
+}
+.enquiry_form_content {
+  background-color: #f0f0f0 !important;
+  padding:20px 0px;
+  margin-left: -15px;
+}
+
+
+/* ==========================================================================
+ Latest Updates Page
+ ========================================================================== */
+
+.latest_updates_container .about_al_content {
+  background-color:#eaeaea;
+}
+.latest_updates_container .about_al_content b,strong {
+  color:#df232f;
+}
+.latest_updates_container .about_al_content h2{
+  color: #616161;
+  border-bottom: solid #e31f27 1px;
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+.latest_updates_container .about_al_content p{
+  color:#616161;
+  margin-top:15px;
+}
+.latest_updates_container .about_al_content a{
+  font-family: 'Conv_Gotham-Book';
+  font-size: 12px;
+  display: block;
+  background-color: #e31f27;
+  color: #fff;
+  border: none;
+  border-radius: 0px;
+  margin-top:15px;
+  outline: none;
+  float: left;
+  padding: 8px 15px;
+}
+.latest_updates_container .about_al_content a:hover{
+  background-color:#cd1824;
+  color:#eaeaea;
+}
+.latest_updates_container ul.media_press li a.active {
+  color: #df232f;
+}
+.latest_updates_container ul.media_press li a:hover {
+  color: #df232f !important;
+}
+.latest_updates_container .cs-select > span::after {
+  background: #df232f;
+}
+.facilities_container .abt_school_awards_pager ul li a.active {
+  color: #df232f;
+}
+.latest_updates_detail p {
+  text-align: left;
+}
+.latest_updates_detail b,strong {
+  text-align: left;
+  font-size:14px;
+  margin-bottom:0px;
+}
+.latest_updates_detail a {
+  text-align:left;
+  float: left;
+  margin-bottom:20px;
+  margin-right:10px;
+}
+.latest_updates_detail a:focus {
+ color:#337ab7;
+}
+.latest_updates_detail ul {
+  margin:20px 0px;
+}
+.latest_updates_detail ul li {
+  margin:0px;
+  text-align:left;
+}
+.latest_updates_detail li:before {
+  font-family: 'Conv_Gotham-Bold';
+  content: "•";
+  color: red;
+  left: 0px;
+  position: absolute;
+  font-size: 17px;
+}
+.latest_updates_title b{
+  font-family: 'Conv_Gotham-Book';
+  font-size: 12px;
+  color:#474747 !important;
+  position: relative;
+}
+.latest_updates_title b:before{
+  content:"";
+  position:absolute;
+  width:30px;
+  height:1px;
+  background-color:red;
+  left:50%;
+  margin-left:-15px;
+  top:30px;
+}
+.latest_updates_title h2{
+  font-family: 'Conv_Gotham-Book';
+  font-size:15px;
+  color:#474747 !important;
+  padding-top:15px;
+}
+.latest_updates_container .ggs_about_team a {
+  color:#e31f27;
+}
+.latest_updates_container .residential_school_content {
+    padding: 60px 60px 60px 60px;
+}
+.latest_update_small_thumb {
+  width:100%;
+  overflow:hidden;
+  margin-top:20px;
+}
+.latest_update_small_thumb img{
+  max-width:100%;
+  width:32%;
+  margin-right:2%;
+  margin-bottom:13px;
+}
+.latest_update_small_thumb img:nth-child(3n) {
+    margin-right:0px;
+}
+.latest_update_large_thumb {
+  width:100%;
+  overflow:hidden;
+  margin-top:13px;
+}
+.latest_update_large_thumb img{
+  width:100%;
+  margin-right:10px;
+  margin-bottom:13px;
+}
+
+
+/* ==========================================================================
+ Gallery Page
+ ========================================================================== */
+
+.gallery_thumb_content {
+  position:relative;
+  background-color:transparent !important;
+  padding-left:0px !important;
+  padding-right:15px !important;
+  height:230px;
+  width:17.666667%;
+}
+.gallery_thumb_content:nth-child(6n) {
+  padding-right: 0px !important;
+  width:11%;
+}
+.gallery_thumb_content img {
+  border-bottom:0 !important;
+  height:140px;
+  width:100%;
+}
+.gallery_thumb_content .border1 {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 20px;
+  width:150px;
+  height: 140px;
+  border: solid #BFBDBD 1px;
+  z-index: 4;
+  background-color: #e9e9e9;
+}
+.gallery_thumb_content .border2 {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 42px;
+  width:162px;
+  height: 131px;
+  border: solid #BFBDBD 1px;
+  z-index: 3;
+  background-color: #e9e9e9;
+}
+.gallery_thumb_content .border3 {
+  position: absolute;
+  right: 0px;
+  left: 25px;
+  top: 59px;
+  width: 149px;
+  height: 126px;
+  border: solid #BFBDBD 1px;
+  z-index: 2;
+  background-color: #e9e9e9;
+}
+.gallery_thumb_content .border4 {
+  position: absolute;
+  right: 0px;
+  left: 50px;
+  top: 72px;
+  width: 136px;
+  height: 125px;
+  border: solid #BFBDBD 1px;
+  z-index: 1;
+  background-color: #e9e9e9;
+}
+.gallery_thumb_content p {
+  position:absolute;
+  bottom:0px;
+  margin-bottom:0px;
+}
+
+
+
+/* ==========================================================================
+ Calendar Page
+ ========================================================================== */
+
+.calendar_container img {
+  width:auto !important;
+  float:inherit;
+}
+.calendar_content {
+  width:300px;
+  margin:auto;
+  clear: both;
+  color:#e31f27;
+  margin-bottom:30px;
+  margin-top:30px;
+  text-align:center;
+}
+.calendar_content b{
+  display:inline;
+  margin:auto;
+}
+.calendar_content a:nth-child(2n){
+  float:left;
+}
+.calendar_content a:last-child{
+  float:right;
+}
+.calendar_bg td {
+  background: #e31f27 !important;
+  color:#fff !important;
+}
+.calendar_container p {
+  color: red;
+  font-size: 30px;
+  padding-bottom: 10px;
+  margin: 0px;
+}
+.calendar_container p span {
+  width:15%;
+  margin:auto;
+  height:2px;
+  background-color: #000;
+  display:block;
+  margin-top:5px;
+}
+ul.media_press.cd li a:hover{
+  color:inherit !important;
+  cursor:default;
+}
+.ccc_mr  ul.media_press li a {
+  color:#6D6D6D;
+}
+.ccc_mr  ul.media_press li a:hover{
+  color:#6D6D6D !important;
+  cursor:default;
+}
+.ccc_mr .media_press{
+  margin-top:80px;
+}
+.circulars_container .about_al_content{
+  height:220px;
+}
+.circulars_container .about_al_content h2{
+  border-bottom:0px;
+}
+
+/* ==========================================================================
+ Suggestions Page
+ ========================================================================== */
+
+.suggestions input,.suggestions textarea {
+  font-family: 'Conv_Gotham-Book';
+  font-size: 11px;
+  line-height: 16px;
+  text-transform:uppercase;
+  background-color:transparent;
+  border:solid 1px #b9b9b9;
+  outline:none;
+  border-radius:0px;
+  margin-bottom:10px;
+  width:100%;
+  height:50px;
+}
+.suggestions textarea {
+  height:100px;
+  resize: none;
+}
+.suggestions input:focus,.suggestions textarea:focus   {
+  box-shadow:inherit;
+  border:#e31f27 solid 1px;
+}
+.suggestions{
+  width:600px;
+  margin:auto;
+  margin-top:40px;
+  overflow:hidden;
+  background: #fff;
+  padding: 25px;
+}
+.suggestions .col-sm-12{
+  padding:0px;
+}
+.suggestions .enquiry_submit{
+  float:left;
+  margin-bottom:0px;
+}
+
+/* ==========================================================================
+ Careers Page
+ ========================================================================== */
+
+.careers_content {
+  display:-webkit-box;
+}
+.careers_content .col-md-8 {
+  background-color:#fff;
+}
+.careers_content b{
+  margin-top:20px;
+}
+.careers_section .col-md-4 {
+  padding:0px;
+}
+.careers_section h3 {
+  font-family: 'Conv_Gotham-Book';
+  font-size:18px;
+  text-align:center;
+  color:#939393;
+  padding-bottom:0px !important;
+  text-transform:uppercase;
+  margin-top:30px;
+}
+.careers_section p {
+  text-align:center;
+}
+.careers_section a {
+  color:red;
+}
+.careers_content p {
+  text-align:left;
+}
+.careers_teacher h3 {
+  font-family:'Conv_Gotham-Book';
+  font-size:18px;
+  text-align:center;
+  color:#df232f;
+  padding-bottom:20px;
+  text-transform:uppercase;
+  margin-bottom:40px;
+}
+.careers_teacher h3:last-child {
+  margin-top:50px;
+}
+.careers_teacher .about_al_content {
+  background-color:#fff;
+  height:265px;
+}
+.careers_teacher .about_al_content p{
+  text-align:left;
+  margin-bottom:15px;
+}
+.careers_teacher .about_al_content a{
+  position:absolute;
+  bottom:30px;
+}
+.careers_teacher b,strong {
+  text-transform:capitalize;
+}
+.careers_teacher .col-md-3{
+  padding-left:15px;
+  padding-right:15px;
+}
+
+
+
+/* ==========================================================================
+ Workplan Page
+ ========================================================================== */
+
+.workplan .about_al_content {
+  padding: 24px;
+}
+.workplan a {
+  color:#646464 !important;
+  background-color:transparent !important;
+  position:inherit !important;
+  background-image:url(../images/workplan_pdf_icon.png);
+  background-repeat:no-repeat;
+  padding-left: 34px !important;
+  background-position:left;
+  padding-bottom:0px !important;
+  font-size:15px !important;
+}
+.workplan a:hover{
+  color:#df232f !important;
+  background-image:url(../images/workplan_pdf_icon_hover.png);
+  background-repeat:no-repeat;
+}
+.workplan b{
+  position:relative;
+  margin-bottom:35px !important;
+  font-size: 17px !important;
+}
+.workplan b:before {
+  content:"";
+  position:absolute;
+  width:40px;
+  height:1px;
+  background-color:red;
+  left:0px;
+  bottom:-3px;
+}
 
 
 
@@ -3254,516 +4290,1076 @@ ul.media_press li a.active {
 =========================================================================================================*/
 
 
+/* ==========================================================================
+                                NORMAL SCREEN
+========================================================================== */
 
+@media screen and (min-width:1440px) and (max-width:1899px) {
+  .the_school_campus .slide_content a:first-child{left:72.8% !important;}
+  .classrooms_thumb{height:200px;}
+}
 
 @media screen and (min-width:1280px) and (max-width:1899px) {
 
-.school_curriculum .col-md-3{width:23.6%;}
-.the_school_campus .bx-controls-direction {left:68%;}
 
+/* ============= Home Page =================== */
+
+.logo{width:180px; background-size:100%;}
+.awards_laurels{font-size:17px;}
+.download_brochure{font-size:17px;}
+.slider_ticker li{ font-size:15px; margin-left: -36px; }
+.slider_ticker .bx-controls-direction{right:-30px;}
+.curriculum_content .caption h3{font-size:25px;}
+.curriculum_content .caption h3:before{top:30px;}
+
+
+.events_content .nav > li > a{font-size:17px; line-height:30px;}
+.events_content .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{font-size:17px !important;}
+.events_content .nav > li > a:hover{font-size:17px; padding:10px 15px;}
+.events_content .caption p{font-size:17px;}
+.affiliations_content .affiliations_bt{font-size:17px; width:116%;}
+.affiliations_content img{max-width:100%;}
+
+.curriculum_content .col-md-3{padding-left:7.5px; padding-right:7.5px;}
+.curriculum_content{padding-top:115px; padding-bottom:30px;}
+.events_content ul.nav.nav-tabs{margin-left:7.5px; margin-right:7.5px;}
+.events_content .col-md-3{padding-left:7.5px; padding-right:7.5px;}
+.events_content {padding-bottom:30px;}
+
+
+/* ============= About Us Page =================== */
+
+.about_our_pledge p{margin-top: 14%;}
+.affiliations_content img{max-width:100%;}
+.footer_content .col-md-4{width:41%;}
+.footer_content .col-md-6{min-height:305px;}
+.about_slider_bg{padding:85px 85px 85px 100px;}
+.about_slider_bg .col-md-offset-1{margin:0px;}
+.abt_purple_color{padding:60px 0px;}
+.residential_school_content{padding:85px 85px 85px 100px;}
+.rscontent_bg {padding-bottom: 85px !important;}
+
+
+.our_philosophy h2{font-size:25px; margin-top:0px;}
+.our_philosophy .col-md-6:last-child{padding-top:57px;}
+.school_curriculum a{font-size:25px;}
+.school_curriculum .col-md-3{width:23.6%; margin-right: 22px;}
+.csr_bottom_container{background-size:50%;}
+.beyond_academics_container .all_school_content ul li a{font-size:18px;}
+
+.animation{display:inherit !important;}
+
+/* ============= Facilities Page =================== */
+
+.the_school_campus .bx-controls-direction {left:66%;}
+.the_school_campus .slide_content a:first-child{left:73.7%;}
 .multipurpose_hall .col-md-9 {width:100%}
 .multipurpose_hall .col-md-3 {width:100%}
 .multipurpose_hall ul li{width: 11.7%;}
 
+/* ============= Admission Page =================== */
+.admission_container .col-md-9{width:65%;}
+.admission_container .col-md-3{width:35%;}
+.admission_container ul li {width:17%;}
+.fund_transfer_contact{width:900px;}
+
+/* ============= Latest Updates Page =================== */
+.latest_updates_container .about_al_content h2{font-size:15px;line-height: 20px;}
+.latest_updates_container .about_al_content p{font-size:13px;line-height: 20px;}
+
+
+.gallery_thumb_content:nth-child(5n) {padding-right: 0px !important;width:16%;}
+.gallery_thumb_content {width: 21%;}
+.gallery_thumb_content:nth-child(6n) {padding-right:0px !important; width:21%;}
+.classrooms_thumb{height:150px;}
+.calendar_container p{font-size:25px !important;}
+.workplan a{font-size:13px !important;}
+.workplan .about_al_content {padding: 17px;}
+
+
+}
+/* ==========================================================================
+                                MAC SCREEN
+========================================================================== */
+
+@media screen and (min-width:991px) and (max-width:1279px) {
+
+
+.footer_content .col-md-6 {border-right:solid 1px #000; padding-right:0px; padding-left:35px; padding-bottom:58px !important;min-height: 321px;}
+.container-fluid.footer_content .col-md-3 {min-height:130px;}
+.about_slider_bg {padding:25px 25px 25px 25px !important;}
+.footer_content .col-xs-6{width:26%;}
+.footer_content .col-md-4{width:43%;}
+.all_school_content .col-md-10{width:100%; margin:0px;}
+.beyond_academics_container .about_slider_bg .col-md-6{width:44.5%;}
+.animation .col-md-6{width:48% !important;}
+.col-md-offset-1{margin:0px;}
+.residential_school_content{padding:25px 25px 25px 25px !important;}
+/*.residential_school_content .col-md-12:nth-child(1n){background-color:transparent !important;}
+*/.multipurpose_hall{padding: 25px 25px 0px 25px !important; }
+.multipurpose_hall ul li{width:24% !important;}
+.classrooms_gallery{padding:0px 42px 66px 42px !important;}
+.classrooms_gallery .col-md-3 {padding-left:15px !important;padding-right:15px !important;}
+.admission_content .col-md-12:nth-child(1n) {background-color: #fff !important;}
+.admission_content .col.md-12:first-child{padding:0px;}
+.gallery_thumb_content{width:25%;}
+
+.gallery_thumb_content:nth-child(6n) {width:25%;}
+.photo_gallery_container .classrooms_gallery {padding: 0px 0px 66px 47px !important;}
+.photo_gallery_container .multipurpose_hall {padding: 25px 25px 0px 47px !important;}
+.classrooms_thumb{height:150px;}
+.classrooms_gallery .col-md-2{width:25%;}
+.class_view_all .multipurpose_hall {padding: 25px 35px 0px 35px !important;}
+.smt-popup-content h3{padding-bottom:0px !important;}
+.smt-popup-content p{font-size:13px !important;}
+.rscontent_bg {padding-bottom:0px !important;}
+
+
+
+
+
 }
 
+/* ==========================================================================
+                                MINI SCREEN
+========================================================================== */
 
 @media screen and (min-width:960px) and (max-width:1279px) {
 
+.main-menu li a{font-size:16px; line-height:50px;}
+.main-menu a .caret{margin-top: 24px;}
+.about_menu_bg a {line-height: 10px !important;}
+.main-menu li .sub-nav a {font-size: 13px;}
+a.nav-expander{font-size:12px;}
+.nav-expanded a.nav-expander{right:27em !important;}
+.nav-expanded a.admission{right:36em !important;}
+.nav-expanded .placement_btn {margin-right: 120px !important;}
+.nav-expanded div.nav-expander{right: 38em !important;}
+.form-control{font-size:12px; line-height:16px;}
+a.nav-expander.fixed{right:5px;top:46px;}
+.header_search{right:395px;}
+.admission{right:110px !important;}
+.placement_btn {margin-right: 135px !important;}
 
-/* ============= HOME PAGE  =================== */
+.logo{width:180px; background-size:100%;}
+.awards_laurels{font-size:15px;}
+.download_brochure{font-size:15px;}
+.slider_ticker li{float:left !important; font-size:13px; margin-left: -36px; line-height: 20px !important;}
+.slider_ticker li span{display:block; margin-top:10px;}
+.slider_ticker .bx-controls-direction{right:-30px;}
+.curriculum_content .caption h3{font-size:20px;}
+.curriculum_content .caption h3:before{top:30px;}
+
+
+.events_content .nav > li > a{font-size:15px; line-height:30px;}
+.events_content .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{font-size:15px !important;}
+.events_content .nav > li > a:hover{font-size:15px; padding:10px 15px;}
+.events_content .caption p{font-size:15px;}
+.affiliations_content .affiliations_bt{font-size:15px; width:116%;}
+.affiliations_content img{max-width:100%;}
+
+.curriculum_content .col-md-3{padding-left:7.5px; padding-right:7.5px;}
+.curriculum_content{padding-top:115px; padding-bottom:30px;}
+.events_content ul.nav.nav-tabs{margin-left:7.5px; margin-right:7.5px;}
+.events_content .col-md-3{padding-left:7.5px; padding-right:7.5px;}
+.events_content {padding-bottom:30px;}
+
+
+
+/* ============= Home Page Footer Section ================ */
+
+.footer_content .col-md-6:first-child{padding-left:0px;}
+.footer_content .col-md-6 {border-right:solid 1px #000; padding-right:0px; padding-left:35px; padding-bottom:70px;min-height: 321px;}
+.container-fluid.footer_content .col-md-3 {min-height:130px;}
+.footer_social_icon {bottom:40px;}
+.footer_content ul li a {font-size:11px;line-height:25px;}
+.footer_content .col-md-5 {padding-left: 0px;margin-bottom: 20px;}
+.footer_content .col-md-7{padding:0px;}
+.footer_content .col-xs-6 {padding:0px; margin-bottom:20px;}
+
+
+/* ============= About Us Page Section ================ */
+
+.about_container {margin-top:140px;padding-bottom:30px;}
+.about_container h2{font-size:10px;}
+.about_container h3{font-size:15px; padding-bottom:20px;}
+.cs-select{font-size:15px;}
+.about_slider_bg{padding:66px 66px 66px 66px;}
+.rscontent_bg {padding-bottom:28px !important;}
+.about_slider_bg .col-md-offset-1 {margin: 0px;}
+.about_slider_bg p{font-size:12px;}
+.about_bg .awards_laurels_content .col-md-2{width:25%;}
+.about_bg .awards_laurels_content .col-md-2:last-child{width:25%;}
+.slider_ticker{width:46%;}
+.about_slider_bg .col-md-offset-1{margin-left:0px;}
+.awards_laurels_content .col-md-2{width:18%;}
+.about_awards_laurels .slider_ticker{width:50%;}
+
+/* ============= About Us (Overview Page) ================ */
+
+.abt_purple_color{padding:60px 0px;}
+.about_our_pledge{padding:0px 25px 0px 25px;}
+.about_our_pledge p{margin-top:0px; width:100%; margin-bottom:30px;}
+.about_our_pledge .content_border{width:99.8%;}
+.our_philosophy h2{font-size:15px !important; margin-top:0px; margin-bottom: 20px;}
+.our_philosophy p{font-size:12px;}
+.our_philosophy p b{font-size:15px;}
+.our_philosophy .col-md-6:last-child{margin-top:35px;}
+.about_our_policies{padding:0px 15px 0px 15px;}
+.about_our_policies p{font-size:12px; line-height:22px;}
+.about_our_policies h4{font-size:14px;}
+
+/* ============= About Us (The School Campus Page) ================ */
+
+.the_school_campus .slide_content{width:90%;margin-left:-45%;}
+.the_school_campus .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{top:-65px !important;}
+.the_school_campus .slide_content p{line-height:40px; font-size:15px;}
+.about_our_policies ul li{font-size:12px; margin-bottom:10px;}
+.the_school_campus .slide_content a{font-size:15px;}
+.the_school_campus .bx-controls-direction{left: 62%; bottom:17px;height:22px;}
+.the_school_campus .bx-wrapper .bx-next {right:-120px;}
+.the_school_campus .bx-wrapper .bx-prev {left: 20px;}
+.the_school_campus .slide_content a:first-child{left:70.6%; top:12px;}
+.the_school_campus .slide_content a img{margin-top:10px;}
+.the_school_content p{font-size:12px; width:23%; margin-right:2%;}
+.all_school_content .tab-pane img{width:25%;}
+.all_school_content .tab-pane p{width:73%;}
+.all_school_content .nav-tabs{left:27%;}
+.all_school_content .nav-tabs > li > a{font-size:12px !important; padding:10px 13px;}
+.all_school_content ul.nav li.active a, ul.nav li.active a:hover{font-size:12px !important;}
+.all_school_content .nav-tabs > li > a:hover{font-size:12px !important;}
+.all_school_content ul.nav li.active a:hover, ul.nav li.active{font-size:12px !important;}
+.all_school_content .tab-pane b{font-size:13px;}
+.all_school_content .tab-pane p{font-size:12px;}
+.all_school_content .nav-tabs{margin-top:17px;}
+.all_school_content .tab-pane p:nth-child(2){padding-top:62px;}
+#ms p:nth-child(2n) {margin-top:30px;}
+.school_curriculum .col-md-3{width:22.6% !important; line-height:80px;}
+.school_curriculum a{font-size:18px;}
+
+.about_al_content h2{font-size:15px !important;}
+.about_al .col-md-3{width:33.3%;}
+.about_al .col-md-6{width:33.3%;}
+.about_al_content p{font-size:12px; line-height:inherit;}
+.about_al_content:hover .about_al_content_hover a{font-size:15px;}
+.about_al_content_highlight{height:315px !important;}
+.about_al_content h2{margin-top:10px; line-height:20px;}
+.highlight_text{padding-top: 20px;}
+ul.media_press li a{font-size:15px;}
+.about_al_content{padding:15px;}
+.abt_school_awards_pager ul li a{font-size:15px;}
+.abt_school_awards h3{font-size:17px;}
+.abt_school_awards h2{font-size:13px;}
+.abt_school_awards_pager{border-bottom: solid 60px #fff;}
+.about_al .col-md-10 {width:100%;}
+.media_video_container .about_al_content h2{font-size:12px !important; line-height:20px;}
+
+
+/* ============= About (CSR)  ================ */
+
+.csr_container .csr_left{width:100%; padding:15px 0px;}
+.csr_container b{font-size:15px;}
+.csr_container .csr_left ul li{font-size:12px; line-height:18px; background-position:0px 5px; padding-left: 17px; background-size:8px;}
+.csr_container .csr_right{width:100%;}
+.csr_container .csr_right img {width:49%; margin-bottom:15px; margin-right: 5px;}
+.csr_school_section .col-md-4{padding-top:30px; padding-bottom:10px; padding-right:0px; border-right:0px; border-bottom:solid #F0F0F0 1px; padding-left:0px;}
+.csr_school_section .col-md-4:last-child{padding-top:30px;}
+.csr_school_section ul li{font-size:12px; background-position:0px 5px; padding-left: 17px; background-size:8px;}
+.csr_container .col-md-4 b{font-size:12px;}
+.csr_bottom_container{padding-top:0px;     background-size:40%;height: 400px;}
+.csr_bottom_container h2{font-size:15px; margin-bottom:10px;margin-top: 30px;}
+.csr_bottom_container h3{font-size:15px;}
+.csr_bottom_container p{font-size:12px; width:100%;}
+.csr_bottom_container .container,.col-md-12 {padding:0px;}
+
+/* ============= Beyond Academics (Academics The Curriculum Page)  ================ */
+
+.academics_the_curriculum ul li a{font-size:15px; line-height:30px;}
+.academics_the_curriculum ul li a:hover{font-size:15px; line-height:30px;}
+.academics_the_curriculum ul.nav li.active a, ul.nav li.active a:hover{font-size:15px !important; line-height: 30px; background: #466AA6;}
+.academics_the_curriculum li.active:before{border-top:10px solid transparent; border-left:10px solid #466AA6; border-bottom:10px solid transparent;right:-10px; top:15px;}
+.academics_the_curriculum b, strong{font-size:15px;}
+.community_service_club {padding: 20px 20px 20px 20px !important;}
+.community_service_club .col-md-8{width: 63%;}
+.community_service_club ul{width:100% !important;}
+.community_service_club .col-md-8{margin-top:20px;}
+.community_service_club .col-md-4{margin-top:20px;}
+
+
+/* ============= Beyond Academics (Sports & Games Page)  ================ */
+
+.community_service_club{display:inherit !important;}
+.beyond_academics_container .wide_range_sports ul{width:100%;}
+.all_school_content{padding-top:20px; padding-bottom:20px; border-bottom: solid 35px #fff; margin-top:-30px;}
+.beyond_academics_container .all_school_content h2{font-size:15px;}
+.beyond_academics_container .all_school_content ul{width:25%; margin-right:0px; margin-top:0px;}
+.beyond_academics_container .all_school_content ul li a{font-size:12px; line-height:25px;}
+.beyond_academics_container .wide_range_sports ul li{font-size:12px;}
+.beyond_academics_container .wide_range_sports ul li b{font-size:12px;}
+.beyond_academics_container .art_education .about_slider_bg {padding: 25px;}
+.academics_the_curriculum p{line-height:25px;}
+.pd_content ul li{font-size:12px;}
+.community_service_club .col-md-4 p{font-size:12px !important;}
+.community_service_club ul li{font-size:12px !important;}
+ul.student_council li.active a, ul.nav li.active a:hover{background:#71c043 !important;}
+
+.community_service_club .bx-controls-direction{width:100px; height:31px;}
+.csc_view{bottom:16px; left:40px;}
+.community_service_club .bx-wrapper .bx-prev{left:5px;}
+.community_service_club .bx-wrapper .bx-next{right:5px;}
+
+.sl_ars img{width:20%;}
+.student_council_content p{font-size:12px;}
+.school_life_table .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{font-size:12px;}
+.publications_container{width:92%;}
+
+.school_life_table{width:95%; margin:auto;}
+.school_life_table b, strong{font-size:12px;}
+.career_counselling ul li{font-size:12px; line-height:20px;}
+.publications_container a{font-size:12px;}
+.residential_school_content li{font-size:12px; line-height:30px;}
+
+.multipurpose_hall{padding:25px 25px 0px 25px;}
+.classrooms a span{font-size:10px;}
+.multipurpose_hall .col-sm-11{width:100%;}
+.cr_back{font-size:12px; right:0px;}
+.classrooms_gallery .col-md-3{padding:0px;}
+.classrooms_gallery{padding:0px 15px 66px 15px !important;}
+.classrooms_gallery .col-md-3 {padding-left:15px !important;padding-right:15px !important;}
+
+
+/* ============= Facilities Page =================== */
+
+.school_curriculum .col-md-3{width:23.6%;}
+.multipurpose_hall .col-md-9 {width:100%}
+.multipurpose_hall .col-md-3 {width:100%}
+.multipurpose_hall ul li {width:24.1%; margin-right:10px; margin-left:0px; margin-bottom:10px;}
+.multipurpose_hall ul li:nth-child(4n) {margin-right:0px;}
+.multipurpose_hall ul li:last-child {margin-right:0px;}
+.facilities_container .residential_school_content{padding:0px 25px 25px 25px;}
+.admission_content .col-md-12 {padding:20px;}
+.fund_transfer_contact{width:825px;}
+.admission_content .table b,strong {font-size:12px;}
+
+
+/* ============= Latest Updates Page =================== */
+.latest_updates_container .residential_school_content {padding: 30px 30px 30px 30px !important;}
+.latest_updates_container .residential_school_content .col-md-12:first-child{margin-bottom:30px;}
+.latest_updates_container .residential_school_content .col-md-12:last-child{margin-bottom:0px !important;}
+.latest_updates_title b{font-size:11px;}
+.latest_updates_title h2{font-size:13px;}
+.latest_updates_detail b,strong,a{font-size:11px;}
+
+
+.latest_updates_container .about_al_content a{font-size:11px;}
+
+.gallery_thumb_content{width:24.5%;}
+.gallery_thumb_content:nth-child(6n) {width:25%;}
+.photo_gallery_container .classrooms_gallery {padding: 0px 0px 66px 47px !important;}
+.photo_gallery_container .multipurpose_hall {padding: 25px 25px 0px 47px !important;}
+
+.class_view_all .multipurpose_hall {padding: 25px 35px 0px 35px;}
+.calendar_container p{font-size:25px !important;}
+.ccc_mr .media_press {margin-top: 50px;}
+
+.workplan a{font-size:12px !important;}
+
+.smt-popup-content h3{padding-bottom:0px !important; font-size:11px;}
+.smt-popup-content h2 {font-size: 13px !important;}
+.smt-popup-content p{font-size:13px !important;}
+
+
+
+
 
 
 
 }
 
-
-
-
+/* ==========================================================================
+                                IPAD
+========================================================================== */
 
 @media screen and (min-width:768px) and (max-width:959px) {
 
+/* ============= Home Page Header Section =================== */
 
-/* ============= HOME PAGE =================== */
+.container{width:100%;}
+.mobile_menu {visibility: visible;}
+.visibility-block {visibility:visible !important;}
+.admission {display: none !important;}
+.header_content {height: 76px; border-bottom:solid 1px #CACACA; background-color: #fff;}
+.header_content.header-hide {transform:inherit !important;}
+nav {width: 35%;right: -35%;}
+.main-menu li a {font-size: 14px; line-height: 41px;}
+.main-menu a .caret {margin-top: 18px;}
+.main-menu li .sub-nav a {font-size:11px; line-height:10px !important;}
+.main-menu li .sub-nav {padding:0px;}
+.logo {width:100px; background-size:contain; height:76px;}
+.nav-expanded a.nav-expander {right:0px !important; top:0px !important; font-size:15px; line-height:30px; height:30px; width:30px; border-radius:0px; text-align: center;padding:0px;}
+a.nav-expander.fixed {right:0px; top:19px;}
+.header_search {right:59px;top:28px; border:solid 1px #DCDCDC; margin-right:16px;}
+.nav-expanded div.nav-expander {right:59px !important;}
+.mac-style {height:20px; line-height:20px;}
+.search_button {right:6px;}
+.form-control {font-size:10px;padding: 6px 6px;}
+.search_button {height: 20px;line-height: 20px;background-size: 62%;background-position:10px 3px;}
+.top_nav {border-bottom: solid #D6D6D6 1px;padding-bottom: 15px;padding-left: 15px;padding-right: 15px;width: 100%;height:76px;}
+.menu_text {display: none;}
 
+/* ============= Home Page Footer Section ================ */
+
+.footer_content .col-md-6:first-child{padding-left:0px;}
+.footer_content .col-md-6 {border-right:solid 1px #000; padding-right:0px; padding-left:35px; padding-bottom:70px;min-height: 321px;}
+.container-fluid.footer_content .col-md-3 {min-height:130px;}
+.footer_social_icon {bottom:40px;}
+.footer_content ul li a {font-size:10px;line-height:25px;}
+.footer_content .col-md-5 {padding-left: 0px;margin-bottom: 20px;}
+.footer_content .col-md-7{padding:0px;}
+.bottom_footer {line-height:15px; text-align: center;padding:15px 27px;}
+.footer_content .col-xs-6 {padding:0px; margin-bottom:20px;}
+
+
+/* ============= Home Page Middle Section =================== */
+
+.slider_video{margin-top:76px;}
+.awards_laurels{font-size:15px;}
+.download_brochure{font-size:15px;}
+.slider_ticker{width:100%; position:absolute;}
+.awards_laurels_content .col-md-2:last-child{width:33.4%;}
+.awards_laurels_content .col-md-2 {margin-top:70px; width:33.3%;}
+.slider_ticker li{font-size:15px;}
+.curriculum_content .caption h3{font-size:15px;}
+.curriculum_content .caption{padding:1px;}
+.curriculum_content .caption h3{margin-bottom:7px;}
+.curriculum_content .caption h3:before{top:20px;}
+.curriculum_content {padding-top:145px; padding-bottom:15px; padding-right:0px;}
+.events_content{padding-right:0px; padding-bottom:20px;}
+.events_content .nav > li > a{font-size:15px; line-height:30px;}
+.events_content .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{font-size:15px !important;}
+.events_content .nav > li > a:hover{}
+.events_content .caption p{font-size:15px; line-height:20px;}
+.affiliations_content .affiliations_bt{font-size:15px;}
+.container-fluid.affiliations_content img{max-width:100%;}
+.affiliations_content .col-md-2:first-child{width:30%;margin-right:70%;}
+.affiliations_content .col-md-2:first-child a{margin-bottom:0px;}
+.affiliations_content .col-md-2{width:20%;}
+.events_content .caption h3{font-size:11px;}
+
+
+/* ============= About Us Page Section ================ */
+
+.about_container {margin-top:76px;border-top:0px;padding-bottom:30px;}
+.about_container h2{font-size:10px;}
+.about_container h3{font-size:15px; padding-bottom:20px;}
+.cs-select{font-size:15px;}
+.about_slider_bg{padding:23px;}
+.rscontent_bg {padding-bottom: 0px !important;}
+.about_slider_bg p{font-size:12px;}
+.about_bg .awards_laurels_content .col-md-2{width:50%;}
+.about_bg .awards_laurels_content .col-md-2:last-child{width:50%;}
+
+/* ============= About Us (Overview Page) ================ */
+
+.abt_purple_color{padding:30px 0px;}
+.about_our_pledge{padding:0px 25px 0px 25px;}
+.about_our_pledge p{margin-top:0px; width:100%; margin-bottom:30px;}
+.about_our_pledge .content_border{width:99.8%;}
+.our_philosophy h2{font-size:15px !important; margin-top:0px; margin-bottom: 20px;}
+.our_philosophy p{font-size:12px;}
+.our_philosophy p b{font-size:15px;}
+.our_philosophy .col-md-6:last-child{margin-top:35px;}
+.about_our_policies{padding:0px 15px 0px 15px;}
+.about_our_policies p{font-size:12px; line-height:22px;}
+.about_our_policies ul li{font-size:12px; margin-bottom:10px; line-height:22px;}
+.about_our_policies h4{font-size:14px;}
+
+/* ============= About Us (The School Campus Page) ================ */
+
+.the_school_campus .slide_content{width:90%;margin-left:-45%;}
+.the_school_campus .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{top:-65px !important;}
+.the_school_campus .slide_content p{line-height:40px; font-size:15px;}
+.the_school_campus .slide_content a{font-size:15px;}
+.the_school_campus .bx-controls-direction{left:56%; bottom:17px;height:22px;}
+.the_school_campus .bx-wrapper .bx-next {right:-120px;}
+.the_school_campus .bx-wrapper .bx-prev {left: 20px;}
+.the_school_campus .slide_content a:first-child{left:66%; top:12px;}.the_school_campus .slide_content a img{margin-top:10px;}
+.the_school_content p{font-size:12px; width:23%; margin-right:2%;}
+.all_school_content .tab-pane img{width:25%;}
+.all_school_content .tab-pane p{width:73%;}
+.all_school_content .nav-tabs{left:27%;}
+.all_school_content .nav-tabs > li > a{font-size:12px !important; padding:10px 13px;}
+.all_school_content ul.nav li.active a, ul.nav li.active a:hover{font-size:12px !important;}
+.all_school_content .nav-tabs > li > a:hover{font-size:12px !important;}
+.all_school_content ul.nav li.active a:hover, ul.nav li.active{font-size:12px !important;}
+.all_school_content .tab-pane b{font-size:13px;}
+.all_school_content .tab-pane p{font-size:12px;}
+.all_school_content .nav-tabs{margin-top:17px;}
+.all_school_content .tab-pane p:nth-child(2){padding-top:62px;}
+#ms p:nth-child(2n) {margin-top:30px;}
+.school_curriculum .col-md-3{width:22.6% !important; line-height:80px;}
+.school_curriculum a{font-size:18px;}
+
+.about_al_content h2{font-size:15px !important; line-height:20px; margin-top:10px; }
+.about_al .col-md-3{width:33.3%;}
+.about_al .col-md-6{width:33.3%;}
+.about_al_content p{font-size:12px; line-height:inherit;}
+.about_al_content:hover .about_al_content_hover a{font-size:15px;}
+.about_al_content_highlight{height:315px !important;}
+.highlight_text{padding-top: 20px;}
+ul.media_press li a{font-size:15px;}
+.about_al_content{padding:15px;}
+.abt_school_awards_pager ul li a{font-size:15px;}
+.abt_school_awards h3{font-size:17px;}
+.abt_school_awards h2{font-size:13px;}
+.abt_school_awards_pager{border-bottom: solid 60px #fff;}
+.about_al .col-md-10 {width:100%;}
+.media_video_container .about_al_content h2{font-size:12px !important; line-height:20px;}
+
+
+/* ============= About (CSR)  ================ */
+
+.csr_container .csr_left{width:100%; padding:15px 0px;}
+.csr_container b{font-size:15px;}
+.csr_container .csr_left ul li{font-size:12px; line-height:18px; background-position:0px 5px; padding-left: 17px; background-size:8px;}
+.csr_container .csr_right{width:100%;}
+.csr_container .csr_right img {width:49%; margin-bottom:15px; margin-right: 5px;}
+.csr_school_section .col-md-4{padding-top:30px; padding-bottom:10px; padding-right:0px; border-right:0px; border-bottom:solid #F0F0F0 1px; padding-left:0px;}
+.csr_school_section .col-md-4:last-child{padding-top:30px;}
+.csr_school_section ul li{font-size:12px; background-position:0px 5px; padding-left: 17px; background-size:8px;}
+.csr_container .col-md-4 b{font-size:12px;}
+.csr_bottom_container{padding-top:0px;     background-size:40%;height: 400px;}
+.csr_bottom_container h2{font-size:15px; margin-bottom:10px;margin-top: 30px;}
+.csr_bottom_container h3{font-size:15px;}
+.csr_bottom_container p{font-size:12px; width:100%;}
+.csr_bottom_container .container,.col-md-12 {padding:0px;}
+
+/* ============= Beyond Academics (Academics The Curriculum Page)  ================ */
+
+.academics_the_curriculum ul li a{font-size:15px; line-height:30px;}
+.academics_the_curriculum ul li a:hover{font-size:15px; line-height:30px;}
+.academics_the_curriculum ul.nav li.active a, ul.nav li.active a:hover{font-size:15px !important; line-height: 30px; background:#466AA6;}
+.academics_the_curriculum li.active:before{border-top:10px solid transparent; border-left:10px solid #466AA6; border-bottom:10px solid transparent;right:-10px; top:15px;}
+.academics_the_curriculum b, strong{font-size:15px;}
+.community_service_club {padding: 20px 20px 20px 20px !important;}
+.community_service_club .col-md-8{width: 63%;}
+.community_service_club ul{width:100% !important;}
+.community_service_club .col-md-8{margin-top:20px;}
+.community_service_club .col-md-4{margin-top:20px;}
+
+
+/* ============= Beyond Academics (Sports & Games Page)  ================ */
+
+.beyond_academics_container .wide_range_sports ul{width:100%;}
+.all_school_content{padding-top:20px; padding-bottom:20px; border-bottom: solid 35px #fff;  margin-top:-30px;}
+.beyond_academics_container .all_school_content h2{font-size:15px;}
+.beyond_academics_container .all_school_content ul{width:25%; margin-right:0px; margin-top:0px;}
+.beyond_academics_container .all_school_content ul li a{font-size:12px; line-height:25px;}
+.beyond_academics_container .wide_range_sports ul li{font-size:12px;}
+.beyond_academics_container .wide_range_sports ul li b{font-size:12px;}
+.beyond_academics_container .art_education .about_slider_bg {padding: 25px;}
+.academics_the_curriculum p{line-height:20px;}
+.pd_content ul li{font-size:12px; line-height:20px;}
+.community_service_club .col-md-4 p{font-size:12px !important;}
+.community_service_club ul li{font-size:12px !important;}
+
+.community_service_club .bx-controls-direction{width:100px; height:31px;}
+.csc_view{bottom:16px; left:40px;}
+.community_service_club .bx-wrapper .bx-prev{left:5px;}
+.community_service_club .bx-wrapper .bx-next{right:5px;}
+
+.sl_ars img{width:20%;}
+.student_council_content p{font-size:12px;}
+.school_life_table .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{font-size:12px;}
+.publications_container{width:92%;}
+
+.school_life_table{width:95%; margin:auto;}
+.school_life_table b, strong{font-size:12px;}
+.career_counselling ul li{font-size:12px; line-height:20px;}
+.publications_container a{font-size:12px;}
+.residential_school_content li{font-size:12px; line-height:30px;}
+.publications_container .col-md-1:last-child{width:10.333333%;}
+.publications_container .col-md-1{width:7%;}
+
+.multipurpose_hall{padding:20px;}
+.rs_bg{border: solid #E2E2E2 20px;}
+
+
+/* ============= Facilities Page =================== */
+
+.school_curriculum .col-md-3{width:23.6%;}
+.multipurpose_hall .col-md-9 {width:100%}
+.multipurpose_hall .col-md-3 {width:100%}
+.multipurpose_hall ul li {width:23.7%; margin-right:10px; margin-left:0px; margin-bottom:10px;}
+.multipurpose_hall ul li:nth-child(4n) {margin-right:0px;}
+.multipurpose_hall ul li:last-child {margin-right:0px;}
+.facilities_container .residential_school_content{padding:25px;}
+.multipurpose_hall{padding-bottom:0px;}
+.facilities_container .residential_school_content{padding-top:0px;}
+
+
+.fund_transfer_contact{width:100%;}
+.fund_transfer_contact b{margin-bottom:0px; font-size:12px;}
+.fund_transfer b {font-size: 10px !important;}
+.admission_content table tr td b {font-size: 12px;}
+.col-xs-12.col-sm-12.col-md-12:first-child{display:inherit;}
+.abbreviations a{padding: 4px 5px;}
+.abbreviations p{margin-bottom:10px;}
+
+.enquiry_content .col-md-6 {width:100%;}
+
+/* ============= Latest Updates Page =================== */
+.latest_updates_container .residential_school_content {padding: 30px 30px 30px 30px !important;}
+.latest_updates_container .residential_school_content .col-md-12:first-child{margin-bottom:30px;}
+.latest_updates_container .residential_school_content .col-md-12:last-child{margin-bottom:0px !important;}
+.latest_updates_title b{font-size:11px;}
+.latest_updates_title h2{font-size:13px;}
+.latest_updates_detail b,strong,a{font-size:11px;}
+
+.latest_updates_container .about_al_content a{font-size:11px;}
+
+.gallery_thumb_content{width:32.5%;}
+.gallery_thumb_content:nth-child(6n) {width:25%;}
+.photo_gallery_container .classrooms_gallery {padding: 0px 0px 66px 60px !important;}
+.photo_gallery_container .multipurpose_hall {padding: 25px 25px 0px 60px !important;}
+
+.class_view_all .multipurpose_hall {padding: 20px 44px;}
+.cr_back{right:0px; font-size:13px;}
+.calendar_container p{font-size:22px !important;}
+
+.ccc_mr .media_press {margin-top: 40px;}
+.workplan a{font-size:11px !important;}
+.workplan .about_al_content {padding: 10px; height: 227px;}
+
+
+.smt-popup-content h3{padding-bottom:0px !important; font-size:11px;}
+.smt-popup-content h2 {font-size: 13px !important;}
+.smt-popup-content p{font-size:13px !important;}
+.popup-data-img{width:24%;}
+.popup-data-content {width:72%;}
+
+
+
+}
+
+/* ==========================================================================
+                                Mobile Landscape
+========================================================================== */
+
+@media screen and (min-width:480px) and (max-width:767px) {
+
+
+/* ============= About (Awards & Laurels Page)  ================ */
+
+.about_al_content_highlight{min-height:545px !important; height:545px !important;}
+.about_al_content_highlight:hover{min-height:545px !important;}
+
+.popup-data-img {width:46% !important;}
 
 
 }
 
 
 
+/* ==========================================================================
+                                Mobile Portrait
+========================================================================== */
 
-@media screen and (min-width:480px) and (max-width:768px) {
-
-/* ============= HOME PAGE =================== */
-
-
-
-}
-
-@media screen and (min-width:320px) and (max-width:479px) {
+@media screen and (min-width:320px) and (max-width:767px) {
 
 
 /* ============= Home Page Header Section =================== */
 
-.mobile_menu {
-  visibility: visible;
-}
-.visibility-block {
-  visibility: visible !important;
-}
-.admission {
-  display: none !important;
-}
-header {
-  height: 132px;
-  border-bottom: solid 1px #CACACA;
-  background-color: #fff;
-}
-header.header-hide {
-  transform:inherit !important;
-}
-nav {
-  width: 100%;
-  right: -100%;
-}
-.main-menu li a {
-  font-size: 14px;
-  line-height: 41px;
-}
-.main-menu a .caret {
-  margin-top: 18px;
-}
-.main-menu li .sub-nav a {
-  font-size: 11px;
-  line-height: 10px !important;
-}
-.main-menu li .sub-nav {
-  padding: 0px;
-}
-.logo {
-  width: 100px;
-  background-size: contain;
-  height: 76px;
-}
-.nav-expanded a.nav-expander {
-  right: 15px !important;
-  top: 10px;
-  font-size: 12px;
-  line-height: 30px;
-  height: 30px;
-  width: 30px;
-  border-radius: 100%;
-  text-align: center;
-  padding: 0px;
-}
-a.nav-expander.fixed {
-  right: 0px;
-  top: 14px;
-}
-.header_search {
-  right: 0px;
-  top: 92px;
-  width: 90%;
-  border: solid 1px #DCDCDC;
-  margin-right: 16px;
-}
-.nav-expanded div.nav-expander {
-  right: 0px !important;
-}
-.mac-style {
-  width: 90%;
-  height: 20px;
-  line-height: 20px;
-}
-.mac-style:focus {
-  width: 90%;
-}
-.search_button {
-  right: 10px;
-}
-.form-control {
-  font-size:10px;
-  padding: 6px 6px;
-}
-.search_button {
-  height: 20px;
-  line-height: 20px;
-  background-size: 62%;
-  background-position:10px 3px;
-}
-.top_nav {
-  border-bottom: solid #D6D6D6 1px;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 100%;
-  height:76px;
-}
-.menu_text {
-  display: none;
-}
+.container{width:100%;}
+.mobile_menu {visibility: visible;}
+.visibility-block {visibility:visible !important;}
+.admission {display: none !important;}
+.header_content {height: 132px; border-bottom:solid 1px #CACACA; background-color: #fff;}
+.header_content.header-hide {transform:inherit !important;}
+nav {width: 100%;right: -100%;}
+.main-menu li a {font-size: 14px; line-height: 41px;}
+.main-menu a .caret {margin-top: 18px;}
+.main-menu li .sub-nav a {font-size:11px; line-height:10px !important;}
+.main-menu li .sub-nav {padding:0px;}
+.logo {width:100px; background-size:contain; height:76px;}
+.nav-expanded a.nav-expander {right:20px !important; top:28px !important; font-size:12px; line-height:30px; height:30px; width:30px; border-radius:100%; text-align: center;padding:0px;}
+a.nav-expander.fixed {right:0px; top:19px;}
+.header_search {right:0px; left:3%; top:92px; width:93%; border:solid 1px #DCDCDC; margin-right:16px;}
+.nav-expanded div.nav-expander {right:0px !important;}
+.mac-style {width:90%; height:20px; line-height:20px;}
+.mac-style:focus {width:90%;}
+.search_button {right:6px;}
+.form-control {font-size:10px;padding: 6px 6px;}
+.search_button {height: 20px;line-height: 20px;background-size: 62%;background-position:10px 3px;}
+.top_nav {border-bottom: solid #D6D6D6 1px;padding-bottom: 15px;padding-left: 15px;padding-right: 15px;width: 100%;height:76px;}
+.menu_text {display: none;}
 
 /* ============= Home Page Video Section ================ */
 
-.slider_video {
-  margin-top:132px;
-  height:200px !important;
-}
-.video_content {
-  width: 40px;
-  height: 40px;
-  margin-left: -20px;
-  margin-top: -20px;
-}
+.slider_video {margin-top:132px;height:200px !important;}
+.video_content {width:40px; height:40px; margin-left:-20px; margin-top:-20px;}
 
 /* ============= Home Page Awards Laurels Section ================ */
 
-.awards_laurels_content {
-  position:inherit;
-  margin-top:0px;
-  border-bottom:0px;
-}
-.about_awards_laurels {
-  border-bottom: solid 3px #ad1f6b !important;
-}
-.awards_laurels {
-  font-size:15px;
-  line-height:50px;
-  width: 90%;
-  margin: auto;
-  margin-top:15px;
-}
-.awards_laurels_content .col-xs-12.col-sm-6.col-md-2:first-child a {
-  margin-top: 15px;
-}
-.download_brochure {
-  font-size:15px;
-  line-height:50px;
-  width: 90%;
-  margin: auto;
-  margin-bottom: 15px;
-}
-.slider_ticker ul.bxslider li {
-  line-height: 14px;
-  width: 74% !important;
-  font-size:12px;
-  text-align:center;
-}
-.slider_ticker span {
-  display:block;
-  text-align:center;
-  border-right:0px;
-  margin-right:0px;
-  padding-right:0px;
-  margin-top:8px;
-}
-.slider_ticker {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  background-color: inherit;
-}
-.slider_ticker .bx-controls-direction {
-  background-color: transparent;
-  width:100%;
-}
-.slider_ticker .bx-wrapper .bx-prev {
-  left: -5px !important;
-  right: inherit !important;
-}
-.slider_ticker .bx-wrapper .bx-next {
-  right: -5px !important;
-  left: inherit !important;
-}
+.awards_laurels_content {position:inherit; margin-top:0px; border-bottom:0px;}
+.about_awards_laurels {border-bottom: solid 3px #ad1f6b !important;}
+.awards_laurels {font-size:15px; line-height:50px; width: 90%; margin:auto; margin-top:15px;}
+.awards_laurels_content .col-xs-12.col-sm-6.col-md-2:first-child a {margin-top: 15px;}
+.download_brochure {font-size:15px; line-height:50px; width: 90%; margin:auto; margin-bottom: 15px;}
+.slider_ticker ul.bxslider li {line-height:14px; width: 74% !important; font-size:12px;text-align:center;}
+.slider_ticker span {display:block; text-align:center; border-right:0px; margin-right:0px; padding-right:0px; margin-top:8px;}
+.slider_ticker {margin-top: 15px; margin-bottom: 15px; background-color: inherit;}
+.slider_ticker .bx-controls-direction {background-color: transparent; width:100%;}
+.slider_ticker .bx-wrapper .bx-prev {left: -5px !important; right: inherit !important;}
+.slider_ticker .bx-wrapper .bx-next {right: -5px !important;left: inherit !important;}
 
 /* ============= Home Page Curriculum Section ================ */
 
-.curriculum_content {
-  padding-top:30px;
-}
-.curriculum_content .caption h3 {
-  font-size:15px;
-  margin-bottom: 10px;
-  margin-top: 0px;
-}
-.curriculum_content .caption h3:before {
-  top:20px;
-}
-.curriculum_content .caption p {
-  margin-bottom:0px;
-}
-.modal-dialog {
-  width:100%;
-}
-.curriculum_content .col-md-3 {
-  padding-right:0px;
-}
-.curriculum_content .caption {
-  margin-bottom:25px;
-}
+.curriculum_content {padding-top:30px; padding-bottom:0px;}
+.curriculum_content .caption h3 {font-size:15px;margin-bottom: 10px;margin-top: 0px;}
+.curriculum_content .caption h3:before {top:20px;}
+.curriculum_content .caption p {margin-bottom:0px;}
+.modal-dialog {width:100%;}
+.curriculum_content .col-md-3 {padding-right:0px;}
+.curriculum_content .caption {margin-bottom:15px;}
 
 /* ============= Home Page Events Section ================ */
 
-.events_content {
-  position: relative;
- padding-bottom:70px;
-}
-.events_content .caption p {
-  font-size:13px;
-  line-height:17px;
-  margin:0px;
-}
-.events_content .caption h3 {
-  margin-top:0px;
-}
-.events_content .nav > li > a {
-  font-size:12px;
-}
-.events_content .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-  font-size: 12px !important;
-  line-height:17px;
-}
-.events_content .nav > li > a {
-  padding-right: 10px;
-  padding-left: 10px;
-}
-.events_content ul.nav.nav-tabs {
-  height:47px;
-  margin-right:0px;
-}
-.events_content .col-md-3 {
-  padding-right:0px;
-}
-.events_content .events_bt {
-  width: 100px;
-  position: absolute;
-  bottom: 22px;
-  right:4px;
-  font-size: 12px;
-  background-color: #466aa6;
-  color: #fff;
-}
+.events_content {position: relative; padding-bottom:70px;}
+.events_content .caption p {font-size:13px; line-height:17px; margin:0px;}
+.events_content .caption h3 {margin-top:0px;}
+.events_content .nav > li > a {font-size:12px;}
+.events_content .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {font-size: 12px !important; line-height:17px !important;}
+.events_content .nav > li > a {padding-right: 10px; padding-left: 10px;}
+.events_content ul.nav.nav-tabs {height:47px;margin-right:0px;}
+.events_content .col-md-3 {padding-right:0px;}
+.events_content .events_bt {width: 100px; position: absolute; bottom: 22px; right:4px; font-size: 12px; background-color: #466aa6; color: #fff;}
 
 /* ============= Home Page Affiliations Section ================ */
 
-.affiliations_content .affiliations_bt {
-  font-size:15px;
-  line-height:50px;
-  margin:30px 0px;
-}
-.affiliations_content .col-md-2 {
-  line-height: 110px;
-}
+.affiliations_content .affiliations_bt {font-size:15px; line-height:50px; margin:30px 0px;}
+.affiliations_content .col-md-2 {line-height:110px; text-align:left;}
 
 /* ============= Home Page Footer Section ================ */
 
-.footer_content .col-md-6 {
-  border-right: 0px;
-  border-bottom: solid 1px #000;
-  padding-bottom: 70px;
-}
-.container-fluid.footer_content .col-md-3 {
-  min-height:130px;
-}
-.footer_social_icon {
-  bottom:25px;
-}
-.footer_content ul li a {
-  font-size:10px;
-  line-height:25px;
-}
-.footer_content .col-md-5 {
-  padding-left: 0px;
-  margin-bottom: 20px;
-}
-.footer_content .col-md-7{
-  padding:0px;
-}
-.bottom_footer a {
-  margin-left: 0px;
-  display: block;
-  text-align: center;
-}
-.bottom_footer {
-  line-height:15px;
-  text-align: center;
-  padding:15px 27px;
-}
-.bottom_footer p {
-  margin-bottom:10px;
-}
+.footer_content .col-md-6 {border-right: 0px; border-bottom: solid 1px #000;padding-bottom: 70px;}
+.container-fluid.footer_content .col-md-3 {min-height:130px;}
+.footer_social_icon {bottom:25px;}
+.footer_content ul li a {font-size:10px;line-height:25px;}
+.footer_content .col-md-5 {padding-left: 0px;margin-bottom: 20px;}
+.footer_content .col-md-7{padding:0px;}
+.bottom_footer a {margin-left: 0px;display: block;text-align: center;}
+.bottom_footer {line-height:15px; text-align: center;padding:15px 27px;}
+.bottom_footer p {margin-bottom:10px;  width:100%;}
+.footer_content .col-xs-6 {padding:0px; margin-bottom:20px;}
+
+/* ============= About Us Page ================ */
+
+.about_al .col-md-3 {padding:0px;}
+.about_al .col-md-12{padding: 0px 15px;}
+.about_al_content p{font-size:12px;line-height:inherit;}
+.about_container .col-md-offset-1{padding:0px;}
+.about_slider_bg .col-md-offset-1{padding:inherit;}
+.about_container h3 {font-size:15px;padding-bottom:10px;}
+.cs-select{font-size:15px; margin-left:-8px;}
+.about_container h2 {font-size:10px;padding-top:0px;}
+.about_container {margin-top:132px; border-top:0px;padding-bottom:0px;}
+.abt_purple_color {padding:40px 0px;}
+.about_slider_bg {padding:15px 15px 15px 15px;}
+.rscontent_bg {padding-bottom:0px !important;}
+.about_slider_bg .col-md-2 img {border-bottom:solid 3px #ad1f6b;}
+.about_slider_bg .col-md-9 {padding:20px;}
+.about_slider_bg p {font-size: 12px;line-height: 20px;}
+.pd_content ul li{font-size:12px; line-height:20px;}
+.about_slider_bg .col-md-9:before {display:none;}
+
+/* ============= About (Our Pledge Page)  ================ */
+
+.about_our_pledge {padding:0px 10px 0px 10px; width:95%;}
+.about_our_pledge p {width:90%;margin-top:0px;font-size:12px;line-height:20px; margin-left:15px;}
+.about_our_pledge .content_border {width:100%;}
+
+/* ============= About (Our Philosophy Page)  ================ */
+
+.our_philosophy p {font-size:12px;}
+.our_philosophy p b {font-size:14px;}
+
+/* ============= About (Our Policies Page) ================ */
+
+.about_our_policies {padding:0px 0px 20px 0px; width:90%;}
+.about_our_policies p {font-size:12px;line-height:20px;}
+.about_our_policies ul li{font-size:12px; margin-bottom:10px; line-height:20px;}
+.about_our_policies h4 {font-size:13px;}
+.about_our_policies p:nth-child(1n+3) {background-position:0px 4px;}
+
+/* ============= About (The School Campus Page)  ================ */
+
+.the_school_campus .slide_content {width:100%;left:0px;margin-left:0px;bottom:-33px;}
+.the_school_campus .bx-wrapper .bx-viewport {height:185px !important;}
+.the_school_campus .slide_content p {width:100%;font-size:12px;line-height:30px;background:#E2E2E2;}
+.the_school_campus .slide_content a {width:100%;display:block;font-size:14px;}
+.the_school_campus .slide_content a:first-child{top: 6px;left: 91.5%;}
+.the_school_campus .slide_content a img {width: 16px;margin-top: 6px;}
+.the_school_campus .slider1 .slide {border-bottom: solid #ad1f6b 3px; height:97px;}
+.the_school_content p {font-size: 12px;width: 100%;margin-top:10px;}
+.the_school_campus .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {display:none;}
+.the_school_campus .bx-controls-direction {right:7px; width:120px; top:8px; left:inherit; height:25px; width:65px;}
+.the_school_campus .bx-wrapper .bx-next {right: 0px;}
+.all_school_content .nav-tabs > li > a {font-size: 12px !important;line-height: 13px;}
+.all_school_content .nav-tabs {margin-top:20px;left:0px;}
+.all_school_content ul.nav li.active a, ul.nav li.active a:hover {line-height: 13px !important;font-size: 12px !important;}
+.all_school_content ul.nav li {width: 94%;margin-bottom: 10px;font-size: 12px !important;float: inherit;right: 6px;}
+.all_school_content .tab-pane p {font-size: 12px;width: 95%;padding-right: 20px;}
+.all_school_content .tab-pane p:nth-child(2) {padding-top: 20px;}
+.all_school_content .tab-pane img {width: 100%;margin-top: 200px;}
+.all_school_content .tab-pane b {font-size:15px;}
+.school_curriculum .col-md-3 {line-height: 50px;margin-top: 20px;width: 100%;}
+.school_curriculum a {font-size:15px;}
+.all_school_content {border-bottom:solid 10px #fff;}
+.academics_the_curriculum b {font-size:13px;}
+
+/* ============= About (Awards & Laurels Page)  ================ */
+
+.al_highlight{padding:0px !important;}
+.about_al_content_highlight{min-height:390px; height:390px !important;}
+.about_al_content_highlight:hover{min-height:390px;}
+.about_al_content h2{font-size:15px; margin-top:10px; line-height:inherit;}
+.about_al_content{margin-left:0px;width:100%;margin-bottom:15px; padding:15px;height:200px;}
+.about_al_content .about_al_content_hover{height:200px !important;}
+.about_al_content:hover .about_al_content_hover a{font-size:15px;}
+.abt_school_awards_pager ul{width:290px;}
+.abt_school_awards_pager ul li a{font-size:14px; padding: 0px 10px;}
+.abt_school_awards h3{font-size:15px; margin-bottom: 30px;}
+.abt_school_awards{border-bottom:solid 0px #fff;}
+.abt_school_awards_pager{border-bottom:solid 25px #fff;}
+ul.media_press li a{font-size:15px;}
+.media_press_container .cs-select { margin-top:-15px; margin-bottom:20px;}
+.media_video_container .cs-select {margin-top:-15px; margin-bottom:20px;}
+ul.media_press{height:50px;}
+
+/* ============= About (Press & Video Page)  ================ */
+
+.media_press_container .about_al_content{height:auto;}
+.media_video_container .about_al_content{height:auto;}
+.media_press_thumb_content{padding:15px;}
+.media_video_container .about_al_content p {margin-top:5px;}
+.media_video_container .about_al_content h2 {margin-bottom:10px;}
+.pp_content {width: 100% !important;height: auto !important;}
+div.pp_pic_holder{width: 290px !important;left: 50% !important;margin-left: -140px;height: 350px !important;margin-top: -50px !important;}
+.pp_hoverContainer {width: 87% !important;height: 250px !important;}
+#pp_full_res img {width:100% !important;height:250px !important;}
+.pp_content_container .pp_details {width: 87% !important;}
+#pp_full_res iframe {width:100% !important;height:250px !important;}
+.media_video_container .about_al_content h2{font-size:12px;}
+
+/* ============= About (CSR)  ================ */
+
+.csr_container .csr_left{width:100%; padding:15px 0px;}
+.csr_container b{font-size:15px;}
+.csr_container .csr_left ul li{font-size:12px; line-height:18px; background-position:0px 5px; padding-left: 17px; background-size:8px;}
+.csr_container .csr_right{width:100%;}
+.csr_container .csr_right img {width:100%; margin-bottom:15px;}
+.csr_school_section .col-md-4{padding-top:30px; padding-bottom:10px; padding-right:0px; border-right:0px; border-bottom:solid #F0F0F0 1px; padding-left:0px;}
+.csr_school_section .col-md-4:last-child{padding-top:30px;}
+.csr_school_section ul li{font-size:12px; background-position:0px 5px; padding-left: 17px; background-size:8px;}
+.csr_container .col-md-4 b{font-size:12px;}
+.csr_bottom_container{padding-top:0px;     background-size:85%;}
+.csr_bottom_container h2{font-size:15px; margin-bottom:10px;}
+.csr_bottom_container h3{font-size:15px;}
+.csr_bottom_container p{font-size:12px; width:100%;}
+.csr_bottom_container .container,.col-md-12 {padding:0px;}
 
 
-/* ============= About Page  ================ */
+/* ============= About (FAQ)  ================ */
 
-.about_container h3 {
-  font-size:15px;
-  padding-bottom:10px;
-}
-.cs-select{
-  font-size:15px;
-  margin-left:-8px;
-}
-.about_container h2 {
-  font-size:10px;
-  padding-top:0px;
-}
-.about_container {
-  margin-top:132px;
-  border-top:0px;
-  padding-bottom:0px;
-}
-.abt_purple_color {
-  padding:40px 0px;
-}
-.about_slider_bg {
-  padding:20px 20px 20px 20px;
-}
-.about_slider_bg .col-md-2 img {
-  border-bottom:solid 3px #ad1f6b;
-}
-.about_slider_bg .col-md-9 {
-  padding:20px;
-}
-.about_slider_bg p {
-  font-size: 12px;
-  line-height: 20px;
-}
-.about_slider_bg .col-md-9:before {
-  display:none;
-}
+.scrollup{bottom:5px; right:0px;}
+.faq_container ul li a{font-size:12px;line-height:28px;}
+.faq_content h2{font-size:15px; margin-bottom:10px;}
+.faq_content b{font-size:12px;}
+.faq_content p{font-size:12px;}
+.faq_bg{padding: 20px 0px 20px 0px; margin-bottom: 30px;}
 
-/* ============= About Page Our Pledge  ================ */
+/* ============= Academics (The Curriculum Page)  ================ */
 
-.about_our_pledge {
-  padding:0px 10px 0px 10px;
-}
-.about_our_pledge p {
-  width:100%;
-  margin-top:0px;
-  font-size: 12px;
-  line-height:20px;
-}
-.about_our_pledge .content_border {
-  width:100%;
-}
-/* ============= About Page Our Philosophy  ================ */
+.academics_container .about_slider_bg .col-md-offset-1{padding:0px;}
+.academics_the_curriculum .taa{display:none;}
+.academics_container .academics_the_curriculum{display:inherit;}
+.responsive-tabs-container[class*="accordion-"] .tab-pane{background:#fff; padding:10px; margin-top:-10px;}
+.academics_professional_development img{border-bottom: solid #466AA6 5px;}
+.academics_the_curriculum .col-md-8{padding: 20px 10px;}
 
-.our_philosophy p {
-  font-size:12px;
-}
-.our_philosophy p b {
-  font-size:14px;
-}
-/* ============= About Page Our Policies  ================ */
+/* ============= Academics (Affiliations Collaborations Page)  ================ */
 
-.about_our_policies {
-  padding: 0px 0px 20px 0px;
-}
-.about_our_policies p {
-  font-size:12px;
-  line-height:20px;
-}
-.about_our_policies h4 {
-  font-size:13px;
-}
-.about_our_policies p:nth-child(1n+3) {
-  background-position:0px 4px;
-}
+.ac_content{display:none;}
 
-/* ============= About Page The School Campus  ================ */
+/* ============= Beyond Academics (Sports & Games Page)  ================ */
+.beyond_academics_container .wide_range_sports ul{width:90%;}
+.all_school_content{padding-top:20px; padding-bottom:20px;}
+.beyond_academics_container .all_school_content h2{font-size:15px;}
+.beyond_academics_container .all_school_content ul{width:50%; margin-right:0px; margin-top:0px;}
+.beyond_academics_container .all_school_content ul li a{font-size:12px; line-height:25px;}
+.all_school_content .col-xs-12{padding:0px;}
+.wide_range_sports .col-md-offset-1{padding:0px;}
+.beyond_academics_container .wide_range_sports ul li{font-size:12px;}
+.beyond_academics_container .wide_range_sports ul li b{font-size:12px; margin-bottom: 0px;}
+.beyond_academics_container .wide_range_sports .academics_professional_development img{border-bottom: solid #008545 5px;}
+.beyond_academics_container .art_education .about_slider_bg {padding:15px 15px 15px 15px;}
+.beyond_academics_container .about_slider_bg .col-md-6{width:100%; margin-bottom: 20px; padding:15px;}
 
-.the_school_campus .slide_content {
-  width:100%;
-  left:0px;
-  margin-left:0px;
-  bottom:-33px;
-}
-.the_school_campus .bx-wrapper .bx-viewport {
-    height: 180px !important;
-}
-.the_school_campus .slide_content p {
-  width:100%;
-  font-size:12px;
-  line-height:30px;
-  background:#E2E2E2;
-}
-.the_school_campus .slide_content a {
-  width:100%;
-  display:block;
-  font-size:14px;
-}
-.the_school_campus .slide_content a img {
-  width: 16px;
-  margin-top: 6px;
-}
-.the_school_campus .slider1 .slide {
-  border-bottom: solid #ad1f6b 3px;
-}
-.the_school_content p {
-  font-size: 12px;
-  width: 100%;
-  margin-top:10px;
-}
-.the_school_campus .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
-  display:none;
-}
-.the_school_campus .bx-controls-direction {
-  left: 75%;
-  width: 65px;
-  top: 47px;
-}
-.all_school_content .nav-tabs > li > a {
-  font-size: 12px !important;
-  line-height: 13px;
-}
-.all_school_content .nav-tabs {
-  margin-top:20px;
-  left:0px;
-}
-.all_school_content ul.nav li.active a, ul.nav li.active a:hover {
-  line-height: 13px !important;
-  font-size: 12px !important;
-}
-.all_school_content ul.nav li {
-  width: 94%;
-  margin-bottom: 10px;
-  font-size: 12px !important;
-  float: inherit;
-  right: 6px;
-}
-.all_school_content .tab-pane p {
-  font-size: 12px;
-  width: 95%;
-  padding-right: 20px;
-}
-.all_school_content .tab-pane p:nth-child(2) {
-  padding-top: 20px;
-}
-.all_school_content .tab-pane img {
-    width: 100%;
-    margin-top: 200px;
-}
-.all_school_content .tab-pane b {
-  font-size:15px;
-}
-.school_curriculum .col-md-3 {
-  line-height: 50px;
-  margin-top: 20px;
-  width: 100%;
-}
-.school_curriculum a {
-  font-size:15px;
-}
-.all_school_content {
-  border-bottom:solid 10px #fff;
-}
-.academics_the_curriculum b {
-  font-size:13px;
-}
+/* ============= Beyond Academics (Tod Fod Jod Page)  ================ */
+
+.tod_fod_jod{padding:15px 15px 15px 15px !important;}
+.community_service_club{padding:15px 15px 15px 15px !important;}
+.community_service_club .col-md-4{width:100%;margin-top: 15px;}
+.community_service_club_content{display:inherit;}
+.community_service_club .col-md-8{width:100%;margin-top: 15px;}
+.community_service_club .col-md-4 p{font-size:12px !important;}
+.community_service_club ul{width:86% !important; margin-bottom:0px !important;}
+.community_service_club ul li{font-size:12px !important;}
+/*.community_service_club .bx-controls-direction{width:100%; height:28px; background:transparent; top:32px; top:50%; margin-top:-14px;}
+*/
+.community_service_club .bx-controls-direction{width:100px; height:31px;}
+.csc_view{bottom:16px; left:40px;}
+.community_service_club .bx-wrapper .bx-prev{left:0px;}
+.community_service_club .bx-wrapper .bx-next{right:0px;}
+
+/* ============= Beyond Academics (Animation Page)  ================ */
+
+.computer_animation .col-md-12:first-child{padding:15px;}
+.computer_animation_box{display:inherit;}
+.animation .col-md-6 {margin-top:15px; margin-bottom:0px !important; }
+.computer_animation .col-md-12:last-child{margin-top:15px; padding:15px;}
+
+/* ============= School Life (About Round Square Page)  ================ */
+
+.school_life_container .academics_the_curriculum .col-md-3{padding:0px;}
+.t_p_d{display:none;}
+.school_life_container .wide_range_sports{display:inherit;}
+.sl_ars p{width:100%;}
+.sl_ars img{float:left;}
+.school_life_table p{margin-top:20px; font-size:13px;}
+.school_life_table{width:95%; margin:auto;}
+.school_life_table b{font-size:12px;}
+.table-responsive .table > tbody > tr > td, .table > tfoot > tr > td{font-size:12px; padding:8px;}
+.school_life_table strong{font-size:12px;}
+.student_council_content p{font-size:12px;}
+.student_council_content h2{margin-bottom:10px;}
+.student_council_content h3{font-size:13px !important;}
+.school_life_container .academics_professional_development img{border-bottom:solid #71c043 5px;}
+
+/* ============= School Life (Career Counselling Page)  ================ */
+
+.career_counselling ul li{font-size:12px; line-height:15px;}
+.career_counselling .col-md-offset-1{padding:0px;}
+
+/* ============= School Life (Publications Page)  ================ */
+
+.publications_container .col-md-12{line-height:20px; margin-bottom:20px; padding-bottom:10px; padding-left:0px;}
+.publications_container{width:90%;}
+.publications_container .col-md-2 {padding-left:0px; padding-right:15px; text-align:left;}
+.publications_container a{font-size:12px;}
+.school_life_container h3 span{display:block;}
+.publications_container .col-md-1{padding-left:0px; text-align:left !important;}
+
+/* ============= Scholars Residences (Daily Routine Page)  ================ */
+
+.residential_school_content .table-responsive {margin-bottom: 15px;}
+.rs_bg{margin:0px;padding:15px; border:solid #E2E2E2 15px;}
+.residential_school_content li{font-size:12px; line-height:25px;}
+.residential_school_content .col-md-12{margin-bottom:15px;}
+.col-xs-12.col-sm-12.col-md-12:first-child {display: inherit;}
+.rs_bg a{font-size:12px;}
+.rs_bg img{width:auto !important;}
+.rs_bg p{padding-top:0px;}
+.residential_school_content ul{margin-bottom:20px;}
+.residential_school_content b,strong{margin-bottom:8px;}
+.residential_school_content .col-md-4,.col-md-6 {padding:0px;}  
+.rs_mr{padding-top: 0px !important;}  
+
+/* ============= Facilities (Multipurpose Hall Page)  ================ */
+
+.residential_school_content img {width:100%;}
+.multipurpose_hall_content .col-md-9{padding:15px;}
+.multipurpose_hall{padding: 15px 15px 0px 15px;}
+.multipurpose_hall ul li{width:30.8%; margin-bottom:10px; margin-right:10px; margin-left:0px;}
+.multipurpose_hall ul li:nth-child(3n){margin-right:0px;}
+.multipurpose_hall_content{display:inherit;}
+.facilities_container .residential_school_content{padding:15px 15px 15px 15px;}
+.multipurpose_hall ul li a{font-size:9px;}
+.multipurpose_hall ul li:nth-child(7n) {width:40%;}
+.transportation_content b,strong{font-size:11px;}
+.transportation_bottom_content p b, strong{font-size:10px;}
+
+/* ============= Facilities (Classrooms Page)  ================ */
+
+.classrooms a span{font-size:10px;}
+.cr_back{font-size:12px;}
+.classrooms_gallery .col-md-3{padding:0px;}
+.classrooms_thumb_content{width:93%; margin-bottom:15px;}
+.classrooms_thumb{height:100px; border: solid 3px #fff;}
+
+/* ============= Admission Page  ================ */
+
+.admission_content .col-md-12 {padding:30px 10px 10px 10px;}
+.abbreviations a{background-color:transparent;color:red;}
+.fund_transfer,.fund_transfer_contact {width:100%;}
+.fund_transfer_contact .col-md-6{width:100% !important;}
+.fund_transfer span{margin-right: 0px;}
+.fund_transfer b,strong {font-size: 10px !important;}
+.fund_transfer_contact b,strong{display:inherit;     margin-bottom: 0px;     margin-top: 10px;}
+.admission_content table tr td b {font-size:10px;}
+
+/* ============= Enquiry Page  ================ */
+
+.enquiry_content label{width:100%; margin-bottom:10px; font-size:10px;}
+.enquiry_content .form-group .col-sm-8{padding:0px;}
+.enquiry_content input, .enquiry_content textarea{margin-bottom:5px; font-size:12px;}
+.enquiry_content p{font-size:10px;}
+.enquiry_age .col-sm-4{margin-bottom:0px; padding-left:0px; padding-right:0px; margin-top:10px;}
+.enquiry_age label.col-sm-4.control-label{padding-left:10px;}
 
 
+/* ============= Latest Updates Page =================== */
+.latest_updates_title b{font-size:10px;}
+.latest_updates_title b:before{top:20px;}
+.latest_updates_title h2{font-size:11px;}
+.latest_updates_detail b,strong,a{font-size:11px;}
 
+.latest_updates_container .about_al_content{height:auto;}
+.latest_updates_container  .abt_al_select {margin-bottom:15px;}
+.latest_update_large_thumb{margin-top:0px;}
+.latest_updates_container .about_al_content a{font-size:10px;}
+
+
+.photo_gallery_container .gallery {width:187px; margin:auto; float:inherit; overflow:hidden;}
+.photo_gallery_container .gallery_thumb_content{width:100%;}
+
+.classrooms_gallery {padding:0px 0px 15px 15px !important;}
+.classrooms_gallery .col-md-2{padding:0px;}
+.cr_back{right:0px;}
+.calendar_container p{font-size:22px !important;}
+.calendar_content{width:280px;}
+
+
+.ccc_mr .media_press {margin-top: 20px; height: 30px;}
+.suggestions {width:98%;margin-top:20px; margin-bottom:20px;}
+.suggestions input, .suggestions textarea{height:35px;}
+.suggestions textarea{height:70px;}
+.careers_teacher .about_al_content a {position:initial;}
+.careers_content img{float:inherit;}
+
+.workplan a{font-size:11px !important;}
+.beyond_academics_container .about_slider_bg{display:inherit;}
+
+
+.smt-popup-content h3{padding-bottom:0px !important; font-size:11px !important;}
+.smt-popup-content h2 {font-size: 11px !important;}
+.smt-popup-content p{font-size:12px !important;}
+.popup-data-img {width:100%; margin-top:40px; margin-bottom:20px;}
+.popup-data-content {width:100%;}
+
+.smt-popup .close{top:0px;right:0px;border-radius:0px;}
+.about_our_policies a{width:49%;}
 
 
 

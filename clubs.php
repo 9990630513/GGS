@@ -43,9 +43,11 @@
                             <p>
                               To ignite young minds to think of creating new useful things out of the old and not so useful junk.
                             </p>
-                             <p>To find the useful parts inside a broken part.</p>   
-                              <p>To think of joining the broken parts and making a new thing out of it.</p>  
-                              <p>To learn the functions of various parts for example: motor, wheels, batteries, fan etc.</p>     
+                            <p>
+                              To find the useful parts inside a broken part.<br> 
+                              To think of joining the broken parts and making a new thing out of it.<br>
+                              To learn the functions of various parts for example: motor, wheels, batteries, fan etc.
+                            </p>     
                         </div>
                   </div>
               </div>

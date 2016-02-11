@@ -15,17 +15,21 @@
                         </h3>
                     </div>
                   </div>
-                  <div class="container about_slider_bg academics_the_curriculum residential_school_content">
-                        <b>Residential School</b>
+                  <div class="container about_slider_bg academics_the_curriculum residential_school_content day_programme rscontent_bg">
+                       <div class="col-md-12">
+                          <b>Residential School</b>
                         <p>
                            Resident Scholars at Genesis Global School have the option of being 5-day boarders with the weekends at home, or 7-day boarders. Equipped with modern
                           infrastructure and facilities, the residences for scholars at Genesis are indeed a home away from home. The school has separate air conditioned residences for boys and girls, where they are given personal attention and care by experienced House Parents. Each scholar has a comfortable and cosy bed, a bedside table, a study table and a cupboard for their personal belongings. The scholars’ residences are supported by laundry and housekeeping facilities.
+                        </p>
+                        <p>
                           A lounge and recreational room known as the common room in each Residence gives scholars an opportunity to play indoor games, watch television, and use the Internet.
                         </p>
-                        <b>5 Day Residence</b>
+                       </div>
+                       <!--  <b>5 Day Residence</b>
                         <p>Information Missing </p>
                         <b>7 Day Residence</b>
-                        <p>Information Missing </p>
+                        <p>Information Missing </p> -->
                   </div>
               </div>
           </div>

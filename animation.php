@@ -18,6 +18,7 @@
                   </div>
                   <div class="container about_slider_bg academics_the_curriculum wide_range_sports community_service_club animation">
                     <div class="col-xs-12 col-sm-12 col-md-12">
+                      <a href="#" class="csc_view"><img src="images/view_more_icon.png" alt=""></a>
                       <div class="slider1">
                         <!-- slide1 -->
                         <div class="slide">
@@ -43,23 +44,23 @@
                               something which can't move itself. Animation adds to graphics the dimension of time which vastly increases the amount of information which can be transmitted.
                             </p>  
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12">
+                        <!-- <div class="col-xs-12 col-sm-12 col-md-12">
                             <b>Club In charge :</b>
                             <p>
                               Ravi Pargaien, Anup Gupta
                             </p>  
-                        </div>
+                        </div> -->
                       </div>
                         <div class="col-xs-12 col-sm-6 col-md-6">
                             <b>Objective</b>
                             <p>
                               The main objective of this club is to have students develop an understanding of
-                              fundamental techniques used for computer animation. At the end of the term,students will be able 
+                              fundamental techniques used for computer animation. At the end of the term, students will be able 
                               to identify the advantages & disadvantages of using simulation, procedural animation, motion
                                capture, & hand designed animations, with respect to both online & offline applications. They 
                                will also be able to implement animation techniques, using common software languages and tools.
                                 Finally, in addition to an understanding of current practices in computer animation, a general 
-                                objective is for students to better recognize current important challenges in computer 
+                                objective is for students to better recognize current challenges in computer 
                                 animation.
                             </p>      
                         </div>
